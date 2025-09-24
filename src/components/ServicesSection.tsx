@@ -95,23 +95,23 @@ export default function ServicesSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service) => (
-            <div key={service.id} className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-white">
-              <div className="relative h-96 w-full">
-                {/* Service Image */}
+            <div key={service.id} className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 bg-white">
+              <div className="relative aspect-[4/5] w-full">
+                {/* Service Image - Full Size without cropping */}
                 {!imageErrors[service.id] ? (
                   <Image
                     src={service.image}
                     alt={service.title}
                     fill
-                    className="object-cover w-full h-full"
+                    className="object-cover w-full h-full rounded-t-2xl"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     priority={service.id <= 3}
                     onError={() => handleImageError(service.id)}
                   />
                 ) : (
-                  <div className="w-full h-full bg-gradient-to-br from-pink-200 via-pink-300 to-pink-400 flex items-center justify-center">
+                  <div className="w-full h-full bg-gradient-to-br from-pink-200 via-pink-300 to-pink-400 flex items-center justify-center rounded-t-2xl">
                     <div className="text-center text-pink-800">
                       <div className="text-4xl mb-2">🖼️</div>
                       <p className="text-sm font-semibold">{service.title}</p>
@@ -120,27 +120,27 @@ export default function ServicesSection() {
                 )}
                 
                 {/* Category Badge */}
-                <div className="absolute top-4 left-4 z-20">
-                  <span className="bg-pink-600/90 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm font-bold shadow-lg">
+                <div className="absolute top-4 right-4 z-20">
+                  <span className="bg-pink-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg uppercase tracking-wide">
                     {service.category}
                   </span>
                 </div>
-
-                {/* Content Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6 text-white z-10">
-                  <h3 className="text-xl font-bold mb-2 drop-shadow-lg">{service.title}</h3>
-                  <p className="text-pink-100 mb-4 text-sm drop-shadow-md">{service.subtitle}</p>
-                  <Link 
-                    href={service.link}
-                    className="bg-pink-500/90 hover:bg-pink-600 backdrop-blur-sm text-white px-6 py-2 rounded-full text-center font-semibold transition-all duration-200 w-full shadow-lg hover:shadow-xl"
-                  >
-                    Book {service.title}
-                  </Link>
-                </div>
-
-                {/* Hover Effect */}
-                <div className="absolute inset-0 bg-pink-500/0 group-hover:bg-pink-500/10 transition-all duration-300 z-5"></div>
               </div>
+
+              {/* Content Section - Below Image */}
+              <div className="p-6 bg-white">
+                <h3 className="text-xl font-bold text-gray-800 mb-2">{service.title}</h3>
+                <p className="text-gray-600 mb-4 text-sm leading-relaxed">{service.subtitle}</p>
+                <Link 
+                  href={service.link}
+                  className="block w-full bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 rounded-full text-center font-semibold transition-all duration-200 shadow-md hover:shadow-lg"
+                >
+                  Book {service.title}
+                </Link>
+              </div>
+
+              {/* Hover Effect */}
+              <div className="absolute inset-0 bg-pink-500/0 group-hover:bg-pink-500/5 transition-all duration-300 rounded-2xl"></div>
             </div>
           ))}
         </div>
