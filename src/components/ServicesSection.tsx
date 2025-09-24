@@ -5,10 +5,10 @@ export default function ServicesSection() {
   const services = [
     {
       id: 1,
-      title: "VIP Services",
+      title: "VIP Escorts",
       subtitle: "Premium VIP Service",
       category: "VIP",
-      image: "/images/services/vip-service.jpg",
+      image: "/images/services/vip escorts.webp",
       link: "/services/vip"
     },
     {
@@ -16,7 +16,7 @@ export default function ServicesSection() {
       title: "Celebrity Services",
       subtitle: "Star-Like Companions",
       category: "CELEBRITY",
-      image: "/images/services/celebrity-service.jpg",
+      image: "/images/services/celebrity services.webp",
       link: "/services/celebrity"
     },
     {
@@ -24,7 +24,7 @@ export default function ServicesSection() {
       title: "Elite Models",
       subtitle: "Professional Model Services",
       category: "ELITE",
-      image: "/images/services/elite-models.jpg",
+      image: "/images/services/elite models.webp",
       link: "/services/elite"
     },
     {
@@ -32,7 +32,7 @@ export default function ServicesSection() {
       title: "Premium Services",
       subtitle: "Luxury Premium Experience",
       category: "PREMIUM",
-      image: "/images/services/premium-service.jpg",
+      image: "/images/services/premium services.webp",
       link: "/services/premium"
     },
     {
@@ -40,7 +40,7 @@ export default function ServicesSection() {
       title: "Local Beauties",
       subtitle: "Regional beauties from different states",
       category: "LOCAL",
-      image: "/images/services/local-beauties.jpg",
+      image: "/images/services/local beauties.webp",
       link: "/services/local"
     },
     {
@@ -48,7 +48,7 @@ export default function ServicesSection() {
       title: "Travel Companion",
       subtitle: "Perfect companions for business trips",
       category: "TRAVEL",
-      image: "/images/services/travel-companion.jpg",
+      image: "/images/services/travel companion.webp",
       link: "/services/travel"
     },
     {
@@ -56,7 +56,7 @@ export default function ServicesSection() {
       title: "Event Companion",
       subtitle: "Elegant companions for social events",
       category: "EVENT",
-      image: "/images/services/event-companion.jpg",
+      image: "/images/services/event companion.webp",
       link: "/services/event"
     },
     {
@@ -64,7 +64,7 @@ export default function ServicesSection() {
       title: "Outcall Services",
       subtitle: "Visit you at your preferred location",
       category: "OUTCALL",
-      image: "/images/services/outcall-service.jpg",
+      image: "/images/services/outcall services.jpg",
       link: "/services/outcall"
     },
     {
@@ -72,7 +72,7 @@ export default function ServicesSection() {
       title: "Independent Services",
       subtitle: "Professional independent companions",
       category: "INDEPENDENT",
-      image: "/images/services/independent-service.jpg",
+      image: "/images/services/independent services.webp",
       link: "/services/independent"
     }
   ];
@@ -93,8 +93,14 @@ export default function ServicesSection() {
           {services.map((service) => (
             <div key={service.id} className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
               <div className="relative h-80">
-                {/* Placeholder background with gradient */}
-                <div className="absolute inset-0 bg-gradient-to-br from-pink-200 to-pink-400"></div>
+                {/* Service Image */}
+                <Image
+                  src={service.image}
+                  alt={service.title}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
                 
                 {/* Category Badge */}
                 <div className="absolute top-4 left-4 z-10">
