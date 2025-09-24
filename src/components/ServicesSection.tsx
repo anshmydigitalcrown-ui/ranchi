@@ -1,7 +1,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState } from 'react';
 
 export default function ServicesSection() {
+  const [imageErrors, setImageErrors] = useState<{[key: number]: boolean}>({});
+
+  const handleImageError = (serviceId: number) => {
+    setImageErrors(prev => ({...prev, [serviceId]: true}));
+  };
   const services = [
     {
       id: 1,
@@ -91,38 +97,49 @@ export default function ServicesSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service) => (
-            <div key={service.id} className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-              <div className="relative h-80">
+            <div key={service.id} className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-white">
+              <div className="relative h-96 w-full">
                 {/* Service Image */}
-                <Image
-                  src={service.image}
-                  alt={service.title}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
+                {!imageErrors[service.id] ? (
+                  <Image
+                    src={service.image}
+                    alt={service.title}
+                    fill
+                    className="object-cover w-full h-full"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    priority={service.id <= 3}
+                    onError={() => handleImageError(service.id)}
+                  />
+                ) : (
+                  <div className="w-full h-full bg-gradient-to-br from-pink-200 via-pink-300 to-pink-400 flex items-center justify-center">
+                    <div className="text-center text-pink-800">
+                      <div className="text-4xl mb-2">🖼️</div>
+                      <p className="text-sm font-semibold">{service.title}</p>
+                    </div>
+                  </div>
+                )}
                 
                 {/* Category Badge */}
-                <div className="absolute top-4 left-4 z-10">
-                  <span className="bg-pink-600 text-white px-3 py-1 rounded-full text-sm font-bold">
+                <div className="absolute top-4 left-4 z-20">
+                  <span className="bg-pink-600/90 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm font-bold shadow-lg">
                     {service.category}
                   </span>
                 </div>
 
                 {/* Content Overlay */}
-                <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-6 text-white">
-                  <h3 className="text-xl font-bold mb-2">{service.title}</h3>
-                  <p className="text-pink-200 mb-4">{service.subtitle}</p>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6 text-white z-10">
+                  <h3 className="text-xl font-bold mb-2 drop-shadow-lg">{service.title}</h3>
+                  <p className="text-pink-100 mb-4 text-sm drop-shadow-md">{service.subtitle}</p>
                   <Link 
                     href={service.link}
-                    className="bg-pink-500 hover:bg-pink-600 text-white px-6 py-2 rounded-full text-center font-semibold transition-colors w-full"
+                    className="bg-pink-500/90 hover:bg-pink-600 backdrop-blur-sm text-white px-6 py-2 rounded-full text-center font-semibold transition-all duration-200 w-full shadow-lg hover:shadow-xl"
                   >
                     Book {service.title}
                   </Link>
                 </div>
 
                 {/* Hover Effect */}
-                <div className="absolute inset-0 bg-pink-500 bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+                <div className="absolute inset-0 bg-pink-500/0 group-hover:bg-pink-500/10 transition-all duration-300 z-5"></div>
               </div>
             </div>
           ))}
