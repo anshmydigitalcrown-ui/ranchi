@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
@@ -293,22 +292,82 @@ export default function ServicesPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
               {services.map((service, index) => (
-                <div key={index} className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-                  <div className="aspect-[4/5] relative">
-                    <Image
-                      src={service.image}
-                      alt={`${service.name} - Premium Escort Services in Ranchi`}
-                      fill
-                      className="object-cover hover:scale-105 transition-transform duration-300"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                <div key={index} className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-white via-pink-50 to-rose-50 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-pink-100 hover:border-pink-300">
+                  
+                  {/* Icon and Category Section */}
+                  <div className="relative p-6 text-center">
+                    {/* Background Pattern */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-pink-500/5 via-transparent to-rose-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    
+                    {/* Service Icon */}
+                    <div className="relative z-10 mb-4">
+                      <div className="w-16 h-16 mx-auto bg-gradient-to-br from-pink-500 to-rose-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                        <span className="text-2xl text-white">
+                          {index < 5 ? '💎' : 
+                           index < 10 ? '👑' :
+                           index < 15 ? '🌟' : '💕'}
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* Category Badge */}
+                    <div className="mb-3">
+                      <span className="inline-block bg-gradient-to-r from-pink-600 to-rose-600 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider shadow-md">
+                        {service.name.toUpperCase()}
+                      </span>
+                    </div>
+
+                    {/* Service Title */}
+                    <h3 className="text-lg font-bold text-gray-800 mb-3 group-hover:text-pink-700 transition-colors duration-300">
+                      {service.name}
+                    </h3>
+
+                    {/* Service Description */}
+                    <p className="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-2 group-hover:text-gray-700 transition-colors duration-300">
+                      {service.description}
+                    </p>
+
+                    {/* Features List */}
+                    <div className="mb-5">
+                      <ul className="text-xs text-gray-500 space-y-1">
+                        <li className="flex items-center justify-center gap-2">
+                          <span className="w-1 h-1 bg-pink-500 rounded-full"></span>
+                          <span>Professional & Verified</span>
+                        </li>
+                        <li className="flex items-center justify-center gap-2">
+                          <span className="w-1 h-1 bg-pink-500 rounded-full"></span>
+                          <span>24/7 Available</span>
+                        </li>
+                        <li className="flex items-center justify-center gap-2">
+                          <span className="w-1 h-1 bg-pink-500 rounded-full"></span>
+                          <span>Complete Discretion</span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    {/* Service Details */}
+                    <p className="text-xs text-gray-500 mb-5 leading-relaxed line-clamp-3">
+                      {service.details}
+                    </p>
+
+                    {/* Book Now Button */}
+                    <Link 
+                      href={`/book/${service.name.toLowerCase().replace(/\s+/g, '-')}`}
+                      className="inline-flex items-center justify-center gap-2 w-full bg-gradient-to-r from-pink-500 to-rose-600 hover:from-pink-600 hover:to-rose-700 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105 group-hover:shadow-pink-500/25"
+                    >
+                      <span>Book {service.name}</span>
+                      <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </Link>
                   </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-semibold text-gray-800 mb-2">{service.name}</h3>
-                    <p className="text-gray-600 mb-3">{service.description}</p>
-                    <p className="text-sm text-gray-500">{service.details}</p>
-                  </div>
+
+                  {/* Decorative Elements */}
+                  <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-pink-300/20 to-transparent rounded-full -translate-y-10 translate-x-10 group-hover:scale-150 transition-transform duration-700"></div>
+                  <div className="absolute bottom-0 left-0 w-16 h-16 bg-gradient-to-tr from-rose-300/20 to-transparent rounded-full translate-y-8 -translate-x-8 group-hover:scale-150 transition-transform duration-700"></div>
+                  
+                  {/* Hover Glow Effect */}
+                  <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 to-rose-500 rounded-2xl opacity-0 group-hover:opacity-20 blur-lg transition-all duration-500 pointer-events-none"></div>
                 </div>
               ))}
             </div>
