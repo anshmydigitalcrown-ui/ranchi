@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="antialiased bg-gradient-to-br from-pink-50 to-pink-100 min-h-screen">
+      <body className="antialiased">
         {children}
       </body>
     </html>
