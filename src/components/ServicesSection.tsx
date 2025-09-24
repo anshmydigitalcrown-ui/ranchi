@@ -98,33 +98,38 @@ export default function ServicesSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service) => (
             <div key={service.id} className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 bg-white">
-              <div className="relative aspect-[4/5] w-full">
-                {/* Service Image - Full Size without cropping */}
+              
+              {/* Image Container - No fixed height, allows natural sizing */}
+              <div className="relative w-full">
+                {/* Service Image - Full Size with natural aspect ratio */}
                 {!imageErrors[service.id] ? (
-                  <Image
-                    src={service.image}
-                    alt={service.title}
-                    fill
-                    className="object-cover w-full h-full rounded-t-2xl"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    priority={service.id <= 3}
-                    onError={() => handleImageError(service.id)}
-                  />
+                  <div className="relative">
+                    <Image
+                      src={service.image}
+                      alt={service.title}
+                      width={800}
+                      height={1000}
+                      className="w-full h-auto rounded-t-2xl"
+                      sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                      priority={service.id <= 3}
+                      onError={() => handleImageError(service.id)}
+                    />
+                    
+                    {/* Category Badge */}
+                    <div className="absolute top-4 right-4 z-10">
+                      <span className="bg-pink-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg uppercase tracking-wide">
+                        {service.category}
+                      </span>
+                    </div>
+                  </div>
                 ) : (
-                  <div className="w-full h-full bg-gradient-to-br from-pink-200 via-pink-300 to-pink-400 flex items-center justify-center rounded-t-2xl">
+                  <div className="w-full h-64 bg-gradient-to-br from-pink-200 via-pink-300 to-pink-400 flex items-center justify-center rounded-t-2xl">
                     <div className="text-center text-pink-800">
                       <div className="text-4xl mb-2">🖼️</div>
                       <p className="text-sm font-semibold">{service.title}</p>
                     </div>
                   </div>
                 )}
-                
-                {/* Category Badge */}
-                <div className="absolute top-4 right-4 z-20">
-                  <span className="bg-pink-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg uppercase tracking-wide">
-                    {service.category}
-                  </span>
-                </div>
               </div>
 
               {/* Content Section - Below Image */}
@@ -140,7 +145,7 @@ export default function ServicesSection() {
               </div>
 
               {/* Hover Effect */}
-              <div className="absolute inset-0 bg-pink-500/0 group-hover:bg-pink-500/5 transition-all duration-300 rounded-2xl"></div>
+              <div className="absolute inset-0 bg-pink-500/0 group-hover:bg-pink-500/5 transition-all duration-300 rounded-2xl pointer-events-none"></div>
             </div>
           ))}
         </div>
