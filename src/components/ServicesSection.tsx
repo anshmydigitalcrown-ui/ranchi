@@ -190,7 +190,7 @@ export default function ServicesSection() {
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
+        <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl font-bold text-pink-800 mb-4">
             Premium Services In Ranchi - Our Services
           </h2>
@@ -199,73 +199,80 @@ export default function ServicesSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
           {services.map((service) => (
-            <div key={service.id} className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 bg-white">
+            <div key={service.id} className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-white border border-pink-100 hover:border-pink-300">
               
-              {/* Image Container - Fixed aspect ratio like reference */}
-              <div className="relative w-full aspect-[4/5] overflow-hidden">
-                {/* Service Image - Properly fitted to show face and body */}
+              {/* Image Container - Smaller aspect ratio for compact cards */}
+              <div className="relative w-full aspect-[3/4] overflow-hidden">
+                {/* Service Image - Full image visible without cropping */}
                 {!imageErrors[service.id] ? (
                   <div className="relative w-full h-full">
                     <Image
                       src={service.image}
                       alt={service.title}
                       fill
-                      className="object-cover object-top w-full h-full"
-                      sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                      priority={service.id <= 3}
+                      className="object-contain w-full h-full group-hover:scale-110 transition-transform duration-500"
+                      sizes="(min-width: 1024px) 20vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 50vw"
+                      priority={service.id <= 5}
                       onError={() => handleImageError(service.id)}
                     />
                     
-                    {/* Category Badge - Top right like reference */}
-                    <div className="absolute top-4 right-4 z-10">
-                      <span className="bg-pink-500 text-white px-4 py-2 rounded-full text-xs font-bold shadow-lg uppercase tracking-wide">
-                        ⭐ {service.category}
+                    {/* Gradient overlay for better text readability */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    
+                    {/* Category Badge - Smaller and more stylish */}
+                    <div className="absolute top-2 right-2 z-10">
+                      <span className="bg-gradient-to-r from-pink-500 to-pink-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg uppercase tracking-wide backdrop-blur-sm">
+                        {service.category}
                       </span>
                     </div>
                   </div>
                 ) : (
                   <div className="w-full h-full bg-gradient-to-br from-pink-200 via-pink-300 to-pink-400 flex items-center justify-center">
                     <div className="text-center text-pink-800">
-                      <div className="text-4xl mb-2">🖼️</div>
-                      <p className="text-sm font-semibold">{service.title}</p>
+                      <div className="text-2xl mb-1">🖼️</div>
+                      <p className="text-xs font-semibold">{service.title}</p>
                     </div>
                   </div>
                 )}
               </div>
 
-              {/* Content Section - Below Image like reference */}
-              <div className="p-6 bg-white">
-                <h3 className="text-xl font-bold text-gray-800 mb-2">{service.title}</h3>
-                <p className="text-gray-600 mb-4 text-sm leading-relaxed">{service.subtitle}</p>
+              {/* Content Section - More compact and stylish */}
+              <div className="p-3 bg-white">
+                <h3 className="text-sm font-bold text-gray-800 mb-1 line-clamp-1">{service.title}</h3>
+                <p className="text-gray-600 mb-3 text-xs leading-relaxed line-clamp-2">{service.subtitle}</p>
                 <Link 
                   href={service.link}
-                  className="block w-full bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 rounded-full text-center font-bold transition-all duration-200 shadow-md hover:shadow-lg uppercase tracking-wide"
+                  className="block w-full bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white px-4 py-2 rounded-lg text-center font-semibold transition-all duration-300 shadow-md hover:shadow-lg text-xs uppercase tracking-wide transform hover:scale-105"
                 >
-                  Book {service.title}
+                  Book Now
                 </Link>
               </div>
 
-              {/* Hover Effect */}
-              <div className="absolute inset-0 bg-pink-500/0 group-hover:bg-pink-500/5 transition-all duration-300 rounded-2xl pointer-events-none"></div>
+              {/* Enhanced hover effect with glow */}
+              <div className="absolute inset-0 bg-pink-500/0 group-hover:bg-pink-500/5 transition-all duration-300 rounded-xl pointer-events-none"></div>
+              <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 to-rose-500 rounded-xl opacity-0 group-hover:opacity-20 blur transition-all duration-300 pointer-events-none"></div>
             </div>
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        <div className="text-center mt-8">
           <Link 
             href="/services"
-            className="bg-pink-500 hover:bg-pink-600 text-white px-8 py-3 rounded-full font-semibold text-lg transition-colors shadow-lg"
+            className="inline-flex items-center gap-2 bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white px-8 py-3 rounded-full font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
           >
-            View All Services
+            <span>View All Services</span>
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
           </Link>
         </div>
 
         {/* Local Ranchi Location Services Section */}
-        <div className="mt-16">
-          <div className="text-center mb-8">
-            <h3 className="text-2xl md:text-3xl font-bold text-pink-800 mb-4">
+        <div className="mt-12">
+          <div className="text-center mb-6">
+            <h3 className="text-2xl md:text-3xl font-bold text-pink-800 mb-3">
               Available in Ranchi Locations
             </h3>
             <p className="text-lg text-pink-600">
@@ -273,32 +280,35 @@ export default function ServicesSection() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+          <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-5 gap-3">
             {ranchiLocations.map((location, index) => (
               <Link
                 key={index}
                 href={location.link}
-                className="group bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-200 p-4 text-center border border-pink-100 hover:border-pink-300"
+                className="group bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 p-3 text-center border border-pink-100 hover:border-pink-300 transform hover:-translate-y-1 hover:scale-105"
               >
                 <div className="text-pink-500 mb-2">
-                  <span className="text-2xl">📍</span>
+                  <span className="text-xl">📍</span>
                 </div>
-                <h4 className="font-bold text-gray-800 text-sm mb-1 group-hover:text-pink-600">
+                <h4 className="font-bold text-gray-800 text-xs mb-1 group-hover:text-pink-600">
                   {location.name}
                 </h4>
-                <p className="text-xs text-gray-600 group-hover:text-pink-500">
+                <p className="text-xs text-gray-600 group-hover:text-pink-500 line-clamp-1">
                   {location.area}
                 </p>
               </Link>
             ))}
           </div>
 
-          <div className="text-center mt-8">
+          <div className="text-center mt-6">
             <Link 
               href="/locations"
-              className="bg-pink-500 hover:bg-pink-600 text-white px-6 py-2 rounded-full font-semibold transition-colors shadow-md"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white px-6 py-2 rounded-full font-semibold transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105"
             >
-              View All Locations
+              <span>View All Locations</span>
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
             </Link>
           </div>
         </div>
