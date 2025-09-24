@@ -85,6 +85,20 @@ export default function ServicesSection() {
     }
   ];
 
+  // 10 Local Ranchi Location Services
+  const ranchiLocations = [
+    { name: "Main Road", area: "Central Ranchi", link: "/locations/main-road" },
+    { name: "Kanke Road", area: "Kanke Area", link: "/locations/kanke-road" },
+    { name: "HEC Colony", area: "Heavy Engineering Corporation", link: "/locations/hec-colony" },
+    { name: "Lalpur", area: "Lalpur Township", link: "/locations/lalpur" },
+    { name: "Hinoo", area: "Hinoo Market Area", link: "/locations/hinoo" },
+    { name: "Bariatu", area: "Bariatu Housing Colony", link: "/locations/bariatu" },
+    { name: "Doranda", area: "Doranda Market", link: "/locations/doranda" },
+    { name: "Ratu Road", area: "Ratu Road Junction", link: "/locations/ratu-road" },
+    { name: "Circular Road", area: "City Center", link: "/locations/circular-road" },
+    { name: "Argora", area: "Argora Industrial Area", link: "/locations/argora" }
+  ];
+
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
@@ -158,6 +172,47 @@ export default function ServicesSection() {
           >
             View All Services
           </Link>
+        </div>
+
+        {/* Local Ranchi Location Services Section */}
+        <div className="mt-16">
+          <div className="text-center mb-8">
+            <h3 className="text-2xl md:text-3xl font-bold text-pink-800 mb-4">
+              Available in Ranchi Locations
+            </h3>
+            <p className="text-lg text-pink-600">
+              Our services are available across all major areas in Ranchi
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+            {ranchiLocations.map((location, index) => (
+              <Link
+                key={index}
+                href={location.link}
+                className="group bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-200 p-4 text-center border border-pink-100 hover:border-pink-300"
+              >
+                <div className="text-pink-500 mb-2">
+                  <span className="text-2xl">📍</span>
+                </div>
+                <h4 className="font-bold text-gray-800 text-sm mb-1 group-hover:text-pink-600">
+                  {location.name}
+                </h4>
+                <p className="text-xs text-gray-600 group-hover:text-pink-500">
+                  {location.area}
+                </p>
+              </Link>
+            ))}
+          </div>
+
+          <div className="text-center mt-8">
+            <Link 
+              href="/locations"
+              className="bg-pink-500 hover:bg-pink-600 text-white px-6 py-2 rounded-full font-semibold transition-colors shadow-md"
+            >
+              View All Locations
+            </Link>
+          </div>
         </div>
       </div>
     </section>
