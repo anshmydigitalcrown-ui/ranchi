@@ -101,31 +101,30 @@ export default function ServicesSection() {
           {services.map((service) => (
             <div key={service.id} className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 bg-white">
               
-              {/* Image Container - Dynamic height based on image size */}
-              <div className="relative w-full">
-                {/* Service Image - Full size display without any cropping */}
+              {/* Image Container - Fixed aspect ratio like reference */}
+              <div className="relative w-full aspect-[4/5] overflow-hidden">
+                {/* Service Image - Properly fitted to show face and body */}
                 {!imageErrors[service.id] ? (
-                  <div className="relative w-full">
+                  <div className="relative w-full h-full">
                     <Image
                       src={service.image}
                       alt={service.title}
-                      width={400}
-                      height={600}
-                      className="w-full h-auto rounded-t-2xl"
+                      fill
+                      className="object-cover object-top w-full h-full"
                       sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                       priority={service.id <= 3}
                       onError={() => handleImageError(service.id)}
                     />
                     
-                    {/* Category Badge */}
+                    {/* Category Badge - Top right like reference */}
                     <div className="absolute top-4 right-4 z-10">
-                      <span className="bg-pink-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg uppercase tracking-wide">
-                        {service.category}
+                      <span className="bg-pink-500 text-white px-4 py-2 rounded-full text-xs font-bold shadow-lg uppercase tracking-wide">
+                        ⭐ {service.category}
                       </span>
                     </div>
                   </div>
                 ) : (
-                  <div className="w-full h-96 bg-gradient-to-br from-pink-200 via-pink-300 to-pink-400 flex items-center justify-center rounded-t-2xl">
+                  <div className="w-full h-full bg-gradient-to-br from-pink-200 via-pink-300 to-pink-400 flex items-center justify-center">
                     <div className="text-center text-pink-800">
                       <div className="text-4xl mb-2">🖼️</div>
                       <p className="text-sm font-semibold">{service.title}</p>
@@ -134,13 +133,13 @@ export default function ServicesSection() {
                 )}
               </div>
 
-              {/* Content Section - Below Image */}
+              {/* Content Section - Below Image like reference */}
               <div className="p-6 bg-white">
                 <h3 className="text-xl font-bold text-gray-800 mb-2">{service.title}</h3>
                 <p className="text-gray-600 mb-4 text-sm leading-relaxed">{service.subtitle}</p>
                 <Link 
                   href={service.link}
-                  className="block w-full bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 rounded-full text-center font-semibold transition-all duration-200 shadow-md hover:shadow-lg"
+                  className="block w-full bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 rounded-full text-center font-bold transition-all duration-200 shadow-md hover:shadow-lg uppercase tracking-wide"
                 >
                   Book {service.title}
                 </Link>
