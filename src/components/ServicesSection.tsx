@@ -82,6 +82,86 @@ export default function ServicesSection() {
       category: "INDEPENDENT",
       image: "/images/services/independent services.webp",
       link: "/services/independent"
+    },
+    {
+      id: 10,
+      title: "MILF Escorts",
+      subtitle: "Experienced mature women companions",
+      category: "MATURE",
+      image: "/images/services/milf escorts.webp",
+      link: "/services/milf"
+    },
+    {
+      id: 11,
+      title: "Housewife Escorts",
+      subtitle: "Elegant housewife companions",
+      category: "HOUSEWIFE",
+      image: "/images/services/housewife escorts.webp",
+      link: "/services/housewife"
+    },
+    {
+      id: 12,
+      title: "College Girls Escorts",
+      subtitle: "Young vibrant college companions",
+      category: "COLLEGE",
+      image: "/images/services/college girls escorts.webp",
+      link: "/services/college"
+    },
+    {
+      id: 13,
+      title: "Bengali Escorts",
+      subtitle: "Beautiful Bengali cultural companions",
+      category: "BENGALI",
+      image: "/images/services/bengali escorts.webp",
+      link: "/services/bengali"
+    },
+    {
+      id: 14,
+      title: "Nepali Escorts",
+      subtitle: "Charming Nepali companions",
+      category: "NEPALI",
+      image: "/images/services/nepali escorts.webp",
+      link: "/services/nepali"
+    },
+    {
+      id: 15,
+      title: "Russian Escorts",
+      subtitle: "International Russian beauties",
+      category: "RUSSIAN",
+      image: "/images/services/russian escorts.webp",
+      link: "/services/russian"
+    },
+    {
+      id: 16,
+      title: "Bhabhi Escorts",
+      subtitle: "Sophisticated bhabhi companions",
+      category: "BHABHI",
+      image: "/images/services/bhabhi escorts.webp",
+      link: "/services/bhabhi"
+    },
+    {
+      id: 17,
+      title: "South Indian Escorts",
+      subtitle: "Beautiful South Indian companions",
+      category: "SOUTH INDIAN",
+      image: "/images/services/south indian escorts.webp",
+      link: "/services/south-indian"
+    },
+    {
+      id: 18,
+      title: "Premium Model Escorts",
+      subtitle: "Elite premium model companions",
+      category: "PREMIUM MODEL",
+      image: "/images/services/premium model escorts.webp",
+      link: "/services/premium-model"
+    },
+    {
+      id: 19,
+      title: "Mature Escorts",
+      subtitle: "Refined mature women companions",
+      category: "MATURE",
+      image: "/images/services/mature escorts.webp",
+      link: "/services/mature"
     }
   ];
 
@@ -111,7 +191,7 @@ export default function ServicesSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service) => (
             <div key={service.id} className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 bg-white">
               

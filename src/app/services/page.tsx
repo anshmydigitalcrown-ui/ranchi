@@ -136,6 +136,66 @@ export default function ServicesPage() {
       image: '/images/services/event companion.webp',
       details: 'Elegant companions for corporate events, social gatherings, parties, and special occasions with perfect etiquette.',
     },
+    {
+      name: 'MILF Escorts',
+      description: 'Experienced mature women companions',
+      image: '/images/services/milf escorts.webp',
+      details: 'Sophisticated mature women with life experience, wisdom, and refined companionship for discerning clients.',
+    },
+    {
+      name: 'Housewife Escorts',
+      description: 'Elegant housewife companions',
+      image: '/images/services/housewife escorts.webp',
+      details: 'Charming housewife companions offering warmth, care, and authentic domestic elegance with professional service.',
+    },
+    {
+      name: 'College Girls Escorts',
+      description: 'Young vibrant college companions',
+      image: '/images/services/college girls escorts.webp',
+      details: 'Fresh, energetic college companions with youthful enthusiasm, modern outlook, and intelligent conversation.',
+    },
+    {
+      name: 'Bengali Escorts',
+      description: 'Beautiful Bengali cultural companions',
+      image: '/images/services/bengali escorts.webp',
+      details: 'Elegant Bengali companions with rich cultural heritage, artistic sensibility, and traditional charm.',
+    },
+    {
+      name: 'Nepali Escorts',
+      description: 'Charming Nepali companions',
+      image: '/images/services/nepali escorts.webp',
+      details: 'Beautiful Nepali companions with mountain charm, natural beauty, and gentle caring nature.',
+    },
+    {
+      name: 'Russian Escorts',
+      description: 'International Russian beauties',
+      image: '/images/services/russian escorts.webp',
+      details: 'Stunning Russian companions with international appeal, sophisticated elegance, and European charm.',
+    },
+    {
+      name: 'Bhabhi Escorts',
+      description: 'Sophisticated bhabhi companions',
+      image: '/images/services/bhabhi escorts.webp',
+      details: 'Mature, caring bhabhi companions offering warmth, understanding, and traditional Indian hospitality.',
+    },
+    {
+      name: 'South Indian Escorts',
+      description: 'Beautiful South Indian companions',
+      image: '/images/services/south indian escorts.webp',
+      details: 'Elegant South Indian companions with classical beauty, cultural grace, and traditional values.',
+    },
+    {
+      name: 'Premium Model Escorts',
+      description: 'Elite premium model companions',
+      image: '/images/services/premium model escorts.webp',
+      details: 'Professional model companions with runway experience, photogenic beauty, and high-fashion elegance.',
+    },
+    {
+      name: 'Mature Escorts',
+      description: 'Refined mature women companions',
+      image: '/images/services/mature escorts.webp',
+      details: 'Sophisticated mature companions with life experience, emotional intelligence, and refined conversation.',
+    },
   ]
 
   const locations = [
@@ -182,6 +242,10 @@ export default function ServicesPage() {
                 <div className="text-sm">Verified Escorts</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                <div className="text-2xl font-bold">19</div>
+                <div className="text-sm">Service Categories</div>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
                 <div className="text-2xl font-bold">24/7</div>
                 <div className="text-sm">Service</div>
               </div>
@@ -221,7 +285,7 @@ export default function ServicesPage() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
               {services.map((service, index) => (
                 <div key={index} className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
                   <div className="aspect-[4/5] relative">
