@@ -162,6 +162,14 @@ export default function ServicesSection() {
       category: "MATURE",
       image: "/images/services/mature escorts.webp",
       link: "/services/mature"
+    },
+    {
+      id: 20,
+      title: "Foreign Escorts",
+      subtitle: "International foreign companions",
+      category: "FOREIGN",
+      image: "/images/services/foreign escorts.webp",
+      link: "/services/foreign"
     }
   ];
 

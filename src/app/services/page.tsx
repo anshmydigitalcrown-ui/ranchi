@@ -196,6 +196,12 @@ export default function ServicesPage() {
       image: '/images/services/mature escorts.webp',
       details: 'Sophisticated mature companions with life experience, emotional intelligence, and refined conversation.',
     },
+    {
+      name: 'Foreign Escorts',
+      description: 'International foreign companions',
+      image: '/images/services/foreign escorts.webp',
+      details: 'Exotic foreign companions from various countries offering international charm, cultural diversity, and global sophistication.',
+    },
   ]
 
   const locations = [
@@ -242,7 +248,7 @@ export default function ServicesPage() {
                 <div className="text-sm">Verified Escorts</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <div className="text-2xl font-bold">19</div>
+                <div className="text-2xl font-bold">20</div>
                 <div className="text-sm">Service Categories</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
