@@ -99,16 +99,17 @@ export default function ServicesSection() {
           {services.map((service) => (
             <div key={service.id} className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 bg-white">
               
-              {/* Image Container - Optimal size for face and body visibility */}
-              <div className="relative w-full h-96 overflow-hidden bg-gray-50">
-                {/* Service Image - Perfect positioning to show face and body */}
+              {/* Image Container - Dynamic height based on image size */}
+              <div className="relative w-full">
+                {/* Service Image - Full size display without any cropping */}
                 {!imageErrors[service.id] ? (
-                  <div className="relative w-full h-full">
+                  <div className="relative w-full">
                     <Image
                       src={service.image}
                       alt={service.title}
-                      fill
-                      className="object-cover object-center w-full h-full rounded-t-2xl"
+                      width={400}
+                      height={600}
+                      className="w-full h-auto rounded-t-2xl"
                       sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                       priority={service.id <= 3}
                       onError={() => handleImageError(service.id)}
@@ -122,7 +123,7 @@ export default function ServicesSection() {
                     </div>
                   </div>
                 ) : (
-                  <div className="w-full h-full bg-gradient-to-br from-pink-200 via-pink-300 to-pink-400 flex items-center justify-center rounded-t-2xl">
+                  <div className="w-full h-96 bg-gradient-to-br from-pink-200 via-pink-300 to-pink-400 flex items-center justify-center rounded-t-2xl">
                     <div className="text-center text-pink-800">
                       <div className="text-4xl mb-2">🖼️</div>
                       <p className="text-sm font-semibold">{service.title}</p>
