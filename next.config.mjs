@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  outputFileTracingRoot: './',
-  trailingSlash: false,
-  distDir: '.next'
+  images: {
+    unoptimized: true
+  },
+  outputFileTracingRoot: "./"
 };
 
 export default nextConfig;
