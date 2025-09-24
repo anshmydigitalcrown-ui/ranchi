@@ -100,7 +100,7 @@ export default function ServicesSection() {
             <div key={service.id} className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 bg-white">
               
               {/* Image Container - Fixed optimal height to prevent shrinking */}
-              <div className="relative w-full h-80 overflow-hidden">
+              <div className="relative w-full h-80 overflow-hidden bg-gray-50">
                 {/* Service Image - Covers container while maintaining aspect ratio */}
                 {!imageErrors[service.id] ? (
                   <div className="relative w-full h-full">
@@ -108,7 +108,7 @@ export default function ServicesSection() {
                       src={service.image}
                       alt={service.title}
                       fill
-                      className="object-cover w-full h-full rounded-t-2xl"
+                      className="object-contain w-full h-full rounded-t-2xl"
                       sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                       priority={service.id <= 3}
                       onError={() => handleImageError(service.id)}
