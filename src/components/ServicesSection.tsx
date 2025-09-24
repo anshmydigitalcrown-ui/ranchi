@@ -99,9 +99,9 @@ export default function ServicesSection() {
           {services.map((service) => (
             <div key={service.id} className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 bg-white">
               
-              {/* Image Container - Fixed optimal height to prevent shrinking */}
-              <div className="relative w-full h-80 overflow-hidden bg-gray-50">
-                {/* Service Image - Covers container while maintaining aspect ratio */}
+              {/* Image Container - Vertical aspect ratio for full-size display */}
+              <div className="relative w-full aspect-[3/4] overflow-hidden bg-gray-50">
+                {/* Service Image - Full vertical display without cropping */}
                 {!imageErrors[service.id] ? (
                   <div className="relative w-full h-full">
                     <Image
