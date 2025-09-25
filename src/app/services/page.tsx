@@ -204,16 +204,16 @@ export default function ServicesPage() {
   ]
 
   const locations = [
-    { name: 'Ranchi Main City', desc: 'Central Business District' },
-    { name: 'Hinoo', desc: 'Premium Residential Area' },
-    { name: 'Lalpur', desc: 'Educational Hub' },
-    { name: 'Harmu', desc: 'Housing Board Area' },
-    { name: 'Doranda', desc: 'Commercial Center' },
-    { name: 'Kadru', desc: 'IT Sector Zone' },
-    { name: 'Kanke', desc: 'Medical College Area' },
-    { name: 'Bariatu', desc: 'Upscale Locality' },
-    { name: 'Ratu Road', desc: 'Airport Connectivity' },
-    { name: 'Khelgaon', desc: 'Sports Complex Area' }
+    { name: 'Central Ranchi', desc: 'Central Business District' },
+    { name: 'Hinoo', desc: 'Market & Residential Area' },
+    { name: 'Lalpur', desc: 'Township & Educational Hub' },
+    { name: 'HEC Colony', desc: 'Industrial & Corporate Zone' },
+    { name: 'Doranda', desc: 'Railway & Commercial Center' },
+    { name: 'Kanke Road', desc: 'Educational & Medical Hub' },
+    { name: 'Bariatu', desc: 'Housing Colony Area' },
+    { name: 'Ratu Road', desc: 'Junction & Transport Hub' },
+    { name: 'Circular Road', desc: 'Banking & City Center' },
+    { name: 'Argora', desc: 'Industrial Estate Zone' }
   ]
 
   return (
@@ -857,7 +857,7 @@ export default function ServicesPage() {
               {locations.map((location, index) => (
                 <Link
                   key={index}
-                  href={`/escorts-${location.name.toLowerCase().replace(/\s+/g, '-')}`}
+                  href={`/locations/${location.name.toLowerCase().replace(/\s+/g, '-')}`}
                   className="bg-pink-50 hover:bg-pink-100 p-4 rounded-lg text-center transition-colors border border-pink-200 hover:border-pink-300"
                 >
                   <div className="text-pink-600 font-semibold text-sm">

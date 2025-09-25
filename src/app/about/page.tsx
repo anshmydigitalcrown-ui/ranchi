@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Image from 'next/image'
-import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'About Premium Ranchi Escorts 💎 5+ Years of Excellence & Trust',
@@ -41,12 +41,12 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   const ranchiAreas = [
-    { name: 'Ranchi Main City', desc: 'Central Business District' },
-    { name: 'Hinoo Market Area', desc: 'Premium Residential Zone' },
-    { name: 'Lalpur Township', desc: 'Educational Hub' },
-    { name: 'Harmu Housing Board', desc: 'Residential Complex' },
-    { name: 'Doranda Market', desc: 'Commercial Center' },
-    { name: 'Ratu Road Junction', desc: 'Transport Hub' },
+    { name: 'Central Ranchi', desc: 'Central Business District', link: '/locations/central-ranchi' },
+    { name: 'Hinoo Market Area', desc: 'Premium Residential Zone', link: '/locations/hinoo' },
+    { name: 'Lalpur Township', desc: 'Educational Hub', link: '/locations/lalpur' },
+    { name: 'HEC Colony', desc: 'Industrial Zone', link: '/locations/hec-colony' },
+    { name: 'Doranda Market', desc: 'Commercial Center', link: '/locations/doranda' },
+    { name: 'Ratu Road Junction', desc: 'Transport Hub', link: '/locations/ratu-road' },
   ]
 
   const quickLinks = [
@@ -227,7 +227,7 @@ export default function AboutPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {ranchiAreas.map((area, index) => (
-                <div key={index} className="bg-gradient-to-br from-pink-50 to-pink-100 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <Link key={index} href={area.link} className="bg-gradient-to-br from-pink-50 to-pink-100 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                   <div className="flex items-center mb-4">
                     <div className="bg-gradient-to-r from-pink-500 to-rose-500 text-white p-3 rounded-xl shadow-lg mr-4">
                       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -243,7 +243,7 @@ export default function AboutPage() {
                   <div className="bg-white p-3 rounded-lg">
                     <span className="text-green-600 font-semibold text-sm">✓ Premium Coverage Available</span>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
@@ -519,14 +519,14 @@ export default function AboutPage() {
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
               {ranchiAreas.concat([
-                { name: 'Bariatu Colony', desc: 'Upscale Area' },
-                { name: 'Circular Road', desc: 'City Center' },
-                { name: 'Argora Industrial', desc: 'Industrial Zone' },
-                { name: 'Khelgaon', desc: 'Sports Complex' }
+                { name: 'Bariatu Colony', desc: 'Upscale Area', link: '/locations/bariatu' },
+                { name: 'Circular Road', desc: 'City Center', link: '/locations/circular-road' },
+                { name: 'Argora Industrial', desc: 'Industrial Zone', link: '/locations/argora' },
+                { name: 'Kanke Road', desc: 'Educational Hub', link: '/locations/kanke-road' }
               ]).map((area, index) => (
                 <Link
                   key={index}
-                  href="/services"
+                  href={area.link}
                   className="bg-white p-3 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105 text-center border border-pink-200 hover:border-pink-400"
                 >
                   <div className="text-pink-600 font-semibold text-sm">

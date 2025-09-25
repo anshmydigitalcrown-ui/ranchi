@@ -75,12 +75,12 @@ export default function ContactLocation() {
       link: '/locations/argora'
     },
     {
-      name: 'Harmu Housing Colony',
-      areas: ['Harmu Housing', 'Government Quarters', 'Shopping Center'],
-      description: 'Government housing complex with administrative offices',
-      coverage: 'Harmu Housing Area',
-      responseTime: '30-35 minutes',
-      link: '/locations/harmu'
+      name: 'Circular Road',
+      areas: ['Central Market', 'Banking District', 'Medical College Road'],
+      description: 'Commercial hub with banking and educational facilities',
+      coverage: 'Circular Road Area',
+      responseTime: '15-20 minutes',
+      link: '/locations/circular-road'
     }
   ];
 
