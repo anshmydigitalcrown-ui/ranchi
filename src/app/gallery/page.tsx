@@ -219,45 +219,33 @@ export default function GalleryPage() {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {/* Gallery Images */}
               {galleryImages.map((image, index) => (
-                <div key={`gallery-${index}`} className="group relative overflow-hidden rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 bg-white">
-                  <div className="relative w-full aspect-[4/3] overflow-hidden">
-                    <Image
-                      src={image}
-                      alt={`Premium Companion ${index + 1}`}
-                      fill
-                      className="object-contain w-full h-full group-hover:scale-102 transition-transform duration-300"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <div className="absolute bottom-1 left-1 right-1 transform translate-y-1 group-hover:translate-y-0 transition-transform duration-300 opacity-0 group-hover:opacity-100">
-                      <div className="bg-white/95 backdrop-blur-sm p-1.5 rounded-md shadow-md">
-                        <div className="flex items-center justify-between">
-                          <span className="text-pink-600 font-semibold text-xs flex items-center gap-1">
-                            <svg className="w-2.5 h-2.5 text-pink-500" fill="currentColor" viewBox="0 0 20 20">
-                              <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                            </svg>
-                            Verified
-                          </span>
-                          <div className="bg-gradient-to-r from-pink-500 to-pink-600 text-white px-1.5 py-0.5 rounded-full text-xs font-bold">PREMIUM</div>
-                        </div>
+                <div key={`gallery-${index}`} className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="relative">
+                    <div className="relative w-full aspect-[3/4] overflow-hidden rounded-t-xl">
+                      <Image
+                        src={image}
+                        alt={`Premium Companion ${index + 1}`}
+                        fill
+                        className="object-contain w-full h-full"
+                      />
+                      <div className="absolute top-3 right-3">
+                        <span className="bg-pink-500 text-white px-3 py-1 rounded-full text-sm font-bold">
+                          ⭐ VIP
+                        </span>
                       </div>
                     </div>
                   </div>
-                  <div className="p-2.5 bg-white">
-                    <div className="flex items-center justify-between mb-2">
-                      <div className="flex items-center gap-1.5">
-                        <div className="bg-green-500 w-1.5 h-1.5 rounded-full animate-pulse"></div>
-                        <span className="text-green-600 font-medium text-xs">Available Now</span>
-                      </div>
-                      <div className="text-pink-600 font-semibold text-xs">Elite Companion</div>
-                    </div>
+                  <div className="p-4">
+                    <h3 className="text-lg font-bold text-gray-800 mb-2">VIP Escorts</h3>
+                    <p className="text-gray-600 text-sm mb-4">Premium VIP Service</p>
                     <a 
                       href="tel:+919372662471" 
-                      className="block w-full bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white px-3 py-1.5 rounded-md text-center font-semibold transition-all duration-300 hover:scale-105 shadow-sm text-xs"
+                      className="block w-full bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-lg text-center font-semibold transition-all duration-300"
                     >
-                      Book Now: +91-9372662471
+                      Book VIP Escorts
                     </a>
                   </div>
                 </div>
@@ -265,42 +253,43 @@ export default function GalleryPage() {
               
               {/* Service Images */}
               {premiumServices.map((service, index) => (
-                <div key={`service-${index}`} className="group relative overflow-hidden rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 bg-white">
-                  <div className="relative w-full aspect-[4/3] overflow-hidden">
-                    <Image
-                      src={service.image}
-                      alt={`Premium ${service.name} Service`}
-                      fill
-                      className="object-contain w-full h-full group-hover:scale-102 transition-transform duration-300"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                    <div className="absolute bottom-1 left-1 right-1 transform translate-y-1 group-hover:translate-y-0 transition-transform duration-300 opacity-0 group-hover:opacity-100">
-                      <div className="bg-white/95 backdrop-blur-sm p-1.5 rounded-md shadow-md">
-                        <div className="flex items-center justify-between">
-                          <span className="text-pink-600 font-semibold text-xs flex items-center gap-1">
-                            <svg className="w-2.5 h-2.5 text-pink-500" fill="currentColor" viewBox="0 0 20 20">
-                              <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                            </svg>
-                            Verified
-                          </span>
-                          <div className="bg-gradient-to-r from-pink-500 to-pink-600 text-white px-1.5 py-0.5 rounded-full text-xs font-bold">PREMIUM</div>
-                        </div>
+                <div key={`service-${index}`} className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="relative">
+                    <div className="relative w-full aspect-[3/4] overflow-hidden rounded-t-xl">
+                      <Image
+                        src={service.image}
+                        alt={`Premium ${service.name} Service`}
+                        fill
+                        className="object-contain w-full h-full"
+                      />
+                      <div className="absolute top-3 right-3">
+                        <span className="bg-pink-500 text-white px-3 py-1 rounded-full text-sm font-bold">
+                          {service.name === 'Celebrity Services' ? '⭐ CELEBRITY' : 
+                           service.name === 'Elite Models' ? '⭐ ELITE' : 
+                           service.name === 'VIP Escorts' ? '⭐ VIP' : '⭐ PREMIUM'}
+                        </span>
                       </div>
                     </div>
                   </div>
-                  <div className="p-2.5 bg-white">
-                    <div className="flex items-center justify-between mb-2">
-                      <div className="flex items-center gap-1.5">
-                        <div className="bg-green-500 w-1.5 h-1.5 rounded-full animate-pulse"></div>
-                        <span className="text-green-600 font-medium text-xs">Available Now</span>
-                      </div>
-                      <div className="text-pink-600 font-semibold text-xs">{service.name}</div>
-                    </div>
+                  <div className="p-4">
+                    <h3 className="text-lg font-bold text-gray-800 mb-2">{service.name}</h3>
+                    <p className="text-gray-600 text-sm mb-4">
+                      {service.name === 'VIP Escorts' ? 'Premium VIP Service' :
+                       service.name === 'Celebrity Services' ? 'Star-Like Companions' :
+                       service.name === 'Elite Models' ? 'Professional Model Escorts' :
+                       service.name === 'Independent Services' ? 'Personal Independent Companions' :
+                       service.name === 'Local Beauties' ? 'Beautiful Local Ranchi Companions' :
+                       service.name === 'Outcall Services' ? 'Professional Outcall Services' :
+                       service.name === 'Premium Services' ? 'Exclusive Premium Experiences' :
+                       service.name === 'Travel Companion' ? 'Sophisticated Travel Partners' :
+                       service.name === 'Event Companion' ? 'Elegant Event Partners' :
+                       'Sophisticated Mature Companions'}
+                    </p>
                     <a 
                       href="tel:+919372662471" 
-                      className="block w-full bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white px-3 py-1.5 rounded-md text-center font-semibold transition-all duration-300 hover:scale-105 shadow-sm text-xs"
+                      className="block w-full bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-lg text-center font-semibold transition-all duration-300"
                     >
-                      Book Now: +91-9372662471
+                      Book {service.name}
                     </a>
                   </div>
                 </div>
