@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'Premium Escort Services in Ranchi 💎 #1 Elite Companionship Across All Ranchi Locations',
@@ -279,7 +280,7 @@ export default function ServicesPage() {
 
         {/* Service Categories Section */}
         <section className="py-16 px-4">
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-6xl mx-auto px-6">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
                 Premium Service Categories ⭐
@@ -290,84 +291,36 @@ export default function ServicesPage() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-              {services.map((service, index) => (
-                <div key={index} className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-white via-pink-50 to-rose-50 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-pink-100 hover:border-pink-300">
-                  
-                  {/* Icon and Category Section */}
-                  <div className="relative p-6 text-center">
-                    {/* Background Pattern */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-pink-500/5 via-transparent to-rose-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                    
-                    {/* Service Icon */}
-                    <div className="relative z-10 mb-4">
-                      <div className="w-16 h-16 mx-auto bg-gradient-to-br from-pink-500 to-rose-600 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                        <span className="text-2xl text-white">
-                          {index < 5 ? '💎' : 
-                           index < 10 ? '👑' :
-                           index < 15 ? '🌟' : '💕'}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+              {services.slice(0, 15).map((service, index) => (
+                <div key={index} className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="relative">
+                    <div className="relative w-full aspect-[3/4] overflow-hidden rounded-t-xl">
+                      <Image
+                        src={service.image}
+                        alt={service.name}
+                        fill
+                        className="object-contain w-full h-full"
+                        sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                        priority={index <= 6}
+                      />
+                      <div className="absolute top-3 right-3">
+                        <span className="bg-pink-500 text-white px-3 py-1 rounded-full text-sm font-bold">
+                          ⭐ {service.name.split(' ').slice(-1)[0].toUpperCase()}
                         </span>
                       </div>
                     </div>
-
-                    {/* Category Badge */}
-                    <div className="mb-3">
-                      <span className="inline-block bg-gradient-to-r from-pink-600 to-rose-600 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider shadow-md">
-                        {service.name.toUpperCase()}
-                      </span>
-                    </div>
-
-                    {/* Service Title */}
-                    <h3 className="text-lg font-bold text-gray-800 mb-3 group-hover:text-pink-700 transition-colors duration-300">
-                      {service.name}
-                    </h3>
-
-                    {/* Service Description */}
-                    <p className="text-sm text-gray-600 mb-4 leading-relaxed line-clamp-2 group-hover:text-gray-700 transition-colors duration-300">
-                      {service.description}
-                    </p>
-
-                    {/* Features List */}
-                    <div className="mb-5">
-                      <ul className="text-xs text-gray-500 space-y-1">
-                        <li className="flex items-center justify-center gap-2">
-                          <span className="w-1 h-1 bg-pink-500 rounded-full"></span>
-                          <span>Professional & Verified</span>
-                        </li>
-                        <li className="flex items-center justify-center gap-2">
-                          <span className="w-1 h-1 bg-pink-500 rounded-full"></span>
-                          <span>24/7 Available</span>
-                        </li>
-                        <li className="flex items-center justify-center gap-2">
-                          <span className="w-1 h-1 bg-pink-500 rounded-full"></span>
-                          <span>Complete Discretion</span>
-                        </li>
-                      </ul>
-                    </div>
-
-                    {/* Service Details */}
-                    <p className="text-xs text-gray-500 mb-5 leading-relaxed line-clamp-3">
-                      {service.details}
-                    </p>
-
-                    {/* Book Now Button */}
+                  </div>
+                  <div className="p-4">
+                    <h3 className="text-lg font-bold text-gray-800 mb-2">{service.name}</h3>
+                    <p className="text-gray-600 text-sm mb-4">{service.description}</p>
                     <Link 
                       href={`/book/${service.name.toLowerCase().replace(/\s+/g, '-')}`}
-                      className="inline-flex items-center justify-center gap-2 w-full bg-gradient-to-r from-pink-500 to-rose-600 hover:from-pink-600 hover:to-rose-700 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105 group-hover:shadow-pink-500/25"
+                      className="block w-full bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-lg text-center font-semibold transition-all duration-300"
                     >
-                      <span>Book {service.name}</span>
-                      <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                      </svg>
+                      Book {service.name}
                     </Link>
                   </div>
-
-                  {/* Decorative Elements */}
-                  <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-pink-300/20 to-transparent rounded-full -translate-y-10 translate-x-10 group-hover:scale-150 transition-transform duration-700"></div>
-                  <div className="absolute bottom-0 left-0 w-16 h-16 bg-gradient-to-tr from-rose-300/20 to-transparent rounded-full translate-y-8 -translate-x-8 group-hover:scale-150 transition-transform duration-700"></div>
-                  
-                  {/* Hover Glow Effect */}
-                  <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 to-rose-500 rounded-2xl opacity-0 group-hover:opacity-20 blur-lg transition-all duration-500 pointer-events-none"></div>
                 </div>
               ))}
             </div>
