@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function ContactLocation() {
   const ranchiLocations = [
     {
@@ -5,103 +7,119 @@ export default function ContactLocation() {
       areas: ['Main Road', 'Circular Road', 'Commercial Complex'],
       description: 'Primary business district with premium hotels and corporate offices',
       coverage: 'Complete Central Area',
-      responseTime: '15-20 minutes'
+      responseTime: '15-20 minutes',
+      link: '/locations/central-ranchi'
     },
     {
       name: 'HEC Colony',
-      areas: ['HEC Township', 'Officer Colony', 'Residential Areas'],
-      description: 'Premium residential zone with upscale housing complexes',
-      coverage: 'Full HEC Area',
-      responseTime: '20-25 minutes'
+      areas: ['Heavy Engineering Corporation', 'MECON Area', 'Industrial Zone'],
+      description: 'Industrial area with corporate housing and government establishments',
+      coverage: 'HEC Zone & MECON',
+      responseTime: '20-25 minutes',
+      link: '/locations/hec-colony'
     },
     {
-      name: 'Kanke Road Area',
-      areas: ['Kanke Road', 'BIT Campus', 'Educational Zone'],
-      description: 'Educational hub with institutes and student accommodations',
-      coverage: 'Complete Kanke Region',
-      responseTime: '25-30 minutes'
+      name: 'Kanke Road',
+      areas: ['Kanke', 'Psychiatric Hospital Area', 'BIT Campus'],
+      description: 'Educational hub with multiple institutions and residential complexes',
+      coverage: 'Kanke Road Area',
+      responseTime: '25-30 minutes',
+      link: '/locations/kanke-road'
     },
     {
-      name: 'Lalpur Township',
-      areas: ['Lalpur', 'Housing Board', 'Residential Complex'],
-      description: 'Modern residential township with planned infrastructure',
-      coverage: 'Full Township Area',
-      responseTime: '20-25 minutes'
+      name: 'Lalpur',
+      areas: ['Lalpur Township', 'Sahid Nagar', 'Green Valley'],
+      description: 'Residential township with modern amenities and shopping centers',
+      coverage: 'Lalpur Township',
+      responseTime: '20-25 minutes',
+      link: '/locations/lalpur'
     },
     {
-      name: 'Hinoo Market',
-      areas: ['Hinoo', 'Market Area', 'Shopping Complex'],
-      description: 'Commercial and shopping district with retail outlets',
-      coverage: 'Complete Market Zone',
-      responseTime: '15-20 minutes'
+      name: 'Hinoo',
+      areas: ['Hinoo Market', 'Daily Market', 'Residential Area'],
+      description: 'Commercial market area with dense residential population',
+      coverage: 'Hinoo Market Zone',
+      responseTime: '25-30 minutes',
+      link: '/locations/hinoo'
     },
     {
-      name: 'Bariatu Colony',
-      areas: ['Bariatu', 'Housing Colony', 'Residential Zone'],
-      description: 'Upscale residential area with modern amenities',
-      coverage: 'Full Bariatu Region',
-      responseTime: '25-30 minutes'
+      name: 'Bariatu',
+      areas: ['Bariatu Housing Colony', 'Road No. 3', 'Shopping Complex'],
+      description: 'Planned housing colony with modern infrastructure',
+      coverage: 'Bariatu Housing',
+      responseTime: '30-35 minutes',
+      link: '/locations/bariatu'
     },
     {
-      name: 'Doranda Market',
-      areas: ['Doranda', 'Commercial Area', 'Business Center'],
-      description: 'Traditional commercial center with local businesses',
-      coverage: 'Complete Doranda Area',
-      responseTime: '20-25 minutes'
+      name: 'Doranda',
+      areas: ['Doranda Market', 'Railway Colony', 'Government Quarters'],
+      description: 'Railway hub with government offices and residential quarters',
+      coverage: 'Doranda Station Area',
+      responseTime: '25-30 minutes',
+      link: '/locations/doranda'
     },
     {
-      name: 'Ratu Road Junction',
-      areas: ['Ratu Road', 'Transport Hub', 'Junction Area'],
-      description: 'Major transport junction connecting different city areas',
-      coverage: 'Full Junction Region',
-      responseTime: '15-20 minutes'
+      name: 'Ratu Road',
+      areas: ['Ratu Road Junction', 'Power Grid Area', 'New Market'],
+      description: 'Major junction connecting multiple city areas',
+      coverage: 'Ratu Road Junction',
+      responseTime: '30-35 minutes',
+      link: '/locations/ratu-road'
     },
     {
-      name: 'Argora Industrial',
-      areas: ['Argora', 'Industrial Area', 'Corporate Zone'],
-      description: 'Industrial and corporate district with business establishments',
-      coverage: 'Complete Industrial Zone',
-      responseTime: '30-35 minutes'
+      name: 'Argora Industrial Area',
+      areas: ['Argora Industrial Estate', 'Factory Area', 'Workers Colony'],
+      description: 'Industrial belt with manufacturing units and worker settlements',
+      coverage: 'Argora Industrial Zone',
+      responseTime: '35-40 minutes',
+      link: '/locations/argora'
     },
     {
-      name: 'Harmu Housing',
-      areas: ['Harmu', 'Housing Board', 'Colony Area'],
-      description: 'Established housing board colony with residential facilities',
-      coverage: 'Full Harmu Area',
-      responseTime: '25-30 minutes'
+      name: 'Harmu Housing Colony',
+      areas: ['Harmu Housing', 'Government Quarters', 'Shopping Center'],
+      description: 'Government housing complex with administrative offices',
+      coverage: 'Harmu Housing Area',
+      responseTime: '30-35 minutes',
+      link: '/locations/harmu'
     }
   ];
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-br from-pink-50 via-white to-rose-50 relative overflow-hidden">
-      {/* Background Decorative Elements */}
-      <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-pink-200/20 to-transparent rounded-full transform translate-x-32 -translate-y-32"></div>
-      <div className="absolute bottom-0 left-0 w-48 h-48 bg-gradient-to-tr from-rose-200/20 to-transparent rounded-full transform -translate-x-24 translate-y-24"></div>
-      
-      <div className="max-w-7xl mx-auto relative z-10">
+    <section className="py-20 bg-gradient-to-br from-pink-50 via-white to-rose-50 relative overflow-hidden">
+      {/* Background Decorations */}
+      <div className="absolute top-0 left-0 w-full h-full">
+        <div className="absolute top-20 left-10 w-32 h-32 bg-pink-200/30 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-10 w-48 h-48 bg-rose-200/30 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-purple-200/30 rounded-full blur-3xl animate-pulse delay-500"></div>
+      </div>
+
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-3 bg-white/90 backdrop-blur-sm px-8 py-4 rounded-full shadow-xl mb-6 border border-pink-200/50">
-            <div className="bg-gradient-to-r from-pink-500 to-rose-500 text-white p-3 rounded-full shadow-lg">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="inline-flex items-center bg-gradient-to-r from-pink-100 to-rose-100 rounded-full px-6 py-3 mb-6 border border-pink-200">
+            <div className="bg-pink-500 text-white p-2 rounded-full mr-3">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
             </div>
-            <span className="font-bold text-pink-800 text-lg">SERVICE LOCATIONS</span>
+            <span className="text-pink-700 font-bold">Location Coverage</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-            Escorts in Ranchi - All Major Locations Covered
+          
+          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-pink-600 via-rose-600 to-purple-600 bg-clip-text text-transparent mb-6">
+            Service Areas in Ranchi
           </h2>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Professional escort services available across all major Ranchi locations with verified companions and guaranteed response times
+          
+          <p className="text-gray-700 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+            Professional escort services available across all major locations in Ranchi with guaranteed response times and verified companions
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {ranchiLocations.map((location, index) => (
-            <div 
-              key={index} 
-              className="bg-white/90 backdrop-blur-sm p-8 rounded-3xl shadow-xl border border-pink-100/50 relative overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-105 group"
+            <Link
+              key={index}
+              href={location.link || `tel:+919372662471`}
+              className="block bg-white/90 backdrop-blur-sm p-8 rounded-3xl shadow-xl border border-pink-100/50 relative overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-105 group"
             >
               {/* Card Background Decoration */}
               <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-pink-200/20 to-transparent rounded-full transform translate-x-12 -translate-y-12 group-hover:scale-150 transition-transform duration-500"></div>
@@ -115,8 +133,8 @@ export default function ContactLocation() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-pink-700 mb-1">{location.name}</h3>
-                    <p className="text-pink-600 font-medium">{location.coverage}</p>
+                    <h3 className="text-2xl font-bold text-pink-700 mb-1 group-hover:text-pink-800 transition-colors">{location.name}</h3>
+                    <p className="text-pink-600 font-medium group-hover:text-pink-700 transition-colors">{location.coverage}</p>
                   </div>
                 </div>
 
@@ -134,7 +152,7 @@ export default function ContactLocation() {
                       {location.areas.map((area, areaIndex) => (
                         <span 
                           key={areaIndex} 
-                          className="bg-white text-pink-600 px-3 py-1 rounded-full text-sm font-medium border border-pink-200 hover:bg-pink-100 transition-colors"
+                          className="bg-white text-pink-600 px-3 py-1 rounded-full text-sm font-medium border border-pink-200 group-hover:bg-pink-100 transition-colors"
                         >
                           {area}
                         </span>
@@ -173,122 +191,35 @@ export default function ContactLocation() {
                       <div className="bg-green-500 w-2 h-2 rounded-full mr-2 animate-pulse"></div>
                       Available Now
                     </div>
-                    <a 
-                      href={`tel:+919372662471`}
-                      className="bg-gradient-to-r from-pink-500 to-rose-500 text-white px-4 py-2 rounded-full text-sm font-bold hover:from-pink-600 hover:to-rose-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
-                    >
-                      Book Now
-                    </a>
+                    <div className="bg-gradient-to-r from-pink-500 to-rose-500 text-white px-4 py-2 rounded-full text-sm font-bold group-hover:from-pink-600 group-hover:to-rose-600 transition-all duration-300 shadow-lg group-hover:shadow-xl transform group-hover:scale-105">
+                      {location.link?.includes('/locations/') ? 'View Details' : 'Book Now'}
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
-        {/* Contact Information Cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-16">
-          <div className="bg-white/90 backdrop-blur-sm p-10 rounded-3xl shadow-2xl border border-pink-200/50 relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-pink-200/30 to-transparent rounded-full transform translate-x-16 -translate-y-16"></div>
+        {/* Quick Contact Section */}
+        <div className="mt-20 text-center">
+          <div className="bg-gradient-to-r from-pink-600 to-rose-600 text-white p-8 rounded-3xl shadow-2xl border border-pink-300">
+            <h3 className="text-2xl font-bold mb-4">Quick Location Bookings</h3>
+            <p className="text-pink-100 mb-6">Call now for instant availability across all Ranchi locations</p>
             
-            <div className="relative z-10">
-              <div className="flex items-center mb-8">
-                <div className="bg-gradient-to-r from-pink-500 to-rose-500 text-white p-4 rounded-2xl shadow-lg mr-4">
-                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-pink-700 mb-1">Instant Contact</h3>
-                  <p className="text-pink-600">Call for immediate assistance</p>
-                </div>
-              </div>
-              
-              <div className="space-y-4">
-                <div className="bg-pink-50/80 p-4 rounded-xl border border-pink-200/50">
-                  <div className="text-2xl font-bold text-pink-600 mb-2">+91-9372662471</div>
-                  <div className="text-gray-600">Available 24/7 across all Ranchi locations</div>
-                </div>
-                
-                <div className="flex gap-3">
-                  <a 
-                    href="tel:+919372662471" 
-                    className="flex-1 bg-gradient-to-r from-pink-500 to-rose-500 text-white px-4 py-3 rounded-xl font-bold hover:from-pink-600 hover:to-rose-600 transition-all duration-300 text-center shadow-lg hover:shadow-xl"
-                  >
-                    📞 Call Now
-                  </a>
-                  <a 
-                    href="https://wa.me/919372662471?text=Hi%2C%20I%20need%20escort%20services%20in%20Ranchi" 
-                    className="flex-1 bg-gradient-to-r from-green-500 to-emerald-500 text-white px-4 py-3 rounded-xl font-bold hover:from-green-600 hover:to-emerald-600 transition-all duration-300 text-center shadow-lg hover:shadow-xl"
-                  >
-                    💬 WhatsApp
-                  </a>
-                </div>
-              </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3">
+              {ranchiLocations.slice(0, 10).map((location, index) => (
+                <a
+                  key={index}
+                  href="tel:+919372662471"
+                  className="bg-white p-3 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105 border border-pink-200 hover:border-pink-400 text-center group"
+                >
+                  <div className="text-pink-600 font-semibold text-sm group-hover:text-pink-700">
+                    Escorts in {location.name.replace(/\s+(Area|Zone|Colony|Township|Junction)$/, '')}
+                  </div>
+                </a>
+              ))}
             </div>
-          </div>
-
-          <div className="bg-white/90 backdrop-blur-sm p-10 rounded-3xl shadow-2xl border border-green-200/50 relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-green-200/30 to-transparent rounded-full transform translate-x-16 -translate-y-16"></div>
-            
-            <div className="relative z-10">
-              <div className="flex items-center mb-8">
-                <div className="bg-gradient-to-r from-green-500 to-emerald-500 text-white p-4 rounded-2xl shadow-lg mr-4">
-                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-green-700 mb-1">Service Guarantee</h3>
-                  <p className="text-green-600">Professional & Discrete</p>
-                </div>
-              </div>
-              
-              <div className="space-y-4">
-                <div className="grid grid-cols-2 gap-3">
-                  <div className="bg-green-50/80 p-3 rounded-xl border border-green-200/50 text-center">
-                    <div className="text-lg font-bold text-green-600">100%</div>
-                    <div className="text-xs text-gray-600">Verified</div>
-                  </div>
-                  <div className="bg-green-50/80 p-3 rounded-xl border border-green-200/50 text-center">
-                    <div className="text-lg font-bold text-green-600">24/7</div>
-                    <div className="text-xs text-gray-600">Available</div>
-                  </div>
-                  <div className="bg-green-50/80 p-3 rounded-xl border border-green-200/50 text-center">
-                    <div className="text-lg font-bold text-green-600">100%</div>
-                    <div className="text-xs text-gray-600">Private</div>
-                  </div>
-                  <div className="bg-green-50/80 p-3 rounded-xl border border-green-200/50 text-center">
-                    <div className="text-lg font-bold text-green-600">5 Min</div>
-                    <div className="text-xs text-gray-600">Response</div>
-                  </div>
-                </div>
-                
-                <div className="bg-green-50/80 p-4 rounded-xl border border-green-200/50">
-                  <div className="text-green-700 font-medium text-center">
-                    Professional escort services across all major Ranchi locations with complete privacy and satisfaction guarantee
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Quick Links Section */}
-        <div className="mt-16 text-center">
-          <h3 className="text-2xl font-bold text-gray-800 mb-8">Popular Escort Service Areas in Ranchi</h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3">
-            {ranchiLocations.slice(0, 10).map((location, index) => (
-              <a
-                key={index}
-                href="tel:+919372662471"
-                className="bg-white p-3 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105 border border-pink-200 hover:border-pink-400 text-center group"
-              >
-                <div className="text-pink-600 font-semibold text-sm group-hover:text-pink-700">
-                  Escorts in {location.name.replace(/\s+(Area|Zone|Colony|Township|Junction)$/, '')}
-                </div>
-              </a>
-            ))}
           </div>
         </div>
       </div>

@@ -175,7 +175,7 @@ export default function ServicesSection() {
 
   // 10 Local Ranchi Location Services
   const ranchiLocations = [
-    { name: "Main Road", area: "Central Ranchi", link: "/locations/main-road" },
+    { name: "Central Ranchi", area: "Main Road, Circular Road", link: "/locations/central-ranchi" },
     { name: "Kanke Road", area: "Kanke Area", link: "/locations/kanke-road" },
     { name: "HEC Colony", area: "Heavy Engineering Corporation", link: "/locations/hec-colony" },
     { name: "Lalpur", area: "Lalpur Township", link: "/locations/lalpur" },
