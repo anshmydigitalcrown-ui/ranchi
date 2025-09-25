@@ -269,47 +269,95 @@ export default function ServicesSection() {
           </Link>
         </div>
 
-        {/* Local Ranchi Location Services Section */}
-        <div className="mt-12">
-          <div className="text-center mb-6">
-            <h3 className="text-2xl md:text-3xl font-bold text-pink-800 mb-3">
-              Available in Ranchi Locations
-            </h3>
-            <p className="text-lg text-pink-600">
-              Our services are available across all major areas in Ranchi
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-5 gap-3">
-            {ranchiLocations.map((location, index) => (
-              <Link
-                key={index}
-                href={location.link}
-                className="group bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 p-3 text-center border border-pink-100 hover:border-pink-300 transform hover:-translate-y-1 hover:scale-105"
-              >
-                <div className="text-pink-500 mb-2">
-                  <span className="text-xl">📍</span>
+        {/* Enhanced Local Ranchi Location Services Section */}
+        <div className="mt-16 relative overflow-hidden">
+          {/* Background Decorative Elements */}
+          <div className="absolute inset-0 bg-gradient-to-br from-pink-50 to-pink-100 rounded-3xl"></div>
+          <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-pink-200/30 to-transparent rounded-full transform translate-x-32 -translate-y-32"></div>
+          <div className="absolute bottom-0 left-0 w-48 h-48 bg-gradient-to-tr from-pink-300/20 to-transparent rounded-full transform -translate-x-24 translate-y-24"></div>
+          
+          <div className="relative z-10 p-8">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-3 bg-white/80 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg mb-4 border border-pink-200/50">
+                <div className="bg-gradient-to-r from-pink-500 to-rose-500 text-white p-2 rounded-full">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
                 </div>
-                <h4 className="font-bold text-gray-800 text-xs mb-1 group-hover:text-pink-600">
-                  {location.name}
-                </h4>
-                <p className="text-xs text-gray-600 group-hover:text-pink-500 line-clamp-1">
-                  {location.area}
-                </p>
-              </Link>
-            ))}
-          </div>
+                <span className="font-bold text-pink-800 text-sm">PREMIUM LOCATIONS</span>
+              </div>
+              <h3 className="text-3xl md:text-4xl font-bold text-pink-800 mb-4">
+                Available in Ranchi Locations
+              </h3>
+              <p className="text-lg text-pink-600 max-w-2xl mx-auto">
+                Our services are available across all major areas in Ranchi
+              </p>
+            </div>
 
-          <div className="text-center mt-6">
-            <Link 
-              href="/locations"
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white px-6 py-2 rounded-full font-semibold transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105"
-            >
-              <span>View All Locations</span>
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </Link>
+            <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-5 gap-4">
+              {ranchiLocations.map((location, index) => (
+                <Link
+                  key={index}
+                  href={location.link}
+                  className="group relative overflow-hidden"
+                >
+                  <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 p-6 text-center border border-pink-200/50 hover:border-pink-400/60 transform hover:-translate-y-2 hover:scale-105 relative overflow-hidden">
+                    {/* Card Background Gradient */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-pink-50/50 to-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    
+                    {/* Location Pin Icon */}
+                    <div className="relative z-10 mb-4">
+                      <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-pink-500 to-rose-500 text-white rounded-full shadow-lg group-hover:shadow-xl group-hover:scale-110 transition-all duration-300">
+                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                      </div>
+                    </div>
+
+                    {/* Location Name */}
+                    <div className="relative z-10">
+                      <h4 className="font-bold text-gray-800 text-sm mb-2 group-hover:text-pink-600 transition-colors duration-300">
+                        {location.name}
+                      </h4>
+                      <p className="text-xs text-gray-600 group-hover:text-pink-500 transition-colors duration-300 line-clamp-2">
+                        {location.area}
+                      </p>
+                    </div>
+
+                    {/* Hover Effect Indicator */}
+                    <div className="absolute bottom-2 right-2 opacity-0 group-hover:opacity-100 transform translate-x-2 group-hover:translate-x-0 transition-all duration-300">
+                      <div className="bg-pink-500 text-white p-1 rounded-full">
+                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+
+            <div className="text-center mt-10">
+              <Link 
+                href="/locations"
+                className="group inline-flex items-center gap-3 bg-gradient-to-r from-pink-500 via-pink-600 to-rose-500 hover:from-pink-600 hover:via-pink-700 hover:to-rose-600 text-white px-8 py-4 rounded-2xl font-bold transition-all duration-500 shadow-lg hover:shadow-2xl transform hover:scale-105 hover:-translate-y-1"
+              >
+                <div className="bg-white/20 p-2 rounded-full group-hover:bg-white/30 transition-colors duration-300">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <span>View All Locations</span>
+                <div className="bg-white/20 p-1 rounded-full group-hover:bg-white/30 group-hover:translate-x-1 transition-all duration-300">
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
