@@ -326,9 +326,9 @@ export default function CentralRanchiPage() {
           </div>
         </section>
 
-        {/* Service Cards Section - Matching Home Page */}
+        {/* Service Cards Section - Gallery Style */}
         <section className="py-16 bg-gradient-to-br from-pink-50 to-rose-50">
-          <div className="container mx-auto px-4">
+          <div className="max-w-7xl mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-pink-800 mb-4">
                 Premium Escort Services in Central Ranchi
@@ -338,49 +338,36 @@ export default function CentralRanchiPage() {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-              {centralRanchiServices.map((service) => (
-                <div key={service.id} className="group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 bg-white border border-pink-100 hover:border-pink-300">
-                  
-                  {/* Image Container */}
-                  <div className="relative w-full aspect-[3/4] overflow-hidden">
-                    <div className="relative w-full h-full">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {centralRanchiServices.slice(0, 9).map((service) => (
+                <div key={service.id} className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                  <div className="relative">
+                    <div className="relative w-full aspect-[3/4] overflow-hidden rounded-t-xl">
                       <Image
                         src={service.image}
                         alt={service.title}
                         fill
-                        className="object-contain w-full h-full group-hover:scale-110 transition-transform duration-500"
-                        sizes="(min-width: 1024px) 20vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 50vw"
-                        priority={service.id <= 5}
+                        className="object-contain w-full h-full"
+                        sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                        priority={service.id <= 6}
                       />
-                      
-                      {/* Gradient overlay */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                      
-                      {/* Category Badge */}
-                      <div className="absolute top-2 right-2 z-10">
-                        <span className="bg-gradient-to-r from-pink-500 to-pink-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg uppercase tracking-wide backdrop-blur-sm">
-                          {service.category}
+                      <div className="absolute top-3 right-3">
+                        <span className="bg-pink-500 text-white px-3 py-1 rounded-full text-sm font-bold">
+                          ⭐ {service.category}
                         </span>
                       </div>
                     </div>
                   </div>
-
-                  {/* Content Section */}
-                  <div className="p-3 bg-white">
-                    <h3 className="text-sm font-bold text-gray-800 mb-1 line-clamp-1">{service.title}</h3>
-                    <p className="text-gray-600 mb-3 text-xs leading-relaxed line-clamp-2">{service.subtitle}</p>
+                  <div className="p-4">
+                    <h3 className="text-lg font-bold text-gray-800 mb-2">{service.title}</h3>
+                    <p className="text-gray-600 text-sm mb-4">{service.subtitle}</p>
                     <a 
                       href={service.link}
-                      className="block w-full bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white px-4 py-2 rounded-lg text-center font-semibold transition-all duration-300 shadow-md hover:shadow-lg text-xs uppercase tracking-wide transform hover:scale-105"
+                      className="block w-full bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-lg text-center font-semibold transition-all duration-300"
                     >
-                      Call Now
+                      Call Now: +91-9372662471
                     </a>
                   </div>
-
-                  {/* Hover effects */}
-                  <div className="absolute inset-0 bg-pink-500/0 group-hover:bg-pink-500/5 transition-all duration-300 rounded-xl pointer-events-none"></div>
-                  <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 to-rose-500 rounded-xl opacity-0 group-hover:opacity-20 blur transition-all duration-300 pointer-events-none"></div>
                 </div>
               ))}
             </div>
