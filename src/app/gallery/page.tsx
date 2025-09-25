@@ -211,7 +211,7 @@ export default function GalleryPage() {
 
         {/* Premium Gallery Section */}
         <section className="py-16 bg-gradient-to-br from-pink-50 to-rose-50">
-          <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-pink-800 mb-4">Premium Verified Gallery</h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -300,7 +300,7 @@ export default function GalleryPage() {
 
         {/* Premium Services Content */}
         <section className="py-16 bg-gradient-to-br from-pink-50 to-rose-50">
-          <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-pink-800 mb-4">Premium Services Details</h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -345,7 +345,7 @@ export default function GalleryPage() {
 
         {/* FAQ Section */}
         <section className="py-16 bg-gradient-to-br from-pink-50 to-rose-50">
-          <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-pink-800 mb-4">Premium Gallery FAQ</h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
