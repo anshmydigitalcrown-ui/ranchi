@@ -117,6 +117,11 @@ export default function Footer() {
                   Reviews
                 </Link>
               </li>
+              <li>
+                <Link href="/sitemap" className="text-gray-400 hover:text-pink-400 transition-colors">
+                  Sitemap
+                </Link>
+              </li>
             </ul>
           </div>
 
