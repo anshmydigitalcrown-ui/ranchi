@@ -4,9 +4,64 @@ import Footer from '@/components/Footer'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'Escorts in Circular Road 💎 Premium Services | Call Now +91-9372662471',
-  description: 'Premium escorts in Circular Road with verified profiles and professional services. Available 24/7 near Central Market and surrounding areas. Call +91-9372662471 for instant booking.',
-  keywords: ['escorts in circular road', 'circular road escorts', 'escorts circular road ranchi', 'central market escorts', 'escort service circular road']
+  title: 'Escorts in Circular Road 💎 Premium VIP Services 24/7 | Call +91-9372662471',
+  description: 'Premium escorts in Circular Road Ranchi with verified profiles, professional services available 24/7. VIP escorts near Central Market, Bank Road. Instant booking +91-9372662471.',
+  keywords: [
+    'escorts in circular road',
+    'circular road escorts',
+    'escorts circular road ranchi',
+    'central market escorts',
+    'escort service circular road',
+    'call girls in circular road',
+    'premium escorts circular road',
+    'vip escorts circular road',
+    'independent escorts circular road',
+    'elite escorts circular road',
+    'professional escorts circular road',
+    'verified escorts circular road',
+    'escort booking circular road',
+    'circular road escorts near me',
+    'best escorts circular road',
+    'top escorts circular road',
+    'luxury escorts circular road',
+    'high class escorts circular road',
+    'bank road escorts ranchi',
+    'medical college road escorts'
+  ],
+  openGraph: {
+    title: 'Escorts in Circular Road - Premium VIP Services Available 24/7',
+    description: 'Premium escorts in Circular Road Ranchi with verified profiles and professional services. VIP companions available 24/7 near Central Market.',
+    images: [{
+      url: '/images/services/vip escorts.webp',
+      width: 1200,
+      height: 630,
+      alt: 'Premium Escorts in Circular Road - VIP Services',
+    }],
+    type: 'website',
+    siteName: 'Premium Ranchi Escorts',
+    locale: 'en_IN',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Escorts in Circular Road - Premium VIP Services 24/7',
+    description: 'Premium verified escorts in Circular Road with professional services. Call +91-9372662471 for instant booking.',
+    images: ['/images/services/vip escorts.webp'],
+    creator: '@RanchiEscorts',
+  },
+  alternates: {
+    canonical: '/locations/circular-road',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  }
 }
 
 export default function CircularRoadPage() {
