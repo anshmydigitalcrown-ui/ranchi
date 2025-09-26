@@ -286,31 +286,12 @@ export default function GalleryPage() {
                        service.name === 'Event Companion' ? 'Elegant Event Partners' :
                        'Sophisticated Mature Companions'}
                     </p>
-                    <div className="space-y-2">
-                      <Link
-                        href={
-                          service.name === 'VIP Escorts' ? '/services/vip-escorts' :
-                          service.name === 'Celebrity Services' ? '/services/celebrity-services' :
-                          service.name === 'Elite Models' ? '/services/elite-models' :
-                          service.name === 'Independent Services' ? '/services/independent-services' :
-                          service.name === 'Local Beauties' ? '/services/local-beauties' :
-                          service.name === 'Outcall Services' ? '/services/outcall-services' :
-                          service.name === 'Premium Services' ? '/services/premium-services' :
-                          service.name === 'Travel Companion' ? '/services/travel-companion' :
-                          service.name === 'Event Companion' ? '/services/event-companion' :
-                          '/services/milf-escorts'
-                        }
-                        className="block w-full bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white px-4 py-2 rounded-lg text-center font-semibold transition-all duration-300"
-                      >
-                        View {service.name}
-                      </Link>
-                      <a 
-                        href="tel:+919372662471" 
-                        className="block w-full bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-center font-semibold transition-all duration-300"
-                      >
-                        Book {service.name}
-                      </a>
-                    </div>
+                    <a 
+                      href="tel:+919372662471" 
+                      className="block w-full bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-lg text-center font-semibold transition-all duration-300"
+                    >
+                      Book {service.name}
+                    </a>
                   </div>
                 </div>
               ))}
