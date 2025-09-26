@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { ReactNode } from "react";
 import "./globals.css";
-import AIHub from "@/components/AIHub";
 
 export const metadata: Metadata = {
   title: "Ranchi Escorts - Premium Elite Companions | VIP Services 24/7",
@@ -49,7 +48,6 @@ export default function RootLayout({
       </head>
       <body className="antialiased">
         {children}
-        <AIHub />
       </body>
     </html>
   );
