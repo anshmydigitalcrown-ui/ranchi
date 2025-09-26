@@ -64,11 +64,28 @@ const LLMDashboard: React.FC<LLMDashboardProps> = ({ onClose }) => {
 
   const loadSystemStatus = async () => {
     try {
-      const response = await fetch('/api/ai/health')
-      const data = await response.json()
-      setSystemStatus(data)
-    } catch (error) {
+      const controller = new AbortController()
+      const timeoutId = setTimeout(() => controller.abort(), 10000) // 10 second timeout
+      
+      const response = await fetch('/api/ai/health', {
+        signal: controller.signal
+      })
+      
+      clearTimeout(timeoutId)
+      
+      if (response.ok) {
+        const data = await response.json()
+        setSystemStatus(data)
+      } else {
+        console.warn('Health check failed:', response.statusText)
+      }
+    } catch (error: any) {
       console.error('Failed to load system status:', error)
+      // Set default status on error
+      setSystemStatus({
+        status: 'error',
+        message: 'Unable to check system status'
+      })
     }
   }
 
@@ -79,25 +96,43 @@ const LLMDashboard: React.FC<LLMDashboardProps> = ({ onClose }) => {
     }
 
     setLoading(true)
+    setModelResults([])
+    
     try {
+      const controller = new AbortController()
+      const timeoutId = setTimeout(() => controller.abort(), 60000) // 1 minute timeout for model testing
+      
       const response = await fetch('/api/ai/test-models', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           message: testMessage,
           testAllModels: true
-        })
+        }),
+        signal: controller.signal
       })
 
+      clearTimeout(timeoutId)
+
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}: ${response.statusText}`)
+      }
+
       const data = await response.json()
-      if (data.success) {
+      
+      if (data.success && data.results) {
         setModelResults(data.results)
       } else {
-        alert('Test failed: ' + data.error)
+        throw new Error(data.error || 'Test failed')
       }
-    } catch (error) {
+    } catch (error: any) {
       console.error('Model testing failed:', error)
-      alert('Failed to test models')
+      
+      if (error.name === 'AbortError') {
+        alert('Model testing timed out. Please try with a shorter message.')
+      } else {
+        alert('Failed to test models: ' + (error.message || 'Unknown error'))
+      }
     } finally {
       setLoading(false)
     }

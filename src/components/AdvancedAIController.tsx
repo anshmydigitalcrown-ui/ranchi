@@ -1,6 +1,30 @@
 'use client'
 import React, { useState, useEffect } from 'react'
-import { AI_PERSONALITIES } from '@/lib/advanced-llm'
+
+// Define personalities locally to avoid import issues
+const AI_PERSONALITIES = {
+  SOPHIA: {
+    name: 'Sophia',
+    personality: 'warm and sophisticated',
+    expertise: ['VIP Services', 'Elite Companions', 'Event Planning'],
+    tone: 'sophisticated' as const,
+    languages: ['English', 'Hindi']
+  },
+  PRIYA: {
+    name: 'Priya',
+    personality: 'friendly and approachable',
+    expertise: ['Local Services', 'Cultural Guidance', 'Translation'],
+    tone: 'friendly' as const,
+    languages: ['English', 'Hindi', 'Bengali']
+  },
+  MAYA: {
+    name: 'Maya',
+    personality: 'professional and efficient',
+    expertise: ['Business Services', 'Travel Companion', 'Corporate Events'],
+    tone: 'professional' as const,
+    languages: ['English', 'Hindi']
+  }
+}
 
 interface AdvancedAIControllerProps {
   onClose?: () => void
@@ -23,18 +47,43 @@ const AdvancedAIController: React.FC<AdvancedAIControllerProps> = ({ onClose }) 
 
   const handleServiceCall = async (service: string, data: any) => {
     setLoading(true)
+    setResults(null) // Clear previous results
+    
     try {
+      // Add timeout to prevent hanging requests
+      const controller = new AbortController()
+      const timeoutId = setTimeout(() => controller.abort(), 30000) // 30 second timeout
+      
       const response = await fetch('/api/ai/advanced', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ action: service, ...data })
+        body: JSON.stringify({ action: service, ...data }),
+        signal: controller.signal
       })
       
+      clearTimeout(timeoutId)
+      
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}: ${response.statusText}`)
+      }
+      
       const result = await response.json()
+      
+      if (result.error) {
+        throw new Error(result.error)
+      }
+      
       setResults(result)
-    } catch (error) {
+    } catch (error: any) {
       console.error('Advanced AI Service Error:', error)
-      setResults({ error: 'Service temporarily unavailable' })
+      
+      if (error.name === 'AbortError') {
+        setResults({ error: 'Request timed out. Please try again.' })
+      } else if (error.message.includes('fetch')) {
+        setResults({ error: 'Network error. Please check your connection.' })
+      } else {
+        setResults({ error: error.message || 'Service temporarily unavailable' })
+      }
     } finally {
       setLoading(false)
     }

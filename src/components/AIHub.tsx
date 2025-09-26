@@ -2,12 +2,15 @@
 
 /* eslint-disable react/no-unescaped-entities */
 
-import { useState } from 'react'
+import { useState, lazy, Suspense } from 'react'
 import AIChatbot from './AIChatbot'
 import AISearch from './AISearch'
 import AIControlPanel from './AIControlPanel'
-import AdvancedAIController from './AdvancedAIController'
-import LLMDashboard from './LLMDashboard'
+import ErrorBoundary from './ErrorBoundary'
+
+// Lazy load heavy components to prevent initial load issues
+const AdvancedAIController = lazy(() => import('./AdvancedAIController'))
+const LLMDashboard = lazy(() => import('./LLMDashboard'))
 
 export default function AIHub() {
   const [isChatbotOpen, setIsChatbotOpen] = useState(false)
@@ -133,8 +136,23 @@ export default function AIHub() {
       <AIChatbot isOpen={isChatbotOpen} onClose={() => setIsChatbotOpen(false)} />
       <AISearch isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
       <AIControlPanel isOpen={isControlPanelOpen} onClose={() => setIsControlPanelOpen(false)} />
-      {isAdvancedAIOpen && <AdvancedAIController onClose={() => setIsAdvancedAIOpen(false)} />}
-      {isLLMDashboardOpen && <LLMDashboard onClose={() => setIsLLMDashboardOpen(false)} />}
+      
+      {/* Lazy loaded components with error boundaries */}
+      {isAdvancedAIOpen && (
+        <ErrorBoundary>
+          <Suspense fallback={<div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"><div className="text-white">Loading AI Controller...</div></div>}>
+            <AdvancedAIController onClose={() => setIsAdvancedAIOpen(false)} />
+          </Suspense>
+        </ErrorBoundary>
+      )}
+      
+      {isLLMDashboardOpen && (
+        <ErrorBoundary>
+          <Suspense fallback={<div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50"><div className="text-white">Loading LLM Dashboard...</div></div>}>
+            <LLMDashboard onClose={() => setIsLLMDashboardOpen(false)} />
+          </Suspense>
+        </ErrorBoundary>
+      )}
 
       {/* Background Overlay for Mobile */}
       {(isChatbotOpen || isSearchOpen || isControlPanelOpen || isAdvancedAIOpen || isLLMDashboardOpen) && (
