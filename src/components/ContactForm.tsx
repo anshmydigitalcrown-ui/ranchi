@@ -341,3 +341,4 @@ Please confirm availability and provide booking details.`;
     </section>
   );
 }
+

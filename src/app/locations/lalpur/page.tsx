@@ -567,3 +567,4 @@ export default function LalpurPage() {
     </div>
   )
 }
+
