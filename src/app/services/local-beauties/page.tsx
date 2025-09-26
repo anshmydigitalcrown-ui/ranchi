@@ -230,7 +230,7 @@ export default function LocalBeautiesPage() {
               <div className="text-center">
                 <p className="text-lg text-gray-700 mb-6">🏛️ Our premium gallery features verified local Ranchi companions with authentic photos, detailed service information, and instant booking availability. Experience authentic local charm with complete cultural understanding and discretion.</p>
                 
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <div className="flex justify-center">
                   <Link 
                     href="/gallery" 
                     className="bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center gap-3 justify-center"
@@ -240,16 +240,6 @@ export default function LocalBeautiesPage() {
                     </svg>
                     View Premium Gallery
                   </Link>
-                  
-                  <a 
-                    href="tel:+919372662471" 
-                    className="bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center gap-3 justify-center"
-                  >
-                    <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
-                    </svg>
-                    Book from Gallery
-                  </a>
                 </div>
               </div>
             </div>
