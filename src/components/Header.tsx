@@ -27,6 +27,10 @@ export default function Header() {
             <Link href="/gallery" className="text-gray-700 hover:text-pink-600 transition-colors">
               Gallery
             </Link>
+            <Link href="/ai-features" className="text-gray-700 hover:text-pink-600 transition-colors flex items-center gap-1">
+              <span>🤖</span>
+              AI Features
+            </Link>
             <Link href="/about" className="text-gray-700 hover:text-pink-600 transition-colors">
               About
             </Link>
@@ -82,6 +86,10 @@ export default function Header() {
               </Link>
               <Link href="/gallery" className="text-gray-700 hover:text-pink-600 transition-colors">
                 Gallery
+              </Link>
+              <Link href="/ai-features" className="text-gray-700 hover:text-pink-600 transition-colors flex items-center gap-2">
+                <span>🤖</span>
+                AI Features
               </Link>
               <Link href="/about" className="text-gray-700 hover:text-pink-600 transition-colors">
                 About
