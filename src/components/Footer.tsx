@@ -51,32 +51,32 @@ export default function Footer() {
             <h3 className="text-xl font-semibold text-pink-400 mb-4">Premium Services</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/services/vip" className="text-gray-400 hover:text-pink-400 transition-colors">
+                <Link href="/services/vip-escorts" className="text-gray-400 hover:text-pink-400 transition-colors">
                   VIP Services
                 </Link>
               </li>
               <li>
-                <Link href="/services/celebrity" className="text-gray-400 hover:text-pink-400 transition-colors">
+                <Link href="/services/celebrity-services" className="text-gray-400 hover:text-pink-400 transition-colors">
                   Celebrity Services
                 </Link>
               </li>
               <li>
-                <Link href="/services/elite" className="text-gray-400 hover:text-pink-400 transition-colors">
+                <Link href="/services/elite-models" className="text-gray-400 hover:text-pink-400 transition-colors">
                   Elite Models
                 </Link>
               </li>
               <li>
-                <Link href="/services/premium" className="text-gray-400 hover:text-pink-400 transition-colors">
+                <Link href="/services/premium-services" className="text-gray-400 hover:text-pink-400 transition-colors">
                   Premium Models
                 </Link>
               </li>
               <li>
-                <Link href="/services/travel" className="text-gray-400 hover:text-pink-400 transition-colors">
+                <Link href="/services/travel-companion" className="text-gray-400 hover:text-pink-400 transition-colors">
                   Travel Companion
                 </Link>
               </li>
               <li>
-                <Link href="/services/event" className="text-gray-400 hover:text-pink-400 transition-colors">
+                <Link href="/services/event-companion" className="text-gray-400 hover:text-pink-400 transition-colors">
                   Event Companion
                 </Link>
               </li>

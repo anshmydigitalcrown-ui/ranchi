@@ -87,119 +87,139 @@ export default function ServicesPage() {
       description: 'Luxury companions for elite experiences',
       image: '/images/services/vip escorts.webp',
       details: 'Celebrity-level companions, platinum experiences, exclusive venues, and luxury amenities with complete discretion.',
+      link: '/services/vip-escorts'
     },
     {
       name: 'Celebrity Services',
       description: 'High-profile entertainment companions',
       image: '/images/services/celebrity services.webp',
       details: 'Elite celebrity-style companions for high-profile events, entertainment, and exclusive social gatherings.',
+      link: '/services/celebrity-services'
     },
     {
       name: 'Elite Models',
       description: 'Professional model companions',
       image: '/images/services/elite models.webp',
       details: 'Professional models with stunning beauty, sophistication, and international experience for premium companionship.',
+      link: '/services/elite-models'
     },
     {
       name: 'Independent Services',
       description: 'Personal independent companions',
       image: '/images/services/independent services.webp',
       details: 'Independent professional companions offering personalized services with complete freedom and flexibility.',
+      link: '/services/independent-services'
     },
     {
       name: 'Local Beauties',
       description: 'Charming local Ranchi companions',
       image: '/images/services/local beauties.webp',
       details: 'Beautiful local Ranchi companions with area knowledge, cultural understanding, and authentic charm.',
+      link: '/services/local-beauties'
     },
     {
       name: 'Outcall Services',
       description: 'Professional outcall companions',
       image: '/images/services/outcall services.jpg',
       details: 'Professional outcall services to your location with verified companions and complete discretion guaranteed.',
+      link: '/services/outcall-services'
     },
     {
       name: 'Premium Services',
       description: 'Exclusive premium experiences',
       image: '/images/services/premium services.webp',
       details: 'Exclusive premium experiences with luxury amenities, high-end venues, and sophisticated companionship.',
+      link: '/services/premium-services'
     },
     {
       name: 'Travel Companion',
       description: 'Sophisticated travel partners',
       image: '/images/services/travel companion.webp',
       details: 'Sophisticated travel companions for business trips, vacations, and international travel with cultural awareness.',
+      link: '/services/travel-companion'
     },
     {
       name: 'Event Companion',
       description: 'Elegant event accompaniment',
       image: '/images/services/event companion.webp',
       details: 'Elegant companions for corporate events, social gatherings, parties, and special occasions with perfect etiquette.',
+      link: '/services/event-companion'
     },
     {
       name: 'MILF Escorts',
       description: 'Experienced mature women companions',
       image: '/images/services/milf escorts.webp',
       details: 'Sophisticated mature women with life experience, wisdom, and refined companionship for discerning clients.',
+      link: '/services/milf-escorts'
     },
     {
       name: 'Housewife Escorts',
       description: 'Elegant housewife companions',
       image: '/images/services/housewife escorts.webp',
       details: 'Charming housewife companions offering warmth, care, and authentic domestic elegance with professional service.',
+      link: '/services/housewife-escorts'
     },
     {
       name: 'College Girls Escorts',
       description: 'Young vibrant college companions',
       image: '/images/services/college girls escorts.webp',
       details: 'Fresh, energetic college companions with youthful enthusiasm, modern outlook, and intelligent conversation.',
+      link: '/services/college-girls-escorts'
     },
     {
       name: 'Bengali Escorts',
       description: 'Beautiful Bengali cultural companions',
       image: '/images/services/bengali escorts.webp',
       details: 'Elegant Bengali companions with rich cultural heritage, artistic sensibility, and traditional charm.',
+      link: '/services/bengali-escorts'
     },
     {
       name: 'Nepali Escorts',
       description: 'Charming Nepali companions',
       image: '/images/services/nepali escorts.webp',
       details: 'Beautiful Nepali companions with mountain charm, natural beauty, and gentle caring nature.',
+      link: '/services/nepali-escorts'
     },
     {
       name: 'Russian Escorts',
       description: 'International Russian beauties',
       image: '/images/services/russian escorts.webp',
       details: 'Stunning Russian companions with international appeal, sophisticated elegance, and European charm.',
+      link: '/services/russian-escorts'
     },
     {
       name: 'Bhabhi Escorts',
       description: 'Sophisticated bhabhi companions',
       image: '/images/services/bhabhi escorts.webp',
+      link: '/services/housewife-escorts',
       details: 'Mature, caring bhabhi companions offering warmth, understanding, and traditional Indian hospitality.',
     },
     {
       name: 'South Indian Escorts',
       description: 'Beautiful South Indian companions',
       image: '/images/services/south indian escorts.webp',
+      link: '/services/independent-services',
       details: 'Elegant South Indian companions with classical beauty, cultural grace, and traditional values.',
     },
     {
       name: 'Premium Model Escorts',
       description: 'Elite premium model companions',
       image: '/images/services/premium model escorts.webp',
+      link: '/services/premium-services',
       details: 'Professional model companions with runway experience, photogenic beauty, and high-fashion elegance.',
     },
     {
       name: 'Mature Escorts',
       description: 'Refined mature women companions',
       image: '/images/services/mature escorts.webp',
+      link: '/services/milf-escorts',
       details: 'Sophisticated mature companions with life experience, emotional intelligence, and refined conversation.',
     },
     {
       name: 'Foreign Escorts',
       description: 'International foreign companions',
       image: '/images/services/foreign escorts.webp',
+      link: '/services/russian-escorts',
       details: 'Exotic foreign companions from various countries offering international charm, cultural diversity, and global sophistication.',
     },
   ]
@@ -315,7 +335,7 @@ export default function ServicesPage() {
                     <h3 className="text-lg font-bold text-gray-800 mb-2">{service.name}</h3>
                     <p className="text-gray-600 text-sm mb-4">{service.description}</p>
                     <Link 
-                      href={`/book/${service.name.toLowerCase().replace(/\s+/g, '-')}`}
+                      href={service.link || '#'}
                       className="block w-full bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-lg text-center font-semibold transition-all duration-300"
                     >
                       Book {service.name}

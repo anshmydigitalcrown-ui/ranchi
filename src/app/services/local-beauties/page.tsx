@@ -184,7 +184,7 @@ export default function LocalBeautiesPage() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-4">Intimate City Knowledge</h3>
-                <p className="text-gray-600">Local beauties with deep knowledge of Ranchi's best locations, hidden gems, cultural spots, and authentic experiences.</p>
+                <p className="text-gray-600">Local beauties with deep knowledge of Ranchi&apos;s best locations, hidden gems, cultural spots, and authentic experiences.</p>
               </div>
 
               <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">

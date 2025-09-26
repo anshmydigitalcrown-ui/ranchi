@@ -17,7 +17,7 @@ export default function ServicesSection() {
       subtitle: "Premium VIP Service",
       category: "VIP",
       image: "/images/services/vip escorts.webp",
-      link: "/services/vip"
+      link: "/services/vip-escorts"
     },
     {
       id: 2,
@@ -25,7 +25,7 @@ export default function ServicesSection() {
       subtitle: "Star-Like Companions",
       category: "CELEBRITY",
       image: "/images/services/celebrity services.webp",
-      link: "/services/celebrity"
+      link: "/services/celebrity-services"
     },
     {
       id: 3,
@@ -33,7 +33,7 @@ export default function ServicesSection() {
       subtitle: "Professional Model Services",
       category: "ELITE",
       image: "/images/services/elite models.webp",
-      link: "/services/elite"
+      link: "/services/elite-models"
     },
     {
       id: 4,
@@ -41,7 +41,7 @@ export default function ServicesSection() {
       subtitle: "Luxury Premium Experience",
       category: "PREMIUM",
       image: "/images/services/premium services.webp",
-      link: "/services/premium"
+      link: "/services/premium-services"
     },
     {
       id: 5,
@@ -49,7 +49,7 @@ export default function ServicesSection() {
       subtitle: "Regional beauties from different states",
       category: "LOCAL",
       image: "/images/services/local beauties.webp",
-      link: "/services/local"
+      link: "/services/local-beauties"
     },
     {
       id: 6,
@@ -57,7 +57,7 @@ export default function ServicesSection() {
       subtitle: "Perfect companions for business trips",
       category: "TRAVEL",
       image: "/images/services/travel companion.webp",
-      link: "/services/travel"
+      link: "/services/travel-companion"
     },
     {
       id: 7,
@@ -65,7 +65,7 @@ export default function ServicesSection() {
       subtitle: "Elegant companions for social events",
       category: "EVENT",
       image: "/images/services/event companion.webp",
-      link: "/services/event"
+      link: "/services/event-companion"
     },
     {
       id: 8,
@@ -73,7 +73,7 @@ export default function ServicesSection() {
       subtitle: "Visit you at your preferred location",
       category: "OUTCALL",
       image: "/images/services/outcall services.jpg",
-      link: "/services/outcall"
+      link: "/services/outcall-services"
     },
     {
       id: 9,
@@ -81,7 +81,7 @@ export default function ServicesSection() {
       subtitle: "Professional independent companions",
       category: "INDEPENDENT",
       image: "/images/services/independent services.webp",
-      link: "/services/independent"
+      link: "/services/independent-services"
     },
     {
       id: 10,
@@ -89,7 +89,7 @@ export default function ServicesSection() {
       subtitle: "Experienced mature women companions",
       category: "MATURE",
       image: "/images/services/milf escorts.webp",
-      link: "/services/milf"
+      link: "/services/milf-escorts"
     },
     {
       id: 11,
@@ -97,7 +97,7 @@ export default function ServicesSection() {
       subtitle: "Elegant housewife companions",
       category: "HOUSEWIFE",
       image: "/images/services/housewife escorts.webp",
-      link: "/services/housewife"
+      link: "/services/housewife-escorts"
     },
     {
       id: 12,
@@ -105,7 +105,7 @@ export default function ServicesSection() {
       subtitle: "Young vibrant college companions",
       category: "COLLEGE",
       image: "/images/services/college girls escorts.webp",
-      link: "/services/college"
+      link: "/services/college-girls-escorts"
     },
     {
       id: 13,
@@ -113,7 +113,7 @@ export default function ServicesSection() {
       subtitle: "Beautiful Bengali cultural companions",
       category: "BENGALI",
       image: "/images/services/bengali escorts.webp",
-      link: "/services/bengali"
+      link: "/services/bengali-escorts"
     },
     {
       id: 14,
@@ -121,7 +121,7 @@ export default function ServicesSection() {
       subtitle: "Charming Nepali companions",
       category: "NEPALI",
       image: "/images/services/nepali escorts.webp",
-      link: "/services/nepali"
+      link: "/services/nepali-escorts"
     },
     {
       id: 15,
@@ -129,7 +129,7 @@ export default function ServicesSection() {
       subtitle: "International Russian beauties",
       category: "RUSSIAN",
       image: "/images/services/russian escorts.webp",
-      link: "/services/russian"
+      link: "/services/russian-escorts"
     },
     {
       id: 16,
@@ -137,7 +137,7 @@ export default function ServicesSection() {
       subtitle: "Sophisticated bhabhi companions",
       category: "BHABHI",
       image: "/images/services/bhabhi escorts.webp",
-      link: "/services/bhabhi"
+      link: "/services/housewife-escorts"
     },
     {
       id: 17,
@@ -145,7 +145,7 @@ export default function ServicesSection() {
       subtitle: "Beautiful South Indian companions",
       category: "SOUTH INDIAN",
       image: "/images/services/south indian escorts.webp",
-      link: "/services/south-indian"
+      link: "/services/independent-services"
     },
     {
       id: 18,
@@ -153,7 +153,7 @@ export default function ServicesSection() {
       subtitle: "Elite premium model companions",
       category: "PREMIUM MODEL",
       image: "/images/services/premium model escorts.webp",
-      link: "/services/premium-model"
+      link: "/services/premium-services"
     },
     {
       id: 19,
@@ -161,7 +161,7 @@ export default function ServicesSection() {
       subtitle: "Refined mature women companions",
       category: "MATURE",
       image: "/images/services/mature escorts.webp",
-      link: "/services/mature"
+      link: "/services/milf-escorts"
     },
     {
       id: 20,
@@ -169,7 +169,7 @@ export default function ServicesSection() {
       subtitle: "International foreign companions",
       category: "FOREIGN",
       image: "/images/services/foreign escorts.webp",
-      link: "/services/foreign"
+      link: "/services/russian-escorts"
     }
   ];
 
