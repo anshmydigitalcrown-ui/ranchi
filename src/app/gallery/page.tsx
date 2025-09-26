@@ -240,14 +240,20 @@ export default function GalleryPage() {
                     </div>
                   </div>
                   <div className="p-4">
-                    <h3 className="text-lg font-bold text-gray-800 mb-2">VIP Escorts</h3>
-                    <p className="text-gray-600 text-sm mb-4">Premium VIP Service</p>
-                    <a 
-                      href="tel:+919372662471" 
-                      className="block w-full bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-lg text-center font-semibold transition-all duration-300"
-                    >
-                      Book VIP Escorts
-                    </a>
+                    <h3 className="text-lg font-bold text-gray-800 mb-2">Premium VIP Escorts</h3>
+                    <p className="text-gray-600 text-sm mb-3">Elite luxury companions offering sophisticated VIP experiences with complete discretion and premium service standards.</p>
+                    <div className="flex items-center gap-2 text-pink-600 text-sm mb-2">
+                      <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      <span className="font-semibold">Verified Authentic Photos</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-pink-600 text-sm">
+                      <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      <span className="font-semibold">Available 24/7 Ranchi</span>
+                    </div>
                   </div>
                 </div>
               ))}
@@ -274,24 +280,32 @@ export default function GalleryPage() {
                   </div>
                   <div className="p-4">
                     <h3 className="text-lg font-bold text-gray-800 mb-2">{service.name}</h3>
-                    <p className="text-gray-600 text-sm mb-4">
-                      {service.name === 'VIP Escorts' ? 'Premium VIP Service' :
-                       service.name === 'Celebrity Services' ? 'Star-Like Companions' :
-                       service.name === 'Elite Models' ? 'Professional Model Escorts' :
-                       service.name === 'Independent Services' ? 'Personal Independent Companions' :
-                       service.name === 'Local Beauties' ? 'Beautiful Local Ranchi Companions' :
-                       service.name === 'Outcall Services' ? 'Professional Outcall Services' :
-                       service.name === 'Premium Services' ? 'Exclusive Premium Experiences' :
-                       service.name === 'Travel Companion' ? 'Sophisticated Travel Partners' :
-                       service.name === 'Event Companion' ? 'Elegant Event Partners' :
-                       'Sophisticated Mature Companions'}
+                    <p className="text-gray-600 text-sm mb-3">
+                      {service.name === 'VIP Escorts' ? 'Elite luxury companions offering sophisticated VIP experiences with complete discretion and premium service standards.' :
+                       service.name === 'Celebrity Services' ? 'High-profile entertainment companions providing celebrity-style glamorous experiences for exclusive events and gatherings.' :
+                       service.name === 'Elite Models' ? 'Professional fashion models combining stunning beauty with intelligence, sophistication, and international experience.' :
+                       service.name === 'Independent Services' ? 'Personalized independent companions offering authentic connections with complete flexibility and genuine attention.' :
+                       service.name === 'Local Beauties' ? 'Beautiful Ranchi companions with local cultural knowledge, area expertise, and authentic regional charm.' :
+                       service.name === 'Outcall Services' ? 'Professional outcall companions providing verified services at your preferred location with complete discretion.' :
+                       service.name === 'Premium Services' ? 'Exclusive premium experiences featuring luxury amenities, high-end venues, and sophisticated companionship.' :
+                       service.name === 'Travel Companion' ? 'Cultured travel partners for business trips, vacations, and international journeys with cultural awareness.' :
+                       service.name === 'Event Companion' ? 'Elegant companions perfect for corporate events, social gatherings, and special occasions with impeccable etiquette.' :
+                       'Sophisticated mature women offering life experience, wisdom, and refined companionship for discerning clients.'}
                     </p>
-                    <a 
-                      href="tel:+919372662471" 
-                      className="block w-full bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-lg text-center font-semibold transition-all duration-300"
-                    >
-                      Book {service.name}
-                    </a>
+                    <div className="space-y-2">
+                      <div className="flex items-center gap-2 text-pink-600 text-sm">
+                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                        <span className="font-semibold">Verified Authentic</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-pink-600 text-sm">
+                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                        <span className="font-semibold">Available All Ranchi</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               ))}
