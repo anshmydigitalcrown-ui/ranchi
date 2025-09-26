@@ -6,11 +6,15 @@ import { useState } from 'react'
 import AIChatbot from './AIChatbot'
 import AISearch from './AISearch'
 import AIControlPanel from './AIControlPanel'
+import AdvancedAIController from './AdvancedAIController'
+import LLMDashboard from './LLMDashboard'
 
 export default function AIHub() {
   const [isChatbotOpen, setIsChatbotOpen] = useState(false)
   const [isSearchOpen, setIsSearchOpen] = useState(false)
   const [isControlPanelOpen, setIsControlPanelOpen] = useState(false)
+  const [isAdvancedAIOpen, setIsAdvancedAIOpen] = useState(false)
+  const [isLLMDashboardOpen, setIsLLMDashboardOpen] = useState(false)
   const [isMinimized, setIsMinimized] = useState(false)
 
   const aiFeatures = [
@@ -37,6 +41,22 @@ export default function AIHub() {
       icon: '⚙️',
       color: 'from-green-500 to-teal-500',
       action: () => setIsControlPanelOpen(true)
+    },
+    {
+      id: 'advanced',
+      name: 'Advanced LLM',
+      description: 'GPT-4 & Advanced AI',
+      icon: '🚀',
+      color: 'from-pink-500 to-purple-500',
+      action: () => setIsAdvancedAIOpen(true)
+    },
+    {
+      id: 'dashboard',
+      name: 'LLM Dashboard',
+      description: 'Complete AI Control Center',
+      icon: '📊',
+      color: 'from-cyan-500 to-blue-500',
+      action: () => setIsLLMDashboardOpen(true)
     }
   ]
 
@@ -113,15 +133,19 @@ export default function AIHub() {
       <AIChatbot isOpen={isChatbotOpen} onClose={() => setIsChatbotOpen(false)} />
       <AISearch isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
       <AIControlPanel isOpen={isControlPanelOpen} onClose={() => setIsControlPanelOpen(false)} />
+      {isAdvancedAIOpen && <AdvancedAIController onClose={() => setIsAdvancedAIOpen(false)} />}
+      {isLLMDashboardOpen && <LLMDashboard onClose={() => setIsLLMDashboardOpen(false)} />}
 
       {/* Background Overlay for Mobile */}
-      {(isChatbotOpen || isSearchOpen || isControlPanelOpen) && (
+      {(isChatbotOpen || isSearchOpen || isControlPanelOpen || isAdvancedAIOpen || isLLMDashboardOpen) && (
         <div 
           className="fixed inset-0 bg-black bg-opacity-25 z-30 md:hidden" 
           onClick={() => {
             setIsChatbotOpen(false)
             setIsSearchOpen(false)
             setIsControlPanelOpen(false)
+            setIsAdvancedAIOpen(false)
+            setIsLLMDashboardOpen(false)
           }}
         />
       )}
