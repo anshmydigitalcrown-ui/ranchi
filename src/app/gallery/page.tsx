@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Premium Gallery 💎 Elite Ranchi Escorts | Verified Photos & Services',
@@ -285,12 +286,31 @@ export default function GalleryPage() {
                        service.name === 'Event Companion' ? 'Elegant Event Partners' :
                        'Sophisticated Mature Companions'}
                     </p>
-                    <a 
-                      href="tel:+919372662471" 
-                      className="block w-full bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded-lg text-center font-semibold transition-all duration-300"
-                    >
-                      Book {service.name}
-                    </a>
+                    <div className="space-y-2">
+                      <Link
+                        href={
+                          service.name === 'VIP Escorts' ? '/services/vip-escorts' :
+                          service.name === 'Celebrity Services' ? '/services/celebrity-services' :
+                          service.name === 'Elite Models' ? '/services/elite-models' :
+                          service.name === 'Independent Services' ? '/services/independent-services' :
+                          service.name === 'Local Beauties' ? '/services/local-beauties' :
+                          service.name === 'Outcall Services' ? '/services/outcall-services' :
+                          service.name === 'Premium Services' ? '/services/premium-services' :
+                          service.name === 'Travel Companion' ? '/services/travel-companion' :
+                          service.name === 'Event Companion' ? '/services/event-companion' :
+                          '/services/milf-escorts'
+                        }
+                        className="block w-full bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white px-4 py-2 rounded-lg text-center font-semibold transition-all duration-300"
+                      >
+                        View {service.name}
+                      </Link>
+                      <a 
+                        href="tel:+919372662471" 
+                        className="block w-full bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-center font-semibold transition-all duration-300"
+                      >
+                        Book {service.name}
+                      </a>
+                    </div>
                   </div>
                 </div>
               ))}
@@ -327,15 +347,37 @@ export default function GalleryPage() {
                     ))}
                   </div>
                   <div className="mt-6 pt-4 border-t border-pink-200">
-                    <a 
-                      href="tel:+919372662471" 
-                      className="inline-flex items-center gap-2 bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105"
-                    >
-                      <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
-                      </svg>
-                      Book {service.name}
-                    </a>
+                    <div className="flex gap-3">
+                      <Link
+                        href={
+                          service.name === 'VIP Escorts' ? '/services/vip-escorts' :
+                          service.name === 'Celebrity Services' ? '/services/celebrity-services' :
+                          service.name === 'Elite Models' ? '/services/elite-models' :
+                          service.name === 'Independent Services' ? '/services/independent-services' :
+                          service.name === 'Local Beauties' ? '/services/local-beauties' :
+                          service.name === 'Outcall Services' ? '/services/outcall-services' :
+                          service.name === 'Premium Services' ? '/services/premium-services' :
+                          service.name === 'Travel Companion' ? '/services/travel-companion' :
+                          service.name === 'Event Companion' ? '/services/event-companion' :
+                          '/services/milf-escorts'
+                        }
+                        className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105"
+                      >
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        View Details
+                      </Link>
+                      <a 
+                        href="tel:+919372662471" 
+                        className="inline-flex items-center gap-2 bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105"
+                      >
+                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                          <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                        </svg>
+                        Book {service.name}
+                      </a>
+                    </div>
                   </div>
                 </div>
               ))}
