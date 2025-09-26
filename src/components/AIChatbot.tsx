@@ -12,7 +12,7 @@ export default function AIChatbot({ isOpen, onClose }: AIChatbotProps) {
   const [messages, setMessages] = useState<ChatMessage[]>([
     {
       role: 'assistant',
-      content: 'Hello! I\'m your AI assistant for Ranchi Premium Escorts. I can help you with information about our services, locations, and answer any questions you may have. How can I assist you today?',
+      content: 'Hello! I am your AI assistant for Ranchi Premium Escorts. I can help you with information about our services, locations, and answer any questions you may have. How can I assist you today?',
       timestamp: new Date()
     }
   ])
@@ -70,7 +70,7 @@ export default function AIChatbot({ isOpen, onClose }: AIChatbotProps) {
       console.error('Chat error:', error)
       const errorMessage: ChatMessage = {
         role: 'assistant',
-        content: 'I apologize, but I\'m experiencing technical difficulties. Please try again or contact our customer service directly.',
+        content: 'I apologize, but I am experiencing technical difficulties. Please try again or contact our customer service directly.',
         timestamp: new Date()
       }
       setMessages(prev => [...prev, errorMessage])

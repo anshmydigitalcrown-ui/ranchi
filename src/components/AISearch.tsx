@@ -95,7 +95,7 @@ export default function AISearch({ isOpen, onClose }: AISearchProps) {
               </div>
               <div>
                 <h3 className="font-bold text-xl">AI Smart Search</h3>
-                <p className="text-pink-100 text-sm">Find exactly what you're looking for</p>
+                <p className="text-pink-100 text-sm">Find exactly what you are looking for</p>
               </div>
             </div>
             <button
@@ -174,9 +174,9 @@ export default function AISearch({ isOpen, onClose }: AISearchProps) {
               <div className="text-sm text-gray-500">
                 <p><strong>Tip:</strong> Try searching for:</p>
                 <ul className="mt-2 space-y-1">
-                  <li>• "VIP escorts in Central Ranchi"</li>
-                  <li>• "Premium services near Hinoo"</li>
-                  <li>• "Elite models for events"</li>
+                  <li>• &quot;VIP escorts in Central Ranchi&quot;</li>
+                  <li>• &quot;Premium services near Hinoo&quot;</li>
+                  <li>• &quot;Elite models for events&quot;</li>
                 </ul>
               </div>
             </div>
