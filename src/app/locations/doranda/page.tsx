@@ -4,9 +4,64 @@ import Footer from '@/components/Footer'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'Escorts in Doranda 💎 Premium Services | Call Now +91-9372662471',
-  description: 'Premium escorts in Doranda with verified profiles and professional services. Available 24/7 in Doranda Market and surrounding areas. Call +91-9372662471 for instant booking.',
-  keywords: ['escorts in doranda', 'doranda escorts', 'escorts doranda ranchi', 'doranda market escorts', 'escort service doranda']
+  title: 'Escorts in Doranda 💎 Premium VIP Services 24/7 | Call +91-9372662471',
+  description: 'Premium escorts in Doranda Ranchi with verified profiles, professional services available 24/7. VIP escorts near Doranda Market, Railway Station. Instant booking +91-9372662471.',
+  keywords: [
+    'escorts in doranda',
+    'doranda escorts',
+    'escorts doranda ranchi',
+    'doranda market escorts',
+    'escort service doranda',
+    'call girls in doranda',
+    'premium escorts doranda',
+    'vip escorts doranda',
+    'independent escorts doranda',
+    'elite escorts doranda',
+    'professional escorts doranda',
+    'verified escorts doranda',
+    'escort booking doranda',
+    'doranda escorts near me',
+    'best escorts doranda',
+    'top escorts doranda',
+    'luxury escorts doranda',
+    'high class escorts doranda',
+    'doranda station escorts',
+    'doranda railway escorts'
+  ],
+  openGraph: {
+    title: 'Escorts in Doranda - Premium VIP Services Available 24/7',
+    description: 'Premium escorts in Doranda Ranchi with verified profiles and professional services. VIP companions available 24/7 near Doranda Market.',
+    images: [{
+      url: '/images/services/vip escorts.webp',
+      width: 1200,
+      height: 630,
+      alt: 'Premium Escorts in Doranda - VIP Services',
+    }],
+    type: 'website',
+    siteName: 'Premium Ranchi Escorts',
+    locale: 'en_IN',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Escorts in Doranda - Premium VIP Services 24/7',
+    description: 'Premium verified escorts in Doranda with professional services. Call +91-9372662471 for instant booking.',
+    images: ['/images/services/vip escorts.webp'],
+    creator: '@RanchiEscorts',
+  },
+  alternates: {
+    canonical: '/locations/doranda',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  }
 }
 
 export default function DorandaPage() {
@@ -80,6 +135,93 @@ export default function DorandaPage() {
           </div>
         </section>
 
+        {/* Why Choose Doranda Escorts Section */}
+        <section className="py-16 px-4 bg-gradient-to-br from-pink-50 to-white">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-pink-800 mb-4">Why Choose Our Doranda Escort Services?</h2>
+              <p className="text-xl text-gray-700">Professional companions in Doranda&apos;s commercial and residential heart</p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="bg-white p-8 rounded-2xl shadow-lg text-center">
+                <div className="w-20 h-20 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <svg className="w-10 h-10 text-pink-600" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-pink-700 mb-4">100% Verified Profiles</h3>
+                <p className="text-gray-600">All escorts undergo strict verification and background checks for your safety and satisfaction in Doranda</p>
+              </div>
+              <div className="bg-white p-8 rounded-2xl shadow-lg text-center">
+                <div className="w-20 h-20 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <svg className="w-10 h-10 text-pink-600" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-pink-700 mb-4">24/7 Availability</h3>
+                <p className="text-gray-600">Round-the-clock escort services in all Doranda areas with instant booking confirmation</p>
+              </div>
+              <div className="bg-white p-8 rounded-2xl shadow-lg text-center">
+                <div className="w-20 h-20 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <svg className="w-10 h-10 text-pink-600" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-pink-700 mb-4">Local Area Expertise</h3>
+                <p className="text-gray-600">Deep knowledge of Doranda&apos;s premium locations, hotels, and discrete meeting venues</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Verification & Safety Section */}
+        <section className="py-16 px-4 bg-white">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-pink-800 mb-4">Complete Safety & Verification</h2>
+              <p className="text-xl text-gray-700">Your safety and privacy are our top priorities in Doranda</p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-8 h-8 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                </div>
+                <h3 className="font-bold text-gray-800 mb-2">ID Verified</h3>
+                <p className="text-gray-600 text-sm">Government ID verification for all Doranda escorts</p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+                  </svg>
+                </div>
+                <h3 className="font-bold text-gray-800 mb-2">Medical Check</h3>
+                <p className="text-gray-600 text-sm">Regular health screening and STD testing completed</p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6z"/>
+                  </svg>
+                </div>
+                <h3 className="font-bold text-gray-800 mb-2">Privacy Secure</h3>
+                <p className="text-gray-600 text-sm">100% confidential bookings and discrete services</p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-8 h-8 text-pink-600" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                  </svg>
+                </div>
+                <h3 className="font-bold text-gray-800 mb-2">5-Star Rated</h3>
+                <p className="text-gray-600 text-sm">Consistently top-rated escorts in Doranda area</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="py-16 px-4 bg-white">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
@@ -95,6 +237,50 @@ export default function DorandaPage() {
                   <a href="tel:+919372662471" className="mt-4 inline-block bg-gradient-to-r from-pink-500 to-rose-500 text-white px-6 py-3 rounded-full font-bold transition-all duration-300">Book Now</a>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-16 px-4 bg-gradient-to-br from-pink-50 to-white">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-pink-800 mb-4">Frequently Asked Questions</h2>
+              <p className="text-xl text-gray-700">Common questions about Doranda escort services</p>
+            </div>
+            <div className="max-w-4xl mx-auto space-y-6">
+              <div className="bg-white p-8 rounded-2xl shadow-lg">
+                <h3 className="text-xl font-bold text-pink-700 mb-4">Q: Are Doranda escorts available 24/7?</h3>
+                <p className="text-gray-700">A: Yes, we provide 24/7 escort services in all Doranda areas including the main market, commercial zones, and residential sectors. Our companions are available for incall and outcall bookings throughout the day and night.</p>
+              </div>
+              <div className="bg-white p-8 rounded-2xl shadow-lg">
+                <h3 className="text-xl font-bold text-pink-700 mb-4">Q: Which areas in Doranda do you cover?</h3>
+                <p className="text-gray-700">A: We provide services across all major Doranda locations including Doranda Market, Commercial Complex, residential areas near Doranda Railway Station, and surrounding neighborhoods. Our response time is typically 15-30 minutes depending on your location.</p>
+              </div>
+              <div className="bg-white p-8 rounded-2xl shadow-lg">
+                <h3 className="text-xl font-bold text-pink-700 mb-4">Q: How do I verify escort authenticity in Doranda?</h3>
+                <p className="text-gray-700">A: All our Doranda escorts undergo strict verification including government ID checks, medical screening, and background verification. We provide recent photos and detailed profiles to ensure complete transparency and authenticity.</p>
+              </div>
+              <div className="bg-white p-8 rounded-2xl shadow-lg">
+                <h3 className="text-xl font-bold text-pink-700 mb-4">Q: What are your rates for Doranda escort services?</h3>
+                <p className="text-gray-700">A: Our rates vary based on escort selection, service duration, and specific requirements. Contact us directly for detailed pricing information. We offer competitive rates for premium escort services in the Doranda area.</p>
+              </div>
+              <div className="bg-white p-8 rounded-2xl shadow-lg">
+                <h3 className="text-xl font-bold text-pink-700 mb-4">Q: Is privacy guaranteed for Doranda bookings?</h3>
+                <p className="text-gray-700">A: Absolutely. We maintain complete confidentiality for all clients. Our discrete booking process, secure payment options, and professional approach ensure your privacy is fully protected throughout the Doranda escort service experience.</p>
+              </div>
+              <div className="bg-white p-8 rounded-2xl shadow-lg">
+                <h3 className="text-xl font-bold text-pink-700 mb-4">Q: How quickly can you arrange escort services in Doranda?</h3>
+                <p className="text-gray-700">A: We typically arrange escort services within 30-60 minutes for Doranda locations. For advance bookings, we can guarantee specific escort availability and timing. Emergency bookings are also available with premium charges.</p>
+              </div>
+              <div className="bg-white p-8 rounded-2xl shadow-lg">
+                <h3 className="text-xl font-bold text-pink-700 mb-4">Q: Do you provide hotel recommendations in Doranda?</h3>
+                <p className="text-gray-700">A: Yes, we can recommend discrete and comfortable hotels near Doranda Market and commercial areas. Our team has extensive knowledge of local accommodations that ensure privacy and comfort for your escort service experience.</p>
+              </div>
+              <div className="bg-white p-8 rounded-2xl shadow-lg">
+                <h3 className="text-xl font-bold text-pink-700 mb-4">Q: What safety measures are in place for Doranda escorts?</h3>
+                <p className="text-gray-700">A: We prioritize safety with regular health screenings, background checks, emergency contact protocols, and 24/7 support. All Doranda escorts are trained in safety procedures and client interaction protocols for secure service delivery.</p>
+              </div>
             </div>
           </div>
         </section>

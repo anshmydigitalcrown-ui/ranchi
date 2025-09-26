@@ -133,6 +133,93 @@ export default function CircularRoadPage() {
           </div>
         </section>
 
+        {/* Why Choose Circular Road Escorts Section */}
+        <section className="py-16 px-4 bg-gradient-to-br from-pink-50 to-white">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-pink-800 mb-4">Why Choose Our Circular Road Escort Services?</h2>
+              <p className="text-xl text-gray-700">Professional companions in Ranchi&apos;s central business and banking district</p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="bg-white p-8 rounded-2xl shadow-lg text-center">
+                <div className="w-20 h-20 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <svg className="w-10 h-10 text-pink-600" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-pink-700 mb-4">Central Business Location</h3>
+                <p className="text-gray-600">Prime location in Ranchi&apos;s banking district with easy access to premium hotels and business centers</p>
+              </div>
+              <div className="bg-white p-8 rounded-2xl shadow-lg text-center">
+                <div className="w-20 h-20 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <svg className="w-10 h-10 text-pink-600" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-pink-700 mb-4">Professional Standards</h3>
+                <p className="text-gray-600">High-class escorts perfect for business meetings, corporate events, and upscale social gatherings</p>
+              </div>
+              <div className="bg-white p-8 rounded-2xl shadow-lg text-center">
+                <div className="w-20 h-20 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <svg className="w-10 h-10 text-pink-600" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-pink-700 mb-4">Strategic Location</h3>
+                <p className="text-gray-600">Central market area with excellent connectivity and discrete meeting venues throughout the district</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Verification & Safety Section */}
+        <section className="py-16 px-4 bg-white">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-pink-800 mb-4">Premium Verification & Safety</h2>
+              <p className="text-xl text-gray-700">Enhanced security measures for our central business district services</p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-8 h-8 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                </div>
+                <h3 className="font-bold text-gray-800 mb-2">Business Verified</h3>
+                <p className="text-gray-600 text-sm">Professional verification suitable for corporate and business clients</p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+                  </svg>
+                </div>
+                <h3 className="font-bold text-gray-800 mb-2">Elite Standards</h3>
+                <p className="text-gray-600 text-sm">Premium health screening and background checks for upscale clientele</p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6z"/>
+                  </svg>
+                </div>
+                <h3 className="font-bold text-gray-800 mb-2">Corporate Discrete</h3>
+                <p className="text-gray-600 text-sm">Maximum privacy protection for business professionals and executives</p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-8 h-8 text-pink-600" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                  </svg>
+                </div>
+                <h3 className="font-bold text-gray-800 mb-2">5-Star Central</h3>
+                <p className="text-gray-600 text-sm">Top-rated escorts specializing in Circular Road business district</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="py-16 px-4 bg-white">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-pink-800 mb-8 text-center">Circular Road Areas We Cover</h2>
@@ -146,6 +233,50 @@ export default function CircularRoadPage() {
                   <a href="tel:+919372662471" className="inline-block bg-gradient-to-r from-pink-500 to-rose-500 text-white px-6 py-3 rounded-full font-bold">Book Now</a>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-16 px-4 bg-gradient-to-br from-pink-50 to-white">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-pink-800 mb-4">Frequently Asked Questions</h2>
+              <p className="text-xl text-gray-700">Common questions about Circular Road escort services</p>
+            </div>
+            <div className="max-w-4xl mx-auto space-y-6">
+              <div className="bg-white p-8 rounded-2xl shadow-lg">
+                <h3 className="text-xl font-bold text-pink-700 mb-4">Q: What makes Circular Road ideal for escort services?</h3>
+                <p className="text-gray-700">A: Circular Road is Ranchi&apos;s central business and banking district with premium hotels, upscale venues, and excellent connectivity. This makes it perfect for professional escort services, corporate meetings, and high-class companionship.</p>
+              </div>
+              <div className="bg-white p-8 rounded-2xl shadow-lg">
+                <h3 className="text-xl font-bold text-pink-700 mb-4">Q: Do you provide corporate-level escort services in Circular Road?</h3>
+                <p className="text-gray-700">A: Absolutely! Our Circular Road escorts are specially trained for corporate events, business dinners, and professional meetings. They possess the sophistication and etiquette required for high-level business environments.</p>
+              </div>
+              <div className="bg-white p-8 rounded-2xl shadow-lg">
+                <h3 className="text-xl font-bold text-pink-700 mb-4">Q: Which premium hotels near Circular Road do you recommend?</h3>
+                <p className="text-gray-700">A: We work with several upscale hotels and accommodations in the Central Market and banking district area. Our team can recommend the best venues based on your preferences and ensure complete discretion and comfort.</p>
+              </div>
+              <div className="bg-white p-8 rounded-2xl shadow-lg">
+                <h3 className="text-xl font-bold text-pink-700 mb-4">Q: Are your Circular Road escorts suitable for social events?</h3>
+                <p className="text-gray-700">A: Yes, our escorts are perfect companions for social gatherings, business parties, cultural events, and upscale social functions in the Circular Road area. They are well-educated and socially adept.</p>
+              </div>
+              <div className="bg-white p-8 rounded-2xl shadow-lg">
+                <h3 className="text-xl font-bold text-pink-700 mb-4">Q: How quickly can you arrange services in the banking district?</h3>
+                <p className="text-gray-700">A: Being in the central business district, we can typically arrange escort services within 30-45 minutes during business hours. For advance bookings and corporate events, we provide guaranteed scheduling.</p>
+              </div>
+              <div className="bg-white p-8 rounded-2xl shadow-lg">
+                <h3 className="text-xl font-bold text-pink-700 mb-4">Q: Do you maintain extra privacy for business professionals?</h3>
+                <p className="text-gray-700">A: Absolutely. We understand the importance of discretion for corporate clients. Our enhanced privacy protocols include secure booking processes, confidential communications, and discreet meeting arrangements in the business district.</p>
+              </div>
+              <div className="bg-white p-8 rounded-2xl shadow-lg">
+                <h3 className="text-xl font-bold text-pink-700 mb-4">Q: What languages do your Circular Road escorts speak?</h3>
+                <p className="text-gray-700">A: Our escorts in the Circular Road area are multilingual, typically fluent in Hindi, English, and local languages. This makes them perfect for international business meetings and diverse corporate environments.</p>
+              </div>
+              <div className="bg-white p-8 rounded-2xl shadow-lg">
+                <h3 className="text-xl font-bold text-pink-700 mb-4">Q: Can you arrange services for extended business trips?</h3>
+                <p className="text-gray-700">A: Yes, we provide travel companion services for business executives visiting Ranchi. Our escorts can accompany clients to business meetings, conferences, and events throughout the central district and beyond.</p>
+              </div>
             </div>
           </div>
         </section>
