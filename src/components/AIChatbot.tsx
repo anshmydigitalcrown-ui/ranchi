@@ -1,5 +1,7 @@
 'use client'
 
+/* eslint-disable react/no-unescaped-entities */
+
 import { useState, useEffect, useRef } from 'react'
 import { ChatMessage } from '@/lib/ai-service'
 
