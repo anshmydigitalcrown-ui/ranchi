@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import SmartChat from '@/components/SmartChat'
+import SmartRecommendations from '@/components/SmartRecommendations'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -587,6 +589,18 @@ export default function ServicesPage() {
           </div>
         </section>
 
+        {/* AI-Powered Recommendations */}
+        <section className="py-16 px-4 bg-gradient-to-br from-purple-50 to-pink-50">
+          <div className="max-w-6xl mx-auto">
+            <SmartRecommendations 
+              context="services premium escorts VIP celebrity elite models travel companion"
+              maxItems={6}
+              title="🤖 AI Recommendations Based on Your Preferences"
+              className="mb-8"
+            />
+          </div>
+        </section>
+
         {/* Why Choose Us Section */}
         <section className="py-16 px-4">
           <div className="max-w-6xl mx-auto">
@@ -867,6 +881,9 @@ export default function ServicesPage() {
           </div>
         </section>
       </main>
+      
+      {/* Smart AI Chat Widget */}
+      <SmartChat position="bottom-right" theme="pink" />
       
       <Footer />
     </div>
