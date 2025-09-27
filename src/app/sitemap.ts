@@ -2,36 +2,36 @@ import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://natasharai.in'
-  const currentDate = new Date().toISOString()
-
+  const currentDate = new Date().toISOString().split('T')[0] // YYYY-MM-DD format
+  
   return [
     // Main Pages
     {
-      url: baseUrl,
+      url: `${baseUrl}/`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 1.0,
     },
     {
-      url: `${baseUrl}/about`,
+      url: `${baseUrl}/about/`,
       lastModified: currentDate,
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/contact`,
+      url: `${baseUrl}/contact/`,
       lastModified: currentDate,
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/gallery`,
+      url: `${baseUrl}/gallery/`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/services`,
+      url: `${baseUrl}/services/`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.9,
@@ -39,91 +39,91 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Service Pages
     {
-      url: `${baseUrl}/services/vip-escorts`,
+      url: `${baseUrl}/services/vip-escorts/`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/services/celebrity-services`,
+      url: `${baseUrl}/services/celebrity-services/`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/services/elite-models`,
+      url: `${baseUrl}/services/elite-models/`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/services/independent-services`,
+      url: `${baseUrl}/services/independent-services/`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/services/local-beauties`,
+      url: `${baseUrl}/services/local-beauties/`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/services/outcall-services`,
+      url: `${baseUrl}/services/outcall-services/`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/services/premium-services`,
+      url: `${baseUrl}/services/premium-services/`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/services/travel-companion`,
+      url: `${baseUrl}/services/travel-companion/`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/services/event-companion`,
+      url: `${baseUrl}/services/event-companion/`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/services/milf-escorts`,
+      url: `${baseUrl}/services/milf-escorts/`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/services/housewife-escorts`,
+      url: `${baseUrl}/services/housewife-escorts/`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/services/bengali-escorts`,
+      url: `${baseUrl}/services/bengali-escorts/`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/services/college-girls-escorts`,
+      url: `${baseUrl}/services/college-girls-escorts/`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/services/nepali-escorts`,
+      url: `${baseUrl}/services/nepali-escorts/`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/services/russian-escorts`,
+      url: `${baseUrl}/services/russian-escorts/`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.8,
@@ -131,61 +131,61 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Location Pages
     {
-      url: `${baseUrl}/locations/central-ranchi`,
+      url: `${baseUrl}/locations/central-ranchi/`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/locations/hinoo`,
+      url: `${baseUrl}/locations/hinoo/`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/locations/kanke-road`,
+      url: `${baseUrl}/locations/kanke-road/`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/locations/lalpur`,
+      url: `${baseUrl}/locations/lalpur/`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/locations/hec-colony`,
+      url: `${baseUrl}/locations/hec-colony/`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/locations/bariatu`,
+      url: `${baseUrl}/locations/bariatu/`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/locations/doranda`,
+      url: `${baseUrl}/locations/doranda/`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/locations/ratu-road`,
+      url: `${baseUrl}/locations/ratu-road/`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/locations/circular-road`,
+      url: `${baseUrl}/locations/circular-road/`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/locations/argora`,
+      url: `${baseUrl}/locations/argora/`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.7,
