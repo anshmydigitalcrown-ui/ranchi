@@ -1,0 +1,9 @@
+# Redirect broken URLs to proper pages
+/rates                /services               301
+/booking             /contact                301  
+/testimonials        /about                  301
+
+# Additional redirects for common variations
+/rates/              /services               301
+/booking/            /contact                301
+/testimonials/       /about                  301
