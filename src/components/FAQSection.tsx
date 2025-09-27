@@ -54,77 +54,6 @@ export default function FAQSection() {
   return (
     <section className="py-16 bg-gradient-to-br from-pink-50 to-pink-100">
       <div className="container mx-auto px-4">
-        {/* SEO Optimized Content Above FAQ */}
-        <div className="max-w-6xl mx-auto mb-16">
-          <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
-            <div className="text-center mb-8">
-              <h2 className="text-4xl md:text-5xl font-bold text-pink-800 mb-6">
-                Best Escorts in Ranchi - Complete Guide & Information
-              </h2>
-              <p className="text-xl text-pink-600 leading-relaxed">
-                Everything you need to know about premium escort services in Ranchi - verified profiles, booking process, safety measures, and 24/7 availability across all major Ranchi locations
-              </p>
-            </div>
-            
-            <div className="grid md:grid-cols-2 gap-8 mb-8">
-              <div className="space-y-4">
-                <h3 className="text-2xl font-bold text-pink-700 mb-4">Best Escorts in Ranchi - Why Choose Us?</h3>
-                <ul className="space-y-3 text-pink-600">
-                  <li className="flex items-start">
-                    <span className="text-pink-500 mr-2">✓</span>
-                    <span><strong>100% Verified Profiles:</strong> All escorts in Ranchi are thoroughly verified with authentic photos and genuine information.</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-pink-500 mr-2">✓</span>
-                    <span><strong>24/7 Availability:</strong> Round-the-clock escort services across all major Ranchi locations and surrounding areas.</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-pink-500 mr-2">✓</span>
-                    <span><strong>Complete Privacy:</strong> Strict confidentiality and discretion guaranteed for all Ranchi escort service bookings.</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-pink-500 mr-2">✓</span>
-                    <span><strong>Professional Service:</strong> Experienced, educated, and well-mannered companions for all types of occasions.</span>
-                  </li>
-                </ul>
-              </div>
-              
-              <div className="space-y-4">
-                <h3 className="text-2xl font-bold text-pink-700 mb-4">Escort Service Coverage Areas in Ranchi</h3>
-                <div className="grid grid-cols-2 gap-2 text-sm text-pink-600">
-                  <div className="bg-pink-100 rounded-lg p-3">
-                    <strong>Central Ranchi:</strong><br />
-                    Main Road, Circular Road, Commercial areas
-                  </div>
-                  <div className="bg-pink-100 rounded-lg p-3">
-                    <strong>Residential Areas:</strong><br />
-                    HEC Colony, Bariatu, Lalpur Township
-                  </div>
-                  <div className="bg-pink-100 rounded-lg p-3">
-                    <strong>Business Districts:</strong><br />
-                    Kanke Road, Hinoo Market, Argora
-                  </div>
-                  <div className="bg-pink-100 rounded-lg p-3">
-                    <strong>Popular Locations:</strong><br />
-                    Doranda, Ratu Road, Hotel areas
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="bg-gradient-to-r from-pink-100 to-pink-200 rounded-xl p-6 text-center">
-              <h3 className="text-2xl font-bold text-pink-800 mb-4">Premium Escorts in Ranchi - Professional Companionship Services</h3>
-              <p className="text-pink-700 text-lg leading-relaxed">
-                Experience the finest escort services in Ranchi with our carefully selected and verified professional escorts. 
-                We offer premium VIP escorts, celebrity-like companions, elite model escorts, independent professionals, travel companions, 
-                and event escorts available 24/7. Available for dinner dates, social gatherings, business events, hotel visits, 
-                outcall services, and private companionship across all major Ranchi locations including Central Ranchi, Kanke Road, 
-                HEC Colony, Lalpur, Hinoo, Bariatu, Doranda, Ratu Road, Circular Road, and Argora areas.
-              </p>
-            </div>
-          </div>
-        </div>
-
         {/* FAQ Section Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-pink-800 mb-4">
@@ -136,8 +65,8 @@ export default function FAQSection() {
           </p>
         </div>
 
-        {/* Horizontal FAQ Layout */}
-        <div className="max-w-7xl mx-auto">
+        {/* Centered FAQ Layout */}
+        <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-6">
             {faqs.map((faq, index) => (
               <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">

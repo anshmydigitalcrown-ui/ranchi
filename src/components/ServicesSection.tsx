@@ -200,8 +200,9 @@ export default function ServicesSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.slice(0, 15).map((service) => (
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {services.slice(0, 15).map((service) => (
             <div key={service.id} className="group bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
               <div className="relative">
                 <div className="relative w-full aspect-[3/4] overflow-hidden rounded-t-xl">
@@ -241,7 +242,8 @@ export default function ServicesSection() {
                 </Link>
               </div>
             </div>
-          ))}
+            ))}
+          </div>
         </div>
 
         <div className="text-center mt-8">
