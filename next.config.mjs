@@ -9,7 +9,26 @@ const nextConfig = {
   },
   experimental: {
     esmExternals: true
-  }
+  },
+  async redirects() {
+    return [
+      {
+        source: '/rates',
+        destination: '/services',
+        permanent: true,
+      },
+      {
+        source: '/booking',
+        destination: '/contact',
+        permanent: true,
+      },
+      {
+        source: '/testimonials',
+        destination: '/about',
+        permanent: true,
+      },
+    ]
+  },
 };
 
 export default nextConfig;
