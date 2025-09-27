@@ -13,6 +13,9 @@ export const metadata: Metadata = {
     'ranchi companions',
     'escort services ranchi'
   ],
+  verification: {
+    google: '42c583345d4bdb6b'
+  },
   icons: {
     icon: [
       { url: '/favicon.svg', sizes: 'any', type: 'image/svg+xml' },
@@ -38,6 +41,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="google-site-verification" content="42c583345d4bdb6b" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="icon" href="/icon-32.svg" sizes="32x32" type="image/svg+xml" />
         <link rel="icon" href="/icon-16.svg" sizes="16x16" type="image/svg+xml" />
