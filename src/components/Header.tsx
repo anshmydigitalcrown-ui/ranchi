@@ -12,7 +12,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <div className="text-2xl font-bold text-pink-600">
-              Pink<span className="text-pink-800">Ranchi</span>
+              Natasha<span className="text-pink-800">Rai</span>
             </div>
           </Link>
 

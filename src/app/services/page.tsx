@@ -7,9 +7,11 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'Premium Escort Services in Ranchi 💎 #1 Elite Companionship Across All Ranchi Locations',
-  description: 'Discover comprehensive premium escort services available in every major Ranchi location. From elite VIP services to international models - verified companions everywhere with 24/7 service and complete discretion.',
+  title: 'Natasha Rai Services 💎 #1 Elite Companionship Across All Ranchi Locations',
+  description: 'Discover comprehensive premium escort services by Natasha Rai available in every major Ranchi location. From elite VIP services to international models - verified companions everywhere with 24/7 service and complete discretion.',
   keywords: [
+    'natasha rai services',
+    'natasha rai ranchi',
     'escort services Ranchi',
     'premium escorts Ranchi',
     'elite companions Ranchi',
@@ -36,9 +38,9 @@ export const metadata: Metadata = {
     'quality assured',
     'premium companionship Ranchi'
   ],
-  authors: [{ name: 'Ranchi Premium Escorts' }],
-  creator: 'Ranchi Elite Services',
-  publisher: 'Ranchi Premium Escorts',
+  authors: [{ name: 'Natasha Rai' }],
+  creator: 'Natasha Rai Elite Services',
+  publisher: 'Natasha Rai',
   formatDetection: {
     email: false,
     address: false,
@@ -49,24 +51,24 @@ export const metadata: Metadata = {
     canonical: '/services',
   },
   openGraph: {
-    title: 'Premium Escort Services in Ranchi 💎 #1 Elite Companionship',
-    description: 'Experience comprehensive premium escort services in Ranchi with verified elite companions, luxury experiences, and professional discretion. Available 24/7 across all Ranchi locations with complete location coverage.',
+    title: 'Natasha Rai Services 💎 #1 Elite Companionship in Ranchi',
+    description: 'Experience comprehensive premium escort services by Natasha Rai in Ranchi with verified elite companions, luxury experiences, and professional discretion. Available 24/7 across all Ranchi locations with complete location coverage.',
     url: 'https://natasharai.in/services',
-    siteName: 'Ranchi Premium Escorts',
+    siteName: 'Natasha Rai',
     type: 'website',
     images: [
       {
         url: '/images/services/premium-services.webp',
         width: 1200,
         height: 630,
-        alt: 'Premium Escort Services in Ranchi - Elite Companionship Across All Locations',
+        alt: 'Natasha Rai Services - Elite Companionship Across All Ranchi Locations',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Premium Escort Services in Ranchi 💎 Elite Companionship',
-    description: 'Experience comprehensive premium escort services in Ranchi with verified elite companions and professional discretion across all locations.',
+    title: 'Natasha Rai Services 💎 Elite Companionship in Ranchi',
+    description: 'Experience comprehensive premium escort services by Natasha Rai in Ranchi with verified elite companions and professional discretion across all locations.',
     images: ['/images/services/premium-services.webp'],
   },
   robots: {

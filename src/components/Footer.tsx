@@ -8,7 +8,7 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="text-2xl font-bold text-pink-400 mb-4">
-              Pink<span className="text-pink-600">Ranchi</span>
+              Natasha<span className="text-pink-600">Rai</span>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
               Premium services providing high-class companions for discerning gentlemen. 
@@ -34,7 +34,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a 
-                href="mailto:contact@pinkranchi.com" 
+                href="mailto:contact@natasharai.in" 
                 className="bg-blue-500 hover:bg-blue-600 p-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-110"
                 aria-label="Email us"
               >
@@ -150,8 +150,8 @@ export default function Footer() {
                   </svg>
                 </div>
                 <div>
-                  <a href="mailto:contact@pinkranchi.com" className="text-gray-400 hover:text-pink-400 transition-colors">
-                    contact@pinkranchi.com
+                  <a href="mailto:contact@natasharai.in" className="text-gray-400 hover:text-pink-400 transition-colors">
+                    contact@natasharai.in
                   </a>
                 </div>
               </div>
@@ -183,7 +183,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2025 Pink Ranchi. All Rights Reserved. Premium Services In Ranchi.
+              © 2025 Natasha Rai. All Rights Reserved. Premium Services In Ranchi.
             </div>
             <div className="text-gray-500 text-sm">
               <span className="mr-4">Outcall & Incall</span>

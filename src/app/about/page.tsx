@@ -5,10 +5,11 @@ import Footer from '@/components/Footer'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'About Premium Ranchi Escorts 💎 5+ Years of Excellence & Trust',
+  title: 'About Natasha Rai 💎 5+ Years of Excellence & Trust in Ranchi',
   description: 'Discover our commitment to providing exceptional premium escort services in Ranchi with the highest standards of professionalism, expertise, and discretion since 2019.',
   keywords: [
-    'about ranchi escorts',
+    'about natasha rai',
+    'natasha rai ranchi',
     'premium escort services ranchi',
     'trusted escorts ranchi',
     'professional escort service',
@@ -20,20 +21,20 @@ export const metadata: Metadata = {
     'quality escort companions'
   ],
   openGraph: {
-    title: 'About Premium Ranchi Escorts - 5+ Years of Excellence & Trust',
+    title: 'About Natasha Rai - 5+ Years of Excellence & Trust in Ranchi',
     description: 'Discover our commitment to providing exceptional premium escort services in Ranchi with professional standards and complete discretion.',
     images: [{
       url: '/images/services/milf escorts.webp',
       width: 800,
       height: 600,
-      alt: 'About Premium Ranchi Escorts - Excellence & Trust',
+      alt: 'About Natasha Rai - Excellence & Trust in Ranchi',
     }],
     type: 'website',
-    siteName: 'Premium Ranchi Escorts',
+    siteName: 'Natasha Rai',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'About Premium Ranchi Escorts - Excellence & Trust',
+    title: 'About Natasha Rai - Excellence & Trust in Ranchi',
     description: 'Discover our commitment to providing exceptional premium escort services in Ranchi with professional standards and complete discretion.',
     images: ['/images/services/milf escorts.webp'],
   }

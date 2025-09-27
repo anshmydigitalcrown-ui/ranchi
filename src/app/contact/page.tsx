@@ -8,9 +8,11 @@ import ContactFAQ from '@/components/ContactFAQ'
 import ContactLocation from '@/components/ContactLocation'
 
 export const metadata: Metadata = {
-  title: 'Contact Premium Escorts in Ranchi 📞 24/7 Available | Call Now',
-  description: 'Contact premium escorts in Ranchi for verified companions and professional services. Call +91-9372662471 for instant booking. Available 24/7 across all Ranchi locations with complete privacy.',
+  title: 'Contact Natasha Rai 📞 24/7 Available in Ranchi | Call Now',
+  description: 'Contact Natasha Rai for premium escorts in Ranchi with verified companions and professional services. Call +91-9372662471 for instant booking. Available 24/7 across all Ranchi locations with complete privacy.',
   keywords: [
+    'contact natasha rai',
+    'natasha rai contact',
     'contact escorts in ranchi',
     'ranchi escort contact number',
     'book escorts in ranchi',
@@ -23,21 +25,21 @@ export const metadata: Metadata = {
     'ranchi companion booking'
   ],
   openGraph: {
-    title: 'Contact Premium Escorts in Ranchi - 24/7 Available | Call Now',
-    description: 'Contact premium escorts in Ranchi for verified companions and professional services. Available 24/7 with complete privacy.',
+    title: 'Contact Natasha Rai - 24/7 Available in Ranchi | Call Now',
+    description: 'Contact Natasha Rai for premium escorts in Ranchi with verified companions and professional services. Available 24/7 with complete privacy.',
     images: [{
       url: '/images/services/premium services.webp',
       width: 800,
       height: 600,
-      alt: 'Contact Premium Escorts in Ranchi - Professional Service',
+      alt: 'Contact Natasha Rai - Professional Escort Service in Ranchi',
     }],
     type: 'website',
-    siteName: 'Premium Ranchi Escorts',
+    siteName: 'Natasha Rai',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Contact Premium Escorts in Ranchi - 24/7 Available',
-    description: 'Contact premium escorts in Ranchi for verified companions and professional services. Available 24/7 with complete privacy.',
+    title: 'Contact Natasha Rai - 24/7 Available in Ranchi',
+    description: 'Contact Natasha Rai for premium escorts in Ranchi with verified companions and professional services. Available 24/7 with complete privacy.',
     images: ['/images/services/premium services.webp'],
   }
 }
