@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import SmartSearch from './SmartSearch';
 
 export default function HeroSection() {
   return (
@@ -16,27 +15,12 @@ export default function HeroSection() {
             Experience the finest services in Ranchi with our premium companions. Our professional and 
             beautiful Ranchi services are available for outcall services across all Ranchi areas.
           </p>
-
-          {/* AI-Powered Smart Search */}
-          <div className="mb-8 max-w-2xl mx-auto">
-            <SmartSearch 
-              placeholder="🤖 Ask AI: What services do you need in Ranchi?"
-              className="w-full"
-            />
-            <p className="text-sm text-pink-600 mt-2 flex items-center justify-center gap-1">
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-              </svg>
-              AI-powered search with instant recommendations
-            </p>
-          </div>
           
           {/* Features */}
           <div className="flex flex-wrap justify-center gap-4 mb-8 text-pink-600">
             <span className="bg-white px-4 py-2 rounded-full shadow-md">✨ 100% Verified</span>
             <span className="bg-white px-4 py-2 rounded-full shadow-md">🔒 Safe & Discreet</span>
             <span className="bg-white px-4 py-2 rounded-full shadow-md">⚡ Instant Booking</span>
-            <span className="bg-white px-4 py-2 rounded-full shadow-md">🤖 AI Assistant</span>
             <span className="bg-white px-4 py-2 rounded-full shadow-md">🎯 Satisfaction Guaranteed</span>
           </div>
 
