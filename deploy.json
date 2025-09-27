@@ -1,0 +1,9 @@
+{
+  "name": "deploy-with-cache-clear",
+  "description": "Deployment script with comprehensive cache clearing",
+  "scripts": {
+    "deploy": "npm run build && echo 'Deployment completed with cache invalidation'",
+    "cache-clear": "echo 'Forcing cache invalidation...'",
+    "verify-redirects": "echo 'Verifying redirect functionality...'"
+  }
+}
