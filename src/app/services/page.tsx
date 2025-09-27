@@ -5,36 +5,39 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'Natasha Rai Services 💎 #1 Elite Companionship Across All Ranchi Locations',
-  description: 'Discover comprehensive premium escort services by Natasha Rai available in every major Ranchi location. From elite VIP services to international models - verified companions everywhere with 24/7 service and complete discretion.',
+  title: 'Escorts in Ranchi 💎 #1 Premium Services | 24/7 Available | Verified Companions',
+  description: 'Best escorts in Ranchi with 100% verified profiles. Premium companionship services available 24/7 across all Ranchi locations. Book elite escorts in Ranchi now with complete privacy and professional service.',
   keywords: [
-    'natasha rai services',
-    'natasha rai ranchi',
-    'escort services Ranchi',
-    'premium escorts Ranchi',
-    'elite companions Ranchi',
-    'VIP escort services Ranchi',
-    'professional escorts Ranchi',
-    'Ranchi escort girls',
-    'luxury escorts Ranchi',
-    'high-class escorts Ranchi',
-    'independent escorts Ranchi',
-    'call girls Ranchi',
-    'escort agency Ranchi',
-    'celebrity escorts Ranchi',
-    'local escorts Ranchi',
-    'travel companions Ranchi',
-    'event escorts Ranchi',
-    'international models Ranchi',
-    'college escorts Ranchi',
-    'mature escorts Ranchi',
-    'specialized escort services',
-    'verified escorts Ranchi',
-    'location based escorts',
-    'area specific companions',
-    'discretion guaranteed',
-    'quality assured',
-    'premium companionship Ranchi'
+    'escorts in ranchi',
+    'ranchi escorts',
+    'escort services ranchi',
+    'call girls in ranchi',
+    'ranchi call girls',
+    'premium escorts ranchi',
+    'elite escorts in ranchi',
+    'best escorts ranchi',
+    'verified escorts ranchi',
+    'professional escorts ranchi',
+    'luxury escorts in ranchi',
+    'high class escorts ranchi',
+    'independent escorts ranchi',
+    'VIP escorts in ranchi',
+    'celebrity escorts ranchi',
+    'model escorts in ranchi',
+    'college girls ranchi',
+    'mature escorts ranchi',
+    'housewife escorts ranchi',
+    'bengali escorts ranchi',
+    'russian escorts ranchi',
+    'outcall escorts ranchi',
+    'incall escorts ranchi',
+    'escorts ranchi 24/7',
+    'ranchi escort agency',
+    'escort booking ranchi',
+    'companions in ranchi',
+    'ranchi dating services',
+    'adult services ranchi',
+    'entertainment ranchi'
   ],
   authors: [{ name: 'Natasha Rai' }],
   creator: 'Natasha Rai Elite Services',
@@ -49,24 +52,24 @@ export const metadata: Metadata = {
     canonical: '/services',
   },
   openGraph: {
-    title: 'Natasha Rai Services 💎 #1 Elite Companionship in Ranchi',
-    description: 'Experience comprehensive premium escort services by Natasha Rai in Ranchi with verified elite companions, luxury experiences, and professional discretion. Available 24/7 across all Ranchi locations with complete location coverage.',
+    title: 'Escorts in Ranchi 💎 #1 Premium Services | 24/7 Available',
+    description: 'Best escorts in Ranchi with 100% verified profiles and professional service. Available 24/7 across all Ranchi locations with complete privacy and discretion.',
     url: 'https://natasharai.in/services',
-    siteName: 'Natasha Rai',
+    siteName: 'Natasha Rai - Premium Escorts in Ranchi',
     type: 'website',
     images: [
       {
         url: '/images/services/premium-services.webp',
         width: 1200,
         height: 630,
-        alt: 'Natasha Rai Services - Elite Companionship Across All Ranchi Locations',
+        alt: 'Best Escorts in Ranchi - Premium Services Available 24/7',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Natasha Rai Services 💎 Elite Companionship in Ranchi',
-    description: 'Experience comprehensive premium escort services by Natasha Rai in Ranchi with verified elite companions and professional discretion across all locations.',
+    title: 'Escorts in Ranchi 💎 Premium Services Available 24/7',
+    description: 'Best escorts in Ranchi with verified profiles and professional service. Available across all Ranchi locations with complete discretion.',
     images: ['/images/services/premium-services.webp'],
   },
   robots: {
@@ -249,37 +252,37 @@ export default function ServicesPage() {
           <div className="absolute inset-0 bg-black/20"></div>
           <div className="relative max-w-6xl mx-auto z-10">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Premium Escort Services 💎
+              Best Escorts in Ranchi 💎
             </h1>
             <p className="text-xl md:text-2xl mb-4 font-medium">
-              #1 Elite Companionship Across All Ranchi Locations
+              #1 Premium Escort Services | 100% Verified | Available 24/7
             </p>
             <p className="text-lg mb-8 max-w-4xl mx-auto">
-              Discover our comprehensive premium escort services available in every major
-              Ranchi location. From elite VIP services to celebrity companions, from business district to 
-              residential areas - verified companions everywhere.
+              Discover the finest escorts in Ranchi with verified profiles and professional service. 
+              From VIP companions to elite models, college girls to mature escorts - premium companionship 
+              services available across all Ranchi locations with complete privacy and discretion.
             </p>
             
             <div className="flex flex-wrap justify-center gap-8 mt-8">
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <div className="text-2xl font-bold">50+</div>
-                <div className="text-sm">All Locations</div>
+                <div className="text-2xl font-bold">500+</div>
+                <div className="text-sm">Escorts in Ranchi</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <div className="text-2xl font-bold">200+</div>
-                <div className="text-sm">Verified Escorts</div>
+                <div className="text-2xl font-bold">100%</div>
+                <div className="text-sm">Verified Profiles</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <div className="text-2xl font-bold">20</div>
+                <div className="text-2xl font-bold">25+</div>
                 <div className="text-sm">Service Categories</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
                 <div className="text-2xl font-bold">24/7</div>
-                <div className="text-sm">Service</div>
+                <div className="text-sm">Always Available</div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <div className="text-2xl font-bold">100%</div>
-                <div className="text-sm">Complete Discretion</div>
+                <div className="text-2xl font-bold">10+</div>
+                <div className="text-sm">Ranchi Areas</div>
               </div>
             </div>
             
@@ -311,11 +314,12 @@ export default function ServicesPage() {
           <div className="max-w-7xl mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-                Premium Service Categories ⭐
+                All Types of Escorts in Ranchi ⭐
               </h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Comprehensive escort services across specialized categories and demographics,
-                available in every Ranchi location with verified companions.
+                Complete range of escorts in Ranchi across all categories and preferences.
+                From VIP escorts to college girls, mature companions to international models - 
+                verified profiles available 24/7 in every Ranchi area.
               </p>
             </div>
 
@@ -664,92 +668,238 @@ export default function ServicesPage() {
           </div>
         </section>
 
-        {/* FAQ Section */}
-        <section className="py-16 px-4 bg-gradient-to-r from-pink-50 to-rose-50">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-                Frequently Asked Questions ❓
+        {/* Comprehensive FAQ Section - Escorts in Ranchi */}
+        <section className="py-20 px-4 bg-gradient-to-br from-pink-50 via-white to-rose-50 relative overflow-hidden">
+          {/* Background Decorative Elements */}
+          <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-bl from-pink-200/20 to-transparent rounded-full transform translate-x-32 -translate-y-32"></div>
+          <div className="absolute bottom-0 left-0 w-48 h-48 bg-gradient-to-tr from-rose-200/20 to-transparent rounded-full transform -translate-x-24 translate-y-24"></div>
+          
+          <div className="max-w-6xl mx-auto relative z-10">
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center gap-3 bg-white/90 backdrop-blur-sm px-8 py-4 rounded-full shadow-xl mb-6 border border-pink-200/50">
+                <div className="bg-gradient-to-r from-pink-500 to-rose-500 text-white p-3 rounded-full shadow-lg">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <span className="font-bold text-pink-800 text-lg">ESCORTS IN RANCHI FAQ</span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+                Escorts in Ranchi - Complete Guide & FAQ
               </h2>
-              <p className="text-lg text-gray-600">
-                Common questions about our location-based escort services across Ranchi.
+              <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                Everything you need to know about booking escorts in Ranchi, safety measures, 
+                pricing, availability, and professional companionship services across all Ranchi areas.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
               <div className="space-y-6">
-                <div className="bg-white p-8 rounded-xl shadow-lg">
-                  <h3 className="text-xl font-bold text-pink-600 mb-4">
-                    🗺️ Which Ranchi locations do you provide escort services?
+                
+                {/* FAQ 1 */}
+                <div className="bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-pink-200/50">
+                  <h3 className="text-xl font-bold text-pink-600 mb-4 flex items-start gap-3">
+                    <div className="bg-pink-500 text-white p-2 rounded-full flex-shrink-0">
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                    </div>
+                    Where can I find the best escorts in Ranchi?
                   </h3>
-                  <p className="text-gray-700">
-                    We provide premium escort services across all major Ranchi locations including
-                    Ranchi Main City, Hinoo, Lalpur, Harmu, Doranda, Kadru, Kanke, Bariatu,
-                    Ratu Road, Khelgaon, and all other areas with verified local companions
-                    who have complete area knowledge and cultural understanding.
+                  <p className="text-gray-700 leading-relaxed">
+                    The best escorts in Ranchi are available through our verified platform across all major areas including 
+                    Central Ranchi, HEC Colony, Lalpur, Hinoo, Kanke Road, Bariatu, Doranda, Ratu Road, Circular Road, 
+                    and Argora. We provide 100% verified profiles with authentic photos, complete background verification, 
+                    and professional service standards. Call +91-9372662471 for instant booking of top-rated escorts in Ranchi.
                   </p>
                 </div>
 
-                <div className="bg-white p-8 rounded-xl shadow-lg">
-                  <h3 className="text-xl font-bold text-pink-600 mb-4">
-                    📞 How do I book escort services in specific Ranchi locations?
+                {/* FAQ 2 */}
+                <div className="bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-pink-200/50">
+                  <h3 className="text-xl font-bold text-pink-600 mb-4 flex items-start gap-3">
+                    <div className="bg-pink-500 text-white p-2 rounded-full flex-shrink-0">
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </div>
+                    How to book escorts in Ranchi safely and quickly?
                   </h3>
-                  <p className="text-gray-700">
-                    Call our premium line at +91-9372662471 or WhatsApp to book escorts in any
-                    Ranchi location. Our dedicated team will arrange verified companions in your 
-                    preferred area with complete discretion, local expertise, and personalized 
-                    service matching your requirements.
+                  <p className="text-gray-700 leading-relaxed">
+                    Booking escorts in Ranchi is safe and simple with our professional service. Call our verified number 
+                    +91-9372662471 or WhatsApp for instant booking. Browse verified profiles, select your preferred companion, 
+                    discuss requirements including location, timing, and services needed. We ensure complete safety with 
+                    verified escorts, secure booking process, privacy protection, and professional service delivery across all Ranchi areas.
                   </p>
                 </div>
 
-                <div className="bg-white p-8 rounded-xl shadow-lg">
-                  <h3 className="text-xl font-bold text-pink-600 mb-4">
-                    ✅ Are all escorts verified across different Ranchi areas?
+                {/* FAQ 3 */}
+                <div className="bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-pink-200/50">
+                  <h3 className="text-xl font-bold text-pink-600 mb-4 flex items-start gap-3">
+                    <div className="bg-pink-500 text-white p-2 rounded-full flex-shrink-0">
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </div>
+                    Are all escorts in Ranchi verified and genuine?
                   </h3>
-                  <p className="text-gray-700">
-                    Yes, all escorts across every Ranchi location are thoroughly verified,
-                    professional, and provide safe companionship with complete background 
-                    verification, quality standards, area-specific training, and ongoing 
-                    quality assurance monitoring.
+                  <p className="text-gray-700 leading-relaxed">
+                    Yes, all escorts in Ranchi available through our platform are 100% verified and genuine. We conduct thorough 
+                    background checks, identity verification, photo authentication, and professional screening for every escort. 
+                    Our verification process includes health certifications, area familiarity checks, and ongoing quality monitoring. 
+                    This ensures you get authentic, safe, and professional companions for all your needs in Ranchi.
+                  </p>
+                </div>
+
+                {/* FAQ 4 */}
+                <div className="bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-pink-200/50">
+                  <h3 className="text-xl font-bold text-pink-600 mb-4 flex items-start gap-3">
+                    <div className="bg-pink-500 text-white p-2 rounded-full flex-shrink-0">
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </div>
+                    What are the rates for escorts in Ranchi?
+                  </h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    Rates for escorts in Ranchi vary based on service type, duration, location, and companion category. 
+                    We offer competitive pricing for VIP escorts, college girls, mature companions, international models, 
+                    and specialized services. Rates start from affordable options and go up to premium luxury experiences. 
+                    Contact +91-9372662471 for detailed pricing information, package deals, and customized service quotes based on your preferences.
                   </p>
                 </div>
               </div>
 
               <div className="space-y-6">
-                <div className="bg-white p-8 rounded-xl shadow-lg">
-                  <h3 className="text-xl font-bold text-pink-600 mb-4">
-                    ⭐ What makes your location-based escort services unique?
+                
+                {/* FAQ 5 */}
+                <div className="bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-pink-200/50">
+                  <h3 className="text-xl font-bold text-pink-600 mb-4 flex items-start gap-3">
+                    <div className="bg-pink-500 text-white p-2 rounded-full flex-shrink-0">
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-2m0 0H7m12 0v-1a2 2 0 00-2-2H9a2 2 0 00-2 2v1m12 0h-2m-4-2h6m0 0h2m-8-1V4" />
+                      </svg>
+                    </div>
+                    What types of escorts are available in Ranchi?
                   </h3>
-                  <p className="text-gray-700">
-                    Our location-specific services offer local expertise, area familiarity, 
-                    premium venues knowledge, verified local companions, tailored experiences 
-                    for each Ranchi district, dedicated location managers, and comprehensive 
-                    quality service ensuring satisfaction.
+                  <p className="text-gray-700 leading-relaxed">
+                    Ranchi offers diverse escort categories including VIP escorts, celebrity-style companions, elite models, 
+                    college girls, mature escorts (MILF), housewife companions, Bengali escorts, Russian escorts, independent escorts, 
+                    outcall/incall services, travel companions, event escorts, business meeting companions, and specialized adult entertainment. 
+                    All categories are available 24/7 across Central Ranchi, residential areas, business districts, and hotel locations.
                   </p>
                 </div>
 
-                <div className="bg-white p-8 rounded-xl shadow-lg">
-                  <h3 className="text-xl font-bold text-pink-600 mb-4">
-                    💰 What are your service rates across different locations?
+                {/* FAQ 6 */}
+                <div className="bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-pink-200/50">
+                  <h3 className="text-xl font-bold text-pink-600 mb-4 flex items-start gap-3">
+                    <div className="bg-pink-500 text-white p-2 rounded-full flex-shrink-0">
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                      </svg>
+                    </div>
+                    Is privacy guaranteed when booking escorts in Ranchi?
                   </h3>
-                  <p className="text-gray-700">
-                    Our rates vary based on location, service type, and companion category. 
-                    Premium areas and specialized services have different pricing structures. 
-                    Contact us directly for detailed pricing information and customized 
-                    packages tailored to your preferences and budget.
+                  <p className="text-gray-700 leading-relaxed">
+                    Absolutely! Privacy and discretion are our top priorities for all escorts in Ranchi bookings. We maintain 
+                    strict confidentiality protocols, secure communication channels, anonymous booking options, discreet service delivery, 
+                    private meeting arrangements, and complete data protection. Your personal information, preferences, and activities 
+                    remain completely confidential. Professional escorts ensure discretion during all interactions across Ranchi locations.
                   </p>
                 </div>
 
-                <div className="bg-white p-8 rounded-xl shadow-lg">
-                  <h3 className="text-xl font-bold text-pink-600 mb-4">
-                    🔒 How do you ensure discretion and privacy?
+                {/* FAQ 7 */}
+                <div className="bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-pink-200/50">
+                  <h3 className="text-xl font-bold text-pink-600 mb-4 flex items-start gap-3">
+                    <div className="bg-pink-500 text-white p-2 rounded-full flex-shrink-0">
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                      </svg>
+                    </div>
+                    How quickly can I get escorts in Ranchi?
                   </h3>
-                  <p className="text-gray-700">
-                    We maintain strict confidentiality protocols, secure communication channels, 
-                    verified companion backgrounds, private meeting arrangements, and complete 
-                    data protection. Your privacy and discretion are our highest priorities 
-                    across all Ranchi locations.
+                  <p className="text-gray-700 leading-relaxed">
+                    Escorts in Ranchi are available for immediate booking with our 24/7 service. For standard bookings, 
+                    companions can be arranged within 30-60 minutes across Central Ranchi, HEC Colony, and main areas. 
+                    Advance bookings ensure availability of your preferred escort. Emergency or last-minute bookings 
+                    are accommodated subject to availability. Call +91-9372662471 for instant confirmation and quick service delivery.
                   </p>
+                </div>
+
+                {/* FAQ 8 */}
+                <div className="bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-pink-200/50">
+                  <h3 className="text-xl font-bold text-pink-600 mb-4 flex items-start gap-3">
+                    <div className="bg-pink-500 text-white p-2 rounded-full flex-shrink-0">
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                      </svg>
+                    </div>
+                    What makes our escorts in Ranchi service special?
+                  </h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    Our escorts in Ranchi service stands out with 100% verified profiles, professional training, 
+                    area-specific expertise, multilingual capabilities, health and safety standards, flexible booking options, 
+                    competitive pricing, 24/7 availability, customer satisfaction guarantee, and complete discretion. 
+                    We maintain the highest quality standards with experienced management, reliable service delivery, 
+                    and comprehensive coverage across all Ranchi locations for your ultimate satisfaction.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* CTA Section within FAQ */}
+            <div className="bg-gradient-to-r from-pink-500 to-rose-600 rounded-3xl p-12 text-white text-center shadow-2xl">
+              <h3 className="text-3xl md:text-4xl font-bold mb-6">
+                Ready to Book Escorts in Ranchi? 🌟
+              </h3>
+              <p className="text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
+                Get instant access to verified escorts in Ranchi with professional service, 
+                complete privacy, and satisfaction guarantee. Available 24/7 across all Ranchi areas.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                <a 
+                  href="tel:+919372662471" 
+                  className="bg-white text-pink-600 px-8 py-4 rounded-full font-bold hover:bg-pink-50 transition-all duration-300 shadow-xl flex items-center gap-3 justify-center hover:scale-105"
+                >
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                  Call +91-9372662471
+                </a>
+                <a 
+                  href="https://wa.me/919372662471?text=Hi%2C%20I%20want%20to%20book%20escorts%20in%20Ranchi" 
+                  className="bg-green-500 text-white px-8 py-4 rounded-full font-bold hover:bg-green-600 transition-all duration-300 shadow-xl flex items-center gap-3 justify-center hover:scale-105"
+                >
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                  </svg>
+                  WhatsApp Booking
+                </a>
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                <div className="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
+                  <div>
+                    <div className="text-2xl font-bold">500+</div>
+                    <div className="text-sm text-pink-100">Escorts Available</div>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-bold">24/7</div>
+                    <div className="text-sm text-pink-100">Always Open</div>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-bold">100%</div>
+                    <div className="text-sm text-pink-100">Verified</div>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-bold">100%</div>
+                    <div className="text-sm text-pink-100">Private</div>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-bold">10+</div>
+                    <div className="text-sm text-pink-100">Ranchi Areas</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -836,6 +986,217 @@ export default function ServicesPage() {
                 </div>
                 <div className="font-semibold">24/7 Service</div>
                 <div className="text-sm">Always Available</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Choose Escorts in Ranchi - Comprehensive Features */}
+        <section className="py-20 px-4 bg-gradient-to-br from-white via-pink-50 to-rose-50 relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-r from-pink-500/5 to-rose-500/5"></div>
+          
+          <div className="max-w-7xl mx-auto relative z-10">
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center gap-3 bg-white/90 backdrop-blur-sm px-8 py-4 rounded-full shadow-xl mb-6 border border-pink-200/50">
+                <div className="bg-gradient-to-r from-pink-500 to-rose-500 text-white p-3 rounded-full shadow-lg">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+                  </svg>
+                </div>
+                <span className="font-bold text-pink-800 text-lg">WHY CHOOSE US</span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+                Why Our Escorts in Ranchi Are #1 Choice
+              </h2>
+              <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                Discover what makes our escorts in Ranchi the most trusted, professional, and 
+                preferred choice for quality companionship services across all Ranchi areas.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mb-16">
+              
+              {/* Feature 1 */}
+              <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-pink-200/50 hover:scale-105 group">
+                <div className="bg-gradient-to-r from-pink-500 to-rose-500 text-white p-4 rounded-2xl w-16 h-16 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-4">100% Verified Escorts in Ranchi</h3>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  Every escort in Ranchi is thoroughly verified with identity checks, background verification, 
+                  photo authentication, and professional screening. We guarantee genuine, safe, and reliable companions.
+                </p>
+                <div className="flex items-center text-pink-600 font-semibold">
+                  <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  100% Verified Profiles
+                </div>
+              </div>
+
+              {/* Feature 2 */}
+              <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-pink-200/50 hover:scale-105 group">
+                <div className="bg-gradient-to-r from-purple-500 to-pink-500 text-white p-4 rounded-2xl w-16 h-16 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-4">24/7 Escorts Available</h3>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  Round-the-clock availability of escorts in Ranchi for immediate booking, emergency requests, 
+                  late-night companionship, early morning meetings, and all-time accessibility.
+                </p>
+                <div className="flex items-center text-purple-600 font-semibold">
+                  <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  Always Available
+                </div>
+              </div>
+
+              {/* Feature 3 */}
+              <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-pink-200/50 hover:scale-105 group">
+                <div className="bg-gradient-to-r from-green-500 to-teal-500 text-white p-4 rounded-2xl w-16 h-16 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-4">All Ranchi Areas Covered</h3>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  Complete coverage across Central Ranchi, HEC Colony, Lalpur, Hinoo, Kanke Road, Bariatu, 
+                  Doranda, Ratu Road, Circular Road, Argora, and all residential & commercial areas.
+                </p>
+                <div className="flex items-center text-green-600 font-semibold">
+                  <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  10+ Ranchi Locations
+                </div>
+              </div>
+
+              {/* Feature 4 */}
+              <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-pink-200/50 hover:scale-105 group">
+                <div className="bg-gradient-to-r from-blue-500 to-indigo-500 text-white p-4 rounded-2xl w-16 h-16 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-4">Complete Privacy & Discretion</h3>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  Maximum privacy protection with discreet service delivery, confidential bookings, 
+                  secure communication, private meetings, and complete anonymity for all escort services.
+                </p>
+                <div className="flex items-center text-blue-600 font-semibold">
+                  <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  100% Private Service
+                </div>
+              </div>
+
+              {/* Feature 5 */}
+              <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-pink-200/50 hover:scale-105 group">
+                <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white p-4 rounded-2xl w-16 h-16 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-4">Instant Booking Service</h3>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  Quick booking process with instant confirmation, immediate availability checks, 
+                  fast response times, and escorts ready within 30-60 minutes across Ranchi areas.
+                </p>
+                <div className="flex items-center text-orange-600 font-semibold">
+                  <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  30-60 Min Booking
+                </div>
+              </div>
+
+              {/* Feature 6 */}
+              <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-pink-200/50 hover:scale-105 group">
+                <div className="bg-gradient-to-r from-teal-500 to-cyan-500 text-white p-4 rounded-2xl w-16 h-16 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-2m0 0H7m12 0v-1a2 2 0 00-2-2H9a2 2 0 00-2 2v1m12 0h-2m-4-2h6m0 0h2m-8-1V4" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-800 mb-4">Diverse Escort Categories</h3>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  Wide selection including VIP escorts, college girls, mature companions, elite models, 
+                  international escorts, event companions, travel partners, and specialized services.
+                </p>
+                <div className="flex items-center text-teal-600 font-semibold">
+                  <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  15+ Service Categories
+                </div>
+              </div>
+            </div>
+
+            {/* Statistics Section */}
+            <div className="bg-gradient-to-r from-pink-500 to-rose-600 rounded-3xl p-12 text-white">
+              <h3 className="text-3xl md:text-4xl font-bold text-center mb-12">
+                Trusted by Thousands in Ranchi 🏆
+              </h3>
+              
+              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 mb-12">
+                <div className="text-center">
+                  <div className="text-4xl font-bold mb-2">500+</div>
+                  <div className="text-pink-100">Verified Escorts</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-4xl font-bold mb-2">24/7</div>
+                  <div className="text-pink-100">Service Hours</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-4xl font-bold mb-2">100%</div>
+                  <div className="text-pink-100">Privacy Guaranteed</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-4xl font-bold mb-2">10+</div>
+                  <div className="text-pink-100">Ranchi Areas</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-4xl font-bold mb-2">5000+</div>
+                  <div className="text-pink-100">Happy Clients</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-4xl font-bold mb-2">15+</div>
+                  <div className="text-pink-100">Service Types</div>
+                </div>
+              </div>
+
+              <div className="text-center">
+                <p className="text-xl mb-8 max-w-3xl mx-auto">
+                  Experience the most professional, discreet, and satisfying escort services in Ranchi 
+                  with our verified companions, instant booking, and complete privacy protection.
+                </p>
+                
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <a 
+                    href="tel:+919372662471" 
+                    className="bg-white text-pink-600 px-8 py-4 rounded-full font-bold hover:bg-pink-50 transition-all duration-300 shadow-xl flex items-center gap-3 justify-center hover:scale-105"
+                  >
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                    Book Now: +91-9372662471
+                  </a>
+                  <a 
+                    href="https://wa.me/919372662471?text=Hi%2C%20I%20want%20to%20book%20escorts%20in%20Ranchi%20with%20complete%20privacy" 
+                    className="bg-green-500 text-white px-8 py-4 rounded-full font-bold hover:bg-green-600 transition-all duration-300 shadow-xl flex items-center gap-3 justify-center hover:scale-105"
+                  >
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                    </svg>
+                    WhatsApp Now
+                  </a>
+                </div>
               </div>
             </div>
           </div>
