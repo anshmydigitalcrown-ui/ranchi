@@ -260,12 +260,12 @@ export default function ContactPage() {
                   </p>
                   
                   <div className="bg-blue-50 p-4 rounded-xl mb-6">
-                    <div className="text-lg font-bold text-blue-600 mb-2 break-all">sanjanadotsingh@gmail.com</div>
+                    <div className="text-lg font-bold text-blue-600 mb-2 break-all">contact@natasharai.in</div>
                     <div className="text-gray-600">Professional Response Within 1 Hour</div>
                   </div>
                   
                   <a 
-                    href="mailto:sanjanadotsingh@gmail.com?subject=Escort%20Service%20Inquiry%20in%20Ranchi&body=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20your%20escort%20services%20in%20Ranchi.%20Please%20provide%20details%20about%20availability%20and%20booking." 
+                    href="mailto:contact@natasharai.in?subject=Escort%20Service%20Inquiry%20in%20Ranchi&body=Hi%2C%20I%20would%20like%20to%20know%20more%20about%20your%20escort%20services%20in%20Ranchi.%20Please%20provide%20details%20about%20availability%20and%20booking." 
                     className="bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-6 py-3 rounded-full font-bold hover:from-blue-600 hover:to-cyan-600 transition-all duration-300 inline-flex items-center gap-2 shadow-lg hover:shadow-xl"
                   >
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

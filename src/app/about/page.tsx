@@ -481,8 +481,8 @@ export default function AboutPage() {
                         <div>
                           <div className="font-bold text-gray-800 mb-1">Email Support</div>
                           <div>
-                            <a href="mailto:sanjanadotsingh@gmail.com" className="text-blue-600 hover:text-blue-700 font-medium hover:underline transition-colors">
-                              sanjanadotsingh@gmail.com
+                            <a href="mailto:contact@natasharai.in" className="text-blue-600 hover:text-blue-700 font-medium hover:underline transition-colors">
+                              contact@natasharai.in
                             </a>
                           </div>
                         </div>

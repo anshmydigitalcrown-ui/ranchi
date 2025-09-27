@@ -241,7 +241,7 @@ export default function ContactFAQ() {
               </a>
 
               <a 
-                href="mailto:sanjanadotsingh@gmail.com?subject=Escort%20Service%20Contact%20-%20Ranchi&body=Hi%2C%20I%20would%20like%20to%20contact%20for%20escort%20services%20in%20Ranchi.%20Please%20provide%20details%20about%20availability%20and%20contact%20process." 
+                href="mailto:contact@natasharai.in?subject=Escort%20Service%20Contact%20-%20Ranchi&body=Hi%2C%20I%20would%20like%20to%20contact%20for%20escort%20services%20in%20Ranchi.%20Please%20provide%20details%20about%20availability%20and%20contact%20process." 
                 className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white p-6 rounded-2xl font-bold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 flex flex-col items-center gap-3"
               >
                 <div className="bg-white/20 p-3 rounded-full">
