@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 
 export default function LocationSEO() {
   const ranchiAreas = [
@@ -6,31 +7,71 @@ export default function LocationSEO() {
       name: "Central Ranchi",
       description: "Main commercial hub with premium hotels and business centers",
       landmarks: ["Main Road", "Commercial Complex", "City Center"],
-      features: ["24/7 availability", "Quick response", "Hotel visits", "Business meetings"]
+      features: ["24/7 availability", "Quick response", "Hotel visits", "Business meetings"],
+      link: "/locations/central-ranchi"
     },
     {
       name: "Kanke Road", 
       description: "IT sector area with modern facilities and corporate offices",
       landmarks: ["IT Park", "Corporate Offices", "Shopping Malls"],
-      features: ["Professional escorts", "Business companions", "Travel partners", "Event escorts"]
+      features: ["Professional escorts", "Business companions", "Travel partners", "Event escorts"],
+      link: "/locations/kanke-road"
     },
     {
       name: "HEC Colony",
       description: "Heavy Engineering Corporation residential area",
       landmarks: ["HEC Township", "Residential Complex", "Club Houses"],
-      features: ["Outcall services", "Home visits", "Private meetings", "Discreet service"]
+      features: ["Outcall services", "Home visits", "Private meetings", "Discreet service"],
+      link: "/locations/hec-colony"
     },
     {
       name: "Lalpur",
       description: "Premium township with upscale residential areas",
       landmarks: ["Lalpur Township", "Residential Areas", "Community Centers"],
-      features: ["Elite escorts", "Premium service", "Privacy guaranteed", "Luxury companions"]
+      features: ["Elite escorts", "Premium service", "Privacy guaranteed", "Luxury companions"],
+      link: "/locations/lalpur"
     },
     {
       name: "Hinoo Market",
       description: "Popular shopping and commercial district",
       landmarks: ["Hinoo Market", "Shopping Complex", "Commercial Area"],
-      features: ["Shopping companions", "Social escorts", "Event partners", "Dinner dates"]
+      features: ["Shopping companions", "Social escorts", "Event partners", "Dinner dates"],
+      link: "/locations/hinoo"
+    },
+    {
+      name: "Bariatu",
+      description: "Residential colony with peaceful environment",
+      landmarks: ["Bariatu Colony", "Residential Complex", "Community Centers"],
+      features: ["Home visits", "Private companions", "Discreet service", "Local escorts"],
+      link: "/locations/bariatu"
+    },
+    {
+      name: "Doranda",
+      description: "Railway junction and commercial center",
+      landmarks: ["Railway Station", "Market Area", "Commercial Hub"],
+      features: ["Travel escorts", "Station pickup", "Business meetings", "Quick service"],
+      link: "/locations/doranda"
+    },
+    {
+      name: "Circular Road",
+      description: "Banking and financial district of Ranchi",
+      landmarks: ["Banks", "Financial Offices", "Business Centers"],
+      features: ["Business escorts", "Professional meetings", "Corporate events", "Elite service"],
+      link: "/locations/circular-road"
+    },
+    {
+      name: "Ratu Road",
+      description: "Major transport junction and commercial area",
+      landmarks: ["Transport Hub", "Shopping Centers", "Hotels"],
+      features: ["Transport companions", "Hotel visits", "Shopping escorts", "24/7 service"],
+      link: "/locations/ratu-road"
+    },
+    {
+      name: "Argora",
+      description: "Industrial estate and residential area",
+      landmarks: ["Industrial Estate", "Residential Blocks", "Community Centers"],
+      features: ["Industrial escorts", "Worker companions", "Home service", "Affordable rates"],
+      link: "/locations/argora"
     }
   ];
 
@@ -51,9 +92,9 @@ export default function LocationSEO() {
           </div>
 
           {/* Location Cards */}
-          <div className="grid lg:grid-cols-2 gap-8 mb-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             {ranchiAreas.map((area, index) => (
-              <div key={index} className="bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden border border-pink-100">
+              <div key={index} className="bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden border border-pink-100 group">
                 <div className="bg-gradient-to-r from-pink-500 to-pink-600 p-6">
                   <div className="flex items-center gap-4">
                     <div className="bg-white/20 backdrop-blur-sm p-3 rounded-full">
@@ -84,7 +125,7 @@ export default function LocationSEO() {
                     </div>
                   </div>
                   
-                  <div>
+                  <div className="mb-8">
                     <h4 className="font-bold text-pink-800 mb-3">Service Features:</h4>
                     <div className="grid grid-cols-2 gap-2">
                       {area.features.map((feature, i) => (
@@ -97,9 +138,53 @@ export default function LocationSEO() {
                       ))}
                     </div>
                   </div>
+
+                  {/* Navigation Button */}
+                  <div className="text-center">
+                    <Link 
+                      href={area.link}
+                      className="inline-flex items-center gap-3 bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white px-6 py-3 rounded-full font-bold transition-all duration-300 shadow-lg hover:shadow-xl group-hover:scale-105"
+                    >
+                      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                      </svg>
+                      View {area.name} Services
+                    </Link>
+                  </div>
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Quick Location Links */}
+          <div className="bg-gradient-to-r from-pink-100 to-rose-100 rounded-3xl p-8 md:p-12 mb-16">
+            <h3 className="text-3xl font-bold text-pink-800 text-center mb-8">
+              Quick Access to All Ranchi Location Pages
+            </h3>
+            <p className="text-pink-700 text-center mb-10 max-w-3xl mx-auto">
+              Explore detailed information about escort services available in each specific Ranchi location 
+              with area maps, service types, and local contact information.
+            </p>
+            
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+              {ranchiAreas.map((area, index) => (
+                <Link 
+                  key={index}
+                  href={area.link}
+                  className="bg-white hover:bg-pink-50 rounded-2xl p-4 text-center shadow-md hover:shadow-xl transition-all duration-300 border border-pink-200 hover:border-pink-400 group"
+                >
+                  <div className="bg-pink-500 group-hover:bg-pink-600 text-white p-3 rounded-full w-12 h-12 mx-auto mb-3 transition-colors">
+                    <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <h4 className="font-bold text-pink-800 group-hover:text-pink-600 text-sm transition-colors">
+                    {area.name}
+                  </h4>
+                  <p className="text-pink-600 text-xs mt-1">View Details</p>
+                </Link>
+              ))}
+            </div>
           </div>
 
           {/* Service Types by Location */}
