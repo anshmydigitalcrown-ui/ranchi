@@ -5,5 +5,37 @@
       "src": "package.json",
       "use": "@vercel/next@latest"
     }
+  ],
+  "redirects": [
+    {
+      "source": "/rates",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/booking",
+      "destination": "/contact", 
+      "permanent": true
+    },
+    {
+      "source": "/testimonials",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/rates/(.*)",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/booking/(.*)",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/testimonials/(.*)",
+      "destination": "/about", 
+      "permanent": true
+    }
   ]
 }
