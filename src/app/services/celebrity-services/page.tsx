@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   authors: [{ name: 'Ranchi Celebrity Services' }],
   creator: 'Ranchi Elite Celebrity Services',
   publisher: 'Ranchi Premium Celebrity Escorts',
-  metadataBase: new URL('https://ranchi-mu.vercel.app'),
+  metadataBase: new URL('https://natasharai.in'),
   alternates: {
     canonical: '/services/celebrity-services',
   },

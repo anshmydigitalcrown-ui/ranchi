@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   authors: [{ name: 'Ranchi Travel Companions' }],
   creator: 'Ranchi Travel Companion Services',
   publisher: 'Ranchi Premium Travel Escorts',
-  metadataBase: new URL('https://ranchi-mu.vercel.app'),
+  metadataBase: new URL('https://natasharai.in'),
   alternates: {
     canonical: '/services/travel-companion',
   },

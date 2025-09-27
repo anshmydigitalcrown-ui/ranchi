@@ -3,6 +3,7 @@ import { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://natasharai.in'),
   title: "Ranchi Escorts - Premium Elite Companions | VIP Services 24/7",
   description: "Premium escort services in Ranchi with verified companions. VIP escorts, celebrity services, elite models available 24/7 across all Ranchi locations with complete discretion.",
   keywords: [

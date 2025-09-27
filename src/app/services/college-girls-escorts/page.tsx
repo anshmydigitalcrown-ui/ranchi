@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   authors: [{ name: 'Ranchi College Girls Escorts' }],
   creator: 'Ranchi College Girls Escort Services',
   publisher: 'Ranchi Premium College Girls Escorts',
-  metadataBase: new URL('https://ranchi-mu.vercel.app'),
+  metadataBase: new URL('https://natasharai.in'),
   alternates: {
     canonical: '/services/college-girls-escorts',
   },

@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   authors: [{ name: 'Ranchi Event Companions' }],
   creator: 'Ranchi Event Companion Services',
   publisher: 'Ranchi Premium Event Escorts',
-  metadataBase: new URL('https://ranchi-mu.vercel.app'),
+  metadataBase: new URL('https://natasharai.in'),
   alternates: {
     canonical: '/services/event-companion',
   },

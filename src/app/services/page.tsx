@@ -42,14 +42,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://ranchi-mu.vercel.app'),
+  metadataBase: new URL('https://natasharai.in'),
   alternates: {
     canonical: '/services',
   },
   openGraph: {
     title: 'Premium Escort Services in Ranchi 💎 #1 Elite Companionship',
     description: 'Experience comprehensive premium escort services in Ranchi with verified elite companions, luxury experiences, and professional discretion. Available 24/7 across all Ranchi locations with complete location coverage.',
-    url: 'https://ranchi-mu.vercel.app/services',
+    url: 'https://natasharai.in/services',
     siteName: 'Ranchi Premium Escorts',
     type: 'website',
     images: [

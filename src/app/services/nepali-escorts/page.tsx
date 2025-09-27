@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   authors: [{ name: 'Ranchi Nepali Escorts' }],
   creator: 'Ranchi Nepali Escort Services',
   publisher: 'Ranchi Premium Nepali Escorts',
-  metadataBase: new URL('https://ranchi-mu.vercel.app'),
+  metadataBase: new URL('https://natasharai.in'),
   alternates: {
     canonical: '/services/nepali-escorts',
   },
