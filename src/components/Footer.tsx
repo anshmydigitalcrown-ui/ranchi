@@ -98,8 +98,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/booking" className="text-gray-400 hover:text-pink-400 transition-colors">
-                  Booking
+                <Link href="/contact" className="text-gray-400 hover:text-pink-400 transition-colors">
+                  Booking & Contact
                 </Link>
               </li>
               <li>
@@ -108,13 +108,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/rates" className="text-gray-400 hover:text-pink-400 transition-colors">
-                  Rates
+                <Link href="/services" className="text-gray-400 hover:text-pink-400 transition-colors">
+                  Services & Rates
                 </Link>
               </li>
               <li>
-                <Link href="/testimonials" className="text-gray-400 hover:text-pink-400 transition-colors">
-                  Reviews
+                <Link href="/about" className="text-gray-400 hover:text-pink-400 transition-colors">
+                  Reviews & Testimonials
                 </Link>
               </li>
               <li>
