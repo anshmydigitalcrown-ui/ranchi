@@ -192,10 +192,11 @@ export default function ServicesSection() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl font-bold text-pink-800 mb-4">
-            Premium Services In Ranchi - Our Services
+            Premium Escort Services in Ranchi - All Categories Available
           </h2>
           <p className="text-lg text-pink-600 max-w-3xl mx-auto">
-            Explore our wide range of premium services designed to provide you with the ultimate experience
+            Explore our comprehensive range of professional escort services in Ranchi with verified profiles, 
+            24/7 availability, and complete privacy protection across all major Ranchi locations.
           </p>
         </div>
 
@@ -271,13 +272,13 @@ export default function ServicesSection() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                 </div>
-                <span className="font-bold text-pink-800 text-sm">PREMIUM LOCATIONS</span>
+                <span className="font-bold text-pink-800 text-sm">RANCHI ESCORT LOCATIONS</span>
               </div>
               <h3 className="text-3xl md:text-4xl font-bold text-pink-800 mb-4">
-                Available in Ranchi Locations
+                Escort Services Available in All Ranchi Areas
               </h3>
               <p className="text-lg text-pink-600 max-w-2xl mx-auto">
-                Our services are available across all major areas in Ranchi
+                Professional escorts available 24/7 across all major Ranchi locations with quick response times
               </p>
             </div>
 

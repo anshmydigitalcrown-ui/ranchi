@@ -59,16 +59,16 @@ export default function FAQSection() {
           <div className="bg-white rounded-2xl shadow-lg p-8 md:p-12">
             <div className="text-center mb-8">
               <h2 className="text-4xl md:text-5xl font-bold text-pink-800 mb-6">
-                Ranchi Escort Services - Complete Information Guide
+                Best Escorts in Ranchi - Complete Guide & Information
               </h2>
               <p className="text-xl text-pink-600 leading-relaxed">
-                Professional escort services in Ranchi with verified profiles, 24/7 availability, and complete privacy protection
+                Everything you need to know about premium escort services in Ranchi - verified profiles, booking process, safety measures, and 24/7 availability across all major Ranchi locations
               </p>
             </div>
             
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div className="space-y-4">
-                <h3 className="text-2xl font-bold text-pink-700 mb-4">Why Choose Our Ranchi Escort Services?</h3>
+                <h3 className="text-2xl font-bold text-pink-700 mb-4">Best Escorts in Ranchi - Why Choose Us?</h3>
                 <ul className="space-y-3 text-pink-600">
                   <li className="flex items-start">
                     <span className="text-pink-500 mr-2">✓</span>
@@ -90,7 +90,7 @@ export default function FAQSection() {
               </div>
               
               <div className="space-y-4">
-                <h3 className="text-2xl font-bold text-pink-700 mb-4">Service Areas in Ranchi</h3>
+                <h3 className="text-2xl font-bold text-pink-700 mb-4">Escort Service Coverage Areas in Ranchi</h3>
                 <div className="grid grid-cols-2 gap-2 text-sm text-pink-600">
                   <div className="bg-pink-100 rounded-lg p-3">
                     <strong>Central Ranchi:</strong><br />
@@ -113,12 +113,13 @@ export default function FAQSection() {
             </div>
             
             <div className="bg-gradient-to-r from-pink-100 to-pink-200 rounded-xl p-6 text-center">
-              <h3 className="text-2xl font-bold text-pink-800 mb-4">Professional Escort Services in Ranchi</h3>
+              <h3 className="text-2xl font-bold text-pink-800 mb-4">Premium Escorts in Ranchi - Professional Companionship Services</h3>
               <p className="text-pink-700 text-lg leading-relaxed">
-                Experience premium companionship services in Ranchi with our carefully selected and verified escorts. 
-                We offer VIP escorts, celebrity companions, elite models, independent professionals, travel companions, 
-                and event escorts. Available for dinner dates, social gatherings, business events, hotel visits, 
-                outcall services, and private companionship across all major Ranchi locations.
+                Experience the finest escort services in Ranchi with our carefully selected and verified professional escorts. 
+                We offer premium VIP escorts, celebrity-like companions, elite model escorts, independent professionals, travel companions, 
+                and event escorts available 24/7. Available for dinner dates, social gatherings, business events, hotel visits, 
+                outcall services, and private companionship across all major Ranchi locations including Central Ranchi, Kanke Road, 
+                HEC Colony, Lalpur, Hinoo, Bariatu, Doranda, Ratu Road, Circular Road, and Argora areas.
               </p>
             </div>
           </div>
@@ -127,10 +128,11 @@ export default function FAQSection() {
         {/* FAQ Section Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-pink-800 mb-4">
-            Frequently Asked Questions About Ranchi Escort Services
+            FAQ - Escorts in Ranchi | Complete Information Guide
           </h2>
           <p className="text-lg text-pink-600 max-w-4xl mx-auto">
-            Get detailed answers about escort services, booking process, safety measures, pricing, availability, and service areas in Ranchi
+            Get comprehensive answers about escort services in Ranchi, booking process, safety measures, pricing, 
+            availability, service areas, and privacy protection for all types of companionship services
           </p>
         </div>
 
@@ -165,9 +167,9 @@ export default function FAQSection() {
         {/* Enhanced CTA Section */}
         <div className="text-center mt-16">
           <div className="bg-white rounded-2xl shadow-xl p-8 max-w-4xl mx-auto">
-            <h3 className="text-3xl font-bold text-pink-800 mb-4">Ready to Book Premium Escort Services in Ranchi?</h3>
+            <h3 className="text-3xl font-bold text-pink-800 mb-4">Ready to Book Best Escorts in Ranchi?</h3>
             <p className="text-pink-700 mb-8 text-lg">
-              Contact us now for verified escorts, instant booking confirmation, and professional service delivery across Ranchi
+              Contact us now for verified escort profiles, instant booking confirmation, and professional escort service delivery across all Ranchi areas. Available 24/7 for your convenience.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 

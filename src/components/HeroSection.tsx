@@ -6,22 +6,23 @@ export default function HeroSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-6xl font-bold text-pink-800 mb-6">
-            #1 Premium Services In Ranchi
+            Escorts in Ranchi - Premium VIP Services
           </h1>
           <h2 className="text-2xl md:text-3xl font-semibold text-pink-600 mb-8">
-            🌟 High Class VIP & Celebrity Services | 24/7 Ranchi Service
+            🌟 #1 Verified Escorts in Ranchi | 24/7 Professional Services | Safe & Discreet
           </h2>
           <p className="text-lg md:text-xl text-pink-700 mb-8 max-w-4xl mx-auto">
-            Experience the finest services in Ranchi with our premium companions. Our professional and 
-            beautiful Ranchi services are available for outcall services across all Ranchi areas.
+            Book premium escorts in Ranchi with verified profiles, professional service, and complete privacy. 
+            Our elite escorts in Ranchi are available 24/7 for outcall services across all major Ranchi locations 
+            including Central Ranchi, Kanke Road, HEC Colony, Lalpur, and surrounding areas.
           </p>
           
           {/* Features */}
           <div className="flex flex-wrap justify-center gap-4 mb-8 text-pink-600">
-            <span className="bg-white px-4 py-2 rounded-full shadow-md">✨ 100% Verified</span>
-            <span className="bg-white px-4 py-2 rounded-full shadow-md">🔒 Safe & Discreet</span>
-            <span className="bg-white px-4 py-2 rounded-full shadow-md">⚡ Instant Booking</span>
-            <span className="bg-white px-4 py-2 rounded-full shadow-md">🎯 Satisfaction Guaranteed</span>
+            <span className="bg-white px-4 py-2 rounded-full shadow-md">✨ 100% Verified Escorts</span>
+            <span className="bg-white px-4 py-2 rounded-full shadow-md">🔒 Safe & Discreet Services</span>
+            <span className="bg-white px-4 py-2 rounded-full shadow-md">⚡ Instant Booking in Ranchi</span>
+            <span className="bg-white px-4 py-2 rounded-full shadow-md">🎯 Premium Quality Guaranteed</span>
           </div>
 
           {/* CTA Buttons */}
@@ -51,19 +52,19 @@ export default function HeroSection() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
           <div className="text-center bg-white p-6 rounded-xl shadow-lg">
             <div className="text-3xl font-bold text-pink-600">5000+</div>
-            <div className="text-pink-700">Verified Services</div>
+            <div className="text-pink-700">Verified Escorts in Ranchi</div>
           </div>
           <div className="text-center bg-white p-6 rounded-xl shadow-lg">
             <div className="text-3xl font-bold text-pink-600">100%</div>
-            <div className="text-pink-700">Safe & Discreet</div>
+            <div className="text-pink-700">Safe & Private Services</div>
           </div>
           <div className="text-center bg-white p-6 rounded-xl shadow-lg">
-            <div className="text-3xl font-bold text-pink-600">⭐ 4.8/5</div>
-            <div className="text-pink-700">Rating (2847+ Reviews)</div>
+            <div className="text-3xl font-bold text-pink-600">⭐ 4.9/5</div>
+            <div className="text-pink-700">Client Rating (3500+ Reviews)</div>
           </div>
           <div className="text-center bg-white p-6 rounded-xl shadow-lg">
             <div className="text-3xl font-bold text-pink-600">24/7</div>
-            <div className="text-pink-700">Instant Booking</div>
+            <div className="text-pink-700">Available Across Ranchi</div>
           </div>
         </div>
 
@@ -72,8 +73,8 @@ export default function HeroSection() {
           <div className="bg-white p-6 rounded-xl shadow-lg max-w-2xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-pink-700">
               <div>🏙️ All Ranchi Areas Covered</div>
-              <div>⏱️ 30-Min Arrival Time</div>
-              <div>🎯 Premium Quality Service</div>
+              <div>⏱️ 30-Min Quick Arrival</div>
+              <div>🎯 Premium Escorts in Ranchi</div>
             </div>
           </div>
         </div>
