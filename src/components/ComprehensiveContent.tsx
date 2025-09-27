@@ -17,11 +17,11 @@ export default function ComprehensiveContent() {
             </p>
           </div>
 
-          {/* Content Grid */}
-          <div className="grid lg:grid-cols-3 gap-12">
+          {/* Content - Centered Layout */}
+          <div className="max-w-5xl mx-auto">
             
-            {/* Main Content Column */}
-            <div className="lg:col-span-2 space-y-12">
+            {/* Main Content - Centered */}
+            <div className="space-y-12">
               
               {/* About Escort Services in Ranchi */}
               <article className="bg-white rounded-2xl shadow-lg p-8 border border-pink-100">
@@ -35,8 +35,8 @@ export default function ComprehensiveContent() {
                     clients who value quality, discretion, and professionalism above all else.
                   </p>
                   <p className="text-pink-700 leading-relaxed mb-4">
-                    Whether you're a business professional visiting Ranchi for corporate meetings, a tourist exploring 
-                    the city's cultural attractions, or a local resident seeking sophisticated companionship for social 
+                    Whether you&apos;re a business professional visiting Ranchi for corporate meetings, a tourist exploring 
+                    the city&apos;s cultural attractions, or a local resident seeking sophisticated companionship for social 
                     events, our verified escort services provide the perfect solution for all your companionship needs.
                   </p>
                   <p className="text-pink-700 leading-relaxed">
@@ -191,79 +191,29 @@ export default function ComprehensiveContent() {
                   </div>
                 </div>
               </article>
-            </div>
 
-            {/* Sidebar */}
-            <div className="space-y-8">
-              
-              {/* Quick Contact */}
-              <div className="bg-pink-500 text-white rounded-2xl p-8 shadow-lg">
+              {/* Quick Contact - Centered */}
+              <div className="bg-pink-500 text-white rounded-2xl p-8 shadow-lg text-center">
                 <h3 className="text-2xl font-bold mb-4">Book Escorts in Ranchi Now</h3>
                 <p className="mb-6 text-pink-100">
                   Professional escort services available 24/7 across all Ranchi locations
                 </p>
-                <div className="space-y-4">
+                <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
                   <a 
                     href="tel:+919372662471" 
-                    className="block bg-white text-pink-600 px-6 py-3 rounded-full font-bold text-center hover:bg-pink-50 transition-colors"
+                    className="bg-white text-pink-600 px-6 py-3 rounded-full font-bold hover:bg-pink-50 transition-colors"
                   >
                     📞 Call +91-9372662471
                   </a>
                   <a 
                     href="https://wa.me/919372662471" 
-                    className="block bg-green-500 text-white px-6 py-3 rounded-full font-bold text-center hover:bg-green-600 transition-colors"
+                    className="bg-green-500 text-white px-6 py-3 rounded-full font-bold hover:bg-green-600 transition-colors"
                   >
                     💬 WhatsApp Booking
                   </a>
                 </div>
-                <div className="mt-6 text-center text-pink-200 text-sm">
+                <div className="mt-6 text-pink-200 text-sm">
                   Available 24/7 • All Ranchi Areas • Instant Response
-                </div>
-              </div>
-
-              {/* Service Highlights */}
-              <div className="bg-white rounded-2xl p-8 shadow-lg border border-pink-100">
-                <h3 className="text-xl font-bold text-pink-800 mb-6">Service Highlights</h3>
-                <div className="space-y-4">
-                  {[
-                    { icon: "✓", text: "100% Verified Escorts", color: "text-green-600" },
-                    { icon: "🔒", text: "Complete Privacy", color: "text-blue-600" },
-                    { icon: "⏰", text: "24/7 Availability", color: "text-purple-600" },
-                    { icon: "📍", text: "All Ranchi Areas", color: "text-red-600" },
-                    { icon: "⭐", text: "Premium Quality", color: "text-yellow-600" },
-                    { icon: "💼", text: "Professional Service", color: "text-indigo-600" }
-                  ].map((item, index) => (
-                    <div key={index} className="flex items-center gap-3">
-                      <span className={`text-lg ${item.color}`}>{item.icon}</span>
-                      <span className="text-pink-700 font-medium">{item.text}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Popular Locations */}
-              <div className="bg-white rounded-2xl p-8 shadow-lg border border-pink-100">
-                <h3 className="text-xl font-bold text-pink-800 mb-6">Popular Ranchi Areas</h3>
-                <div className="space-y-3">
-                  {[
-                    "Central Ranchi (Main Road)",
-                    "Kanke Road Area",
-                    "HEC Colony",
-                    "Lalpur Township", 
-                    "Hinoo Market Area",
-                    "Bariatu Colony",
-                    "Doranda Station",
-                    "Ratu Road Junction",
-                    "Circular Road",
-                    "Argora Industrial"
-                  ].map((location, index) => (
-                    <div key={index} className="flex items-center gap-3 p-2 hover:bg-pink-50 rounded-lg transition-colors">
-                      <svg className="w-4 h-4 text-pink-500" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-                      </svg>
-                      <span className="text-pink-700 text-sm font-medium">{location}</span>
-                    </div>
-                  ))}
                 </div>
               </div>
             </div>
